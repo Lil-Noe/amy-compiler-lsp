@@ -1,0 +1,49 @@
+object Definitions
+	
+  def func1(n : Int(32)) : Int(32) = {
+    Std.printString("func1 called")
+    0
+  }
+
+  def func2() : Util = {
+    Std.printString("func1 called")
+  }
+
+  val x = 2
+  val y = 5
+
+  /* This comment helps separating definitions from calls */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 2nd part of comment */
+
+  val z = x + yS
+  val theta = func1()
+
+  val nul = func2()
+
+  Std.printString("Definitions done")
+end Definitions
