@@ -10,6 +10,9 @@ import lsp._
 import interpreter.Interpreter
 import java.io.File
 
+import org.eclipse.lsp4j.jsonrpc.Launcher
+import org.eclipse.lsp4j.services.LanguageClient
+
 object Main extends MainHelpers {
   private def parseArgs(args: Array[String]): Context = {
     var ctx = Context(new Reporter, Nil)
@@ -27,15 +30,25 @@ object Main extends MainHelpers {
     ctx
   }
 
+  private def launchServer(): Unit = {
+    // Create the server and launch it first
+    val server = new AmyLanguageServer()
+    val launcher = Launcher.createLauncher(
+      server, classOf[LanguageClient], System.in, System.out)
+
+    // Connect to the client side of the LSP
+    val client = launcher.getRemoteProxy
+    server.connect(client)
+
+    // Start listening to communications from client
+    launcher.startListening()
+  }
+
+
   def main(args: Array[String]): Unit = {
     val ctx = parseArgs(args)
 
-    if (ctx.serverMode) {
-      // Start the LSP server
-      AmyLanguageServerLauncher(args)
-      // println("LSP server is running...")
-      return
-    } 
+    if (ctx.serverMode) launchServer() 
 
     if (ctx.help) {
       val helpMsg = {
@@ -53,6 +66,7 @@ object Main extends MainHelpers {
           |  --printNames     Print trees with unique namas after name analyzer and exit
           |  --interpret      Interpret the program instead of compiling
           |  --type-check     Type-check the program and print trees
+          |  --server_mode    Launch Amy LSP Server
           |  --help           Print this message
         """.stripMargin
       }
