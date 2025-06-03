@@ -26,8 +26,8 @@ class AmyLanguageServer extends LanguageServer with LanguageClientAware {
     
 
     // Initialize the workspace and text document services
-    private val workspaceService: WorkspaceService = new AmyWorkspaceService()
-    private val textDocumentService: TextDocumentService = new AmyTextDocumentService()
+    private val workspaceService: WorkspaceService = new AmyWorkspaceService(this)
+    private val textDocumentService: TextDocumentService = new AmyTextDocumentService(this)
 
     override def getWorkspaceService(): WorkspaceService = workspaceService
     override def getTextDocumentService(): TextDocumentService = textDocumentService

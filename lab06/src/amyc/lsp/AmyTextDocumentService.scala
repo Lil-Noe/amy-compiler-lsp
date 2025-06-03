@@ -25,23 +25,28 @@ import amyc.ast.SymbolicTreeModule.*
 import amyc.ast.Identifier
 import scala.compiletime.ops.boolean
 
+/**
+  * Many methods of this class are not used in this project.
+  * We only inform the client the request has been received.
+  *
+  * @param server
+  */
+class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentService {
 
-class AmyTextDocumentService extends TextDocumentService {
+  override def didSave(params: DidSaveTextDocumentParams): Unit =
+    server.sendMsgToClient("didSave TextDocument")
+  override def didClose(params: DidCloseTextDocumentParams): Unit =
+    server.sendMsgToClient("didClose TextDocument")
+  override def didChange(params: DidChangeTextDocumentParams): Unit =
+    server.sendMsgToClient("didChange TextDocument")
+  override def didOpen(params: DidOpenTextDocumentParams): Unit =
+    server.sendMsgToClient("didOpen TextDocument")
 
-  override def didSave(params: DidSaveTextDocumentParams): Unit = {
-  }
 
-  override def didClose(params: DidCloseTextDocumentParams): Unit = {
-  }
 
-  override def didChange(params: DidChangeTextDocumentParams): Unit = {
-  }
-
-  override def didOpen(params: DidOpenTextDocumentParams): Unit = {
-  } 
 
   /**
-   * This function is defined to find the position of a givent identifier
+   * This function is defined to find the position of a given identifier
    * 
    * @param expr
    * @param positionSource
