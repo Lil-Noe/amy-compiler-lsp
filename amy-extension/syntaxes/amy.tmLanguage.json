@@ -1,0 +1,108 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "amy",
+	"patterns": [
+		{ "include": "#storage"     },
+		{ "include": "#keywords"    },
+		{ "include": "#types"	    },
+		{ "include": "#identifiers" },
+		{ "include": "#strings"     },
+		{ "include": "#numbers"     },
+		{ "include": "#booleans"    },
+		{ "include": "#comments"    },
+		{ "include": "#operators"   }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control",
+				"match": "\\b(case|else|extends|if|match|error|end)\\b"
+			}]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"begin": "\\b(def|val)\\b\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"beginCaptures": {
+						"1": { "name": "storage.type" },
+						"2": { "name": "entity.name.function" }
+					},
+					"end": "(?=\\()", 
+					"patterns": []
+				},
+				{
+					"begin": "\\b(class|object)\\b\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"beginCaptures": {
+						"1": { "name": "storage.type" },
+						"2": { "name": "entity.name.class" }
+					},
+					"end": "(?=\\s|$)",
+					"patterns": []
+				},
+				{
+					"name": "storage.type",
+					"match": "\\b(class|object|def|val)\\b"
+				},
+				{
+					"name": "storage.modifier",
+					"match": "\\b(abstract)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b(Boolean|Int|String|Unit|List|Cons|Nil)\\b"
+			}]
+		},
+		"identifiers": {
+      		"patterns": [{
+				"name": "variable.other",
+				"match": "\\b(?!case\\b)(?!else\\b)(?!extends\\b)(?!if\\b)(?!match\\b)(?!object\\b)(?!error\\b)(?!end\\b)(?!class\\b)(?!def\\b)(?!val\\b)(?!abstract\\b)(?!true\\b)(?!false\\b)(?!Boolean\\b)(?!Int\\b)(?!String\\b)(?!Unit\\b)([A-Za-z_][A-Za-z0-9_]*)\\b"
+				}]
+			},
+		"strings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b(\\d+)\\b"
+			}]
+		},
+		"booleans": {
+			"patterns": [{
+				"name": "constant.language.boolean",
+				"match": "\\b(true|false)\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator",
+				"match": "(\\+\\+|<=|&&|\\|\\||==|\\+|\\-|\\*|\\/|%|<|!|;)"
+			}]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]	
+		}
+	},
+	"scopeName": "source.id"
+}
