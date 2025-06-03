@@ -12,11 +12,12 @@ import org.eclipse.lsp4j.Location
 import org.eclipse.lsp4j.LocationLink
 import org.eclipse.lsp4j.Position as LSP4JPosition
 import org.eclipse.lsp4j.Range as LSP4JRange
-import java.{util => ju}
-import ju.Collections
-import ju.Optional
+import java.util.Collections
+import java.util.Optional
+import java.util.List as UtilList
 import java.net.URI
 import java.nio.file.{Files, Path, Paths}
+import amyc.utils.Position as AmyPosition
 import amyc.utils.* 
 import amyc.parsing.*
 import java.io.File
@@ -399,13 +400,14 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
     * @return
     */
   override def definition(params: DefinitionParams): 
-    CompletableFuture[Either[ju.List[? <: Location], ju.List[? <: LocationLink]]] = 
+    CompletableFuture[Either[UtilList[? <: Location], UtilList[? <: LocationLink]]] = 
   { 
 
       // Get the file in which to look for identifier
       val textDoc = params.getTextDocument
       val uri = textDoc.getUri
       val path = Paths.get(URI.create(uri))
+      server.sendMsgToClient(s"ClientFile URI : $uri \n ClientFile Path : $path")
 
       // Compile the file up to NameAnalyser to have identifiers
       val ctx = new Context(new Reporter, List(path.toString()))
@@ -417,7 +419,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
 
       // Get position given by the client
-      val clientPosition = params.getPosition()
+      val clientPosition: LSP4JPosition = params.getPosition()
 
       // Translate position (from LSP4J to Amy format) 
       // following zero-indexing of LSP4J protocol
@@ -491,14 +493,18 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
       }}
 
 
-      // Change position from Amy to LSP4J following zero-indexing of LSP4J protocol
-      // We set the start and end of position to same value
+      // Translate position (from Amy to LSP4J format) 
+      // following zero-indexing of LSP4J protocol
+      // (we set the start and end of position to same value)
       val range = new LSP4JRange(
         new LSP4JPosition(definitionPosition.line - 1, definitionPosition.col - 1), 
         new LSP4JPosition(definitionPosition.line - 1, definitionPosition.col - 1)
       )
 
       val definitionFileURI = definitionPosition.file.toPath().toUri.toString()
+
+      server.sendMsgToClient(s"Found identifier : $identifier")
+      server.sendMsgToClient(s"ServerFile URI : $definitionFileURI")
 
       val location = Optional.of(new Location(definitionFileURI, range))
       val locationList = Collections.singletonList(location.get())

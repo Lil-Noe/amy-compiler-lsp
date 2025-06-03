@@ -55,16 +55,16 @@ class AmyLanguageServer extends LanguageServer with LanguageClientAware {
 
         // Create the capabilities of the server
         val capabilities = new ServerCapabilities()
-
         // Make sure text documents are synced, always sending full content of the document
         capabilities.setTextDocumentSync(TextDocumentSyncKind.Full)
 
-        // Make sure the server provides goto definition support
+
+        // Only service the LSP implements for now
         capabilities.setDefinitionProvider(true)
+
 
         // Create the InitializeResult with the capabilities
         val result = new InitializeResult(capabilities)
-
         // Return the CompletableFuture
         CompletableFuture.completedFuture(result)
     }
