@@ -27,7 +27,7 @@ import scala.compiletime.ops.boolean
 
 /**
   * Many methods of this class are not used in this project.
-  * We only inform the client the request has been received.
+  * When it happens we only inform the client the request has been received.
   *
   * @param server
   */
@@ -200,8 +200,10 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
     startPos.col  <= pos.col  && pos.col  <= endPos.col
   }
 
+
   /**
-  * This function is defined to recursively find the identifier pointed by positionSource in a pattern
+  * This function is defined to recursively find the identifier pointed by positionSource 
+  * in a matchCase pattern
   *
   * @param pattern
   * @param positionSource
@@ -228,8 +230,15 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
     }
   } 
 
+
   /**
-    * This function is defined to find the identifier pointed by positionSource 
+    * This function is defined to recursively find the identifier pointed by positionSource.
+    * 
+    * The algorithm is the following :
+    * - If the Expr cannot contain an identifier (i.e. literals), return None 
+    * - If the Expr contains sub-expressions, go recursive
+    * - If the Expr contains a direct identifier (Variable/Let/Call)
+    *   check if it corresponds, else go recursive (or return None for Variable)
     *
     * @param e
     * @param positionSource
@@ -378,41 +387,53 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
 
 
-
+  /**
+    * This method implements the goto definition method on Server side.
+    * 
+    * It receives a position in a file from Client side, 
+    * find which identifier is pointed and returns the position of the definition of this identifier.
+    * 
+    * If the position does not point to an identifier, this method does nothing.
+    *
+    * @param params
+    * @return
+    */
   override def definition(params: DefinitionParams): 
     CompletableFuture[Either[ju.List[? <: Location], ju.List[? <: LocationLink]]] = 
   { 
-      // Get Position given by the client
+
+      // Get the file in which to look for identifier
       val textDoc = params.getTextDocument
       val uri = textDoc.getUri
-      val clientPosition = params.getPosition
-
-      // Get line in file and position in this line
-      val line = params.getPosition().getLine()
-      val character = params.getPosition().getCharacter()
-
-      // Change position from LSP4J to Amy following zero-indexing of LSP4J protocol
-      val identifierPosition = new SourcePosition(new File(uri), line + 1, character + 1)
-      var definitionPosition : Position = NoPosition
-    
-      // Get path of file
       val path = Paths.get(URI.create(uri))
 
+      // Compile the file up to NameAnalyser to have identifiers
       val ctx = new Context(new Reporter, List(path.toString()))
       val files = ctx.files.map(new File(_))
       val pipeline = AmyLexer.andThen(Parser.andThen(NameAnalyzer))
-
-      // Keep track of the corresponding identifier
-      var identifier : Option[Identifier] = None
-
-      if (files.isEmpty) {
-        // Return future with empty files
-        return CompletableFuture.completedFuture(Either.forLeft(Collections.emptyList()))
-      }
-
       val (program, table) = pipeline.run(ctx)(files)
 
-      // Go through modules to find identifier then definition
+
+
+
+      // Get position given by the client
+      val clientPosition = params.getPosition()
+
+      // Translate position (from LSP4J to Amy format) 
+      // following zero-indexing of LSP4J protocol
+      val identifierPosition = new SourcePosition(
+        new File(uri), clientPosition.getLine() + 1, clientPosition.getCharacter() + 1)
+      var definitionPosition : Position = NoPosition
+    
+
+
+
+      // Keep track of the wanted identifier
+      var identifier : Option[Identifier] = None
+
+      // Go through modules to :
+      // 1. Find the identifier pointed by the position
+      // 2. Find the position of the definition of this identifier
       program.modules.foreach { mod => {
 
 
@@ -421,7 +442,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
             if (!identifier.isDefined) {
               definition match {
                 case FunDef(_,_,_,body) => identifier = lookForIdentifier(body, identifierPosition) 
-                case _                  => /* do nothing */
+                case _                  => /* do nothing for ClassDef (no Expr) */
               }
             }
         }}
@@ -441,19 +462,18 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
         // When corresponding identifier found, get its position
         identifier match {
-          case None => {}
+          case None => {/* do nothing if the position did not point to an identifier */}
           case Some(name) => {
             
             // Search first in definitions
             mod.defs.foreach { definition => {
 
+              // If the identifier is a Class or a function, we are done
               if (definition.name == name) definitionPosition = definition.startPosition
               else {
-                if (definitionPosition == NoPosition) {
-                  definition match {
-                    case FunDef(_,_,_,body) => definitionPosition = lookForPosition(body, name) 
-                    case _                  => /* do nothing */
-                  }
+                definition match {
+                  case FunDef(_,_,_,body) => definitionPosition = lookForPosition(body, name) 
+                  case _                  => /* do nothing for ClassDef (no Expr) */
                 }
               }
             }}
@@ -461,7 +481,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
             // If not found, look in the expressions
             if (definitionPosition == NoPosition) {
               mod.optExpr.foreach { e => {
-                  if (definitionPosition != NoPosition) {
+                  if (definitionPosition == NoPosition) {
                     definitionPosition = lookForPosition(e, name)
                   }
               }}

@@ -1,4 +1,4 @@
-[debug] [lab06-build-build] Classpath dependencies List()
-[debug] [lab06-build-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'lab06-build-build' to 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\project\.bloop\lab06-build-build.json'
-[success] Generated .bloop\lab06-build-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[lab06-build-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[lab06-build-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'lab06-build-build' to 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\project\.bloop\lab06-build-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\lab06-build-build.json[0m

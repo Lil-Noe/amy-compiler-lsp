@@ -48,6 +48,7 @@ case object NoPosition extends Position {
 }
 
 // A trait for entities which have a position in a file
+// (add endPosition to assign a position to an identifier (between start and end) in LSP)
 trait Positioned {
 
   protected var startPos_ : Position = NoPosition
