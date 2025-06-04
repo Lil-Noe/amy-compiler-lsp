@@ -1,3 +1,15 @@
+file:///C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/src/amyc/lsp/AmyTextDocumentService.scala
+### java.lang.AssertionError: assertion failed
+
+occurred in the presentation compiler.
+
+presentation compiler configuration:
+
+
+action parameters:
+uri: file:///C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/src/amyc/lsp/AmyTextDocumentService.scala
+text:
+```scala
 package amyc.lsp
 
 import org.eclipse.lsp4j.services.TextDocumentService
@@ -424,7 +436,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
       // Translate position (from LSP4J to Amy format) 
       // following zero-indexing of LSP4J protocol
       val identifierPosition = new SourcePosition(
-        path.toFile(), clientPosition.getLine() + 1, clientPosition.getCharacter() + 1)
+        new File(uri), clientPosition.getLine() + 1, clientPosition.getCharacter() + 1)
       var definitionPosition : Position = NoPosition
     
 
@@ -501,14 +513,137 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
         new LSP4JPosition(definitionPosition.line - 1, definitionPosition.col - 1)
       )
 
-      val definitionFileURI = definitionPosition.file.toURI().toString()
+      val definitionFileURI = definitionPosition.file.toPath().toUri.toString()
 
       server.sendMsgToClient(s"Found identifier : $identifier")
       server.sendMsgToClient(s"ServerFile URI : $definitionFileURI")
 
-      val locationList = Collections.singletonList(
-        new Location(definitionFileURI, range))
-
-      CompletableFuture.supplyAsync(() => Either.forLeft(locationList))
+      val location = Optional.of(new Location(definitionFileURI, range))
+      val locationList = Collections.singletonList(location.get())
+      CompletableFuture.completedFuture(Either.forLeft(Collections.singletonList(location.get())))
   }
 }
+```
+
+
+
+#### Error stacktrace:
+
+```
+scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:11)
+	dotty.tools.dotc.core.TypeOps$.dominators$1(TypeOps.scala:245)
+	dotty.tools.dotc.core.TypeOps$.approximateOr$1(TypeOps.scala:381)
+	dotty.tools.dotc.core.TypeOps$.orDominator(TypeOps.scala:399)
+	dotty.tools.dotc.core.Types$OrType.join(Types.scala:3684)
+	dotty.tools.dotc.core.Types$OrType.widenUnionWithoutNull(Types.scala:3700)
+	dotty.tools.dotc.core.Types$Type.widenUnion(Types.scala:1386)
+	dotty.tools.dotc.core.ConstraintHandling.widenOr$1(ConstraintHandling.scala:663)
+	dotty.tools.dotc.core.ConstraintHandling.widenInferred(ConstraintHandling.scala:684)
+	dotty.tools.dotc.core.ConstraintHandling.widenInferred$(ConstraintHandling.scala:29)
+	dotty.tools.dotc.core.TypeComparer.widenInferred(TypeComparer.scala:31)
+	dotty.tools.dotc.core.ConstraintHandling.instanceType(ConstraintHandling.scala:725)
+	dotty.tools.dotc.core.ConstraintHandling.instanceType$(ConstraintHandling.scala:29)
+	dotty.tools.dotc.core.TypeComparer.instanceType(TypeComparer.scala:31)
+	dotty.tools.dotc.core.TypeComparer$.instanceType(TypeComparer.scala:3277)
+	dotty.tools.dotc.core.Types$TypeVar.typeToInstantiateWith(Types.scala:5054)
+	dotty.tools.dotc.core.Types$TypeVar.instantiate(Types.scala:5064)
+	dotty.tools.dotc.typer.Inferencing.tryInstantiate$1(Inferencing.scala:814)
+	dotty.tools.dotc.typer.Inferencing.doInstantiate$1(Inferencing.scala:817)
+	dotty.tools.dotc.typer.Inferencing.interpolateTypeVars(Inferencing.scala:820)
+	dotty.tools.dotc.typer.Inferencing.interpolateTypeVars$(Inferencing.scala:629)
+	dotty.tools.dotc.typer.Typer.interpolateTypeVars(Typer.scala:145)
+	dotty.tools.dotc.typer.Typer.simplify(Typer.scala:3518)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3503)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3630)
+	dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3649)
+	dotty.tools.dotc.typer.Typer.typedBlockStats(Typer.scala:1399)
+	dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1403)
+	dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3423)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3500)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3692)
+	dotty.tools.dotc.typer.Typer.caseRest$1(Typer.scala:2177)
+	dotty.tools.dotc.typer.Typer.typedCase(Typer.scala:2193)
+	dotty.tools.dotc.typer.Typer.typedCases$$anonfun$1(Typer.scala:2121)
+	dotty.tools.dotc.core.Decorators$.loop$1(Decorators.scala:99)
+	dotty.tools.dotc.core.Decorators$.mapconserve(Decorators.scala:115)
+	dotty.tools.dotc.typer.Typer.typedCases(Typer.scala:2120)
+	dotty.tools.dotc.typer.Typer.$anonfun$39(Typer.scala:2111)
+	dotty.tools.dotc.typer.Applications.harmonic(Applications.scala:2559)
+	dotty.tools.dotc.typer.Applications.harmonic$(Applications.scala:434)
+	dotty.tools.dotc.typer.Typer.harmonic(Typer.scala:145)
+	dotty.tools.dotc.typer.Typer.typedMatchFinish(Typer.scala:2111)
+	dotty.tools.dotc.typer.Typer.typedMatch(Typer.scala:2040)
+	dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3430)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3500)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3692)
+	dotty.tools.dotc.typer.Typer.typedBlock(Typer.scala:1406)
+	dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3423)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3500)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3692)
+	dotty.tools.dotc.typer.Typer.$anonfun$64(Typer.scala:2834)
+	dotty.tools.dotc.inlines.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:256)
+	dotty.tools.dotc.typer.Typer.typedDefDef(Typer.scala:2834)
+	dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:3397)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3499)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3603)
+	dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3649)
+	dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:3097)
+	dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:3403)
+	dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:3407)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3499)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3603)
+	dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3649)
+	dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:3230)
+	dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3449)
+	dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3500)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3577)
+	dotty.tools.dotc.typer.Typer.typed(Typer.scala:3581)
+	dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3692)
+	dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:47)
+	scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:503)
+	dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:53)
+	dotty.tools.dotc.typer.TyperPhase.$anonfun$4(TyperPhase.scala:99)
+	scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:479)
+	scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	scala.collection.immutable.List.prependedAll(List.scala:152)
+	scala.collection.immutable.List$.from(List.scala:685)
+	scala.collection.immutable.List$.from(List.scala:682)
+	scala.collection.IterableOps$WithFilter.map(Iterable.scala:900)
+	dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:98)
+	dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:343)
+	scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1323)
+	dotty.tools.dotc.Run.runPhases$1(Run.scala:336)
+	dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:384)
+	dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:396)
+	dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:69)
+	dotty.tools.dotc.Run.compileUnits(Run.scala:396)
+	dotty.tools.dotc.Run.compileSources(Run.scala:282)
+	dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:161)
+	dotty.tools.pc.MetalsDriver.run(MetalsDriver.scala:47)
+	dotty.tools.pc.WithCompilationUnit.<init>(WithCompilationUnit.scala:31)
+	dotty.tools.pc.SimpleCollector.<init>(PcCollector.scala:351)
+	dotty.tools.pc.PcSemanticTokensProvider$Collector$.<init>(PcSemanticTokensProvider.scala:63)
+	dotty.tools.pc.PcSemanticTokensProvider.Collector$lzyINIT1(PcSemanticTokensProvider.scala:63)
+	dotty.tools.pc.PcSemanticTokensProvider.Collector(PcSemanticTokensProvider.scala:63)
+	dotty.tools.pc.PcSemanticTokensProvider.provide(PcSemanticTokensProvider.scala:88)
+	dotty.tools.pc.ScalaPresentationCompiler.semanticTokens$$anonfun$1(ScalaPresentationCompiler.scala:116)
+```
+#### Short summary: 
+
+java.lang.AssertionError: assertion failed

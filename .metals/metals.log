@@ -1531,3 +1531,653 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.lang.Thread.run(Thread.java:1583)
 
+2025.06.03 21:24:32 INFO  Started: Metals version 1.5.3 in folders 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP' for client Visual Studio Code 1.100.3.
+2025.06.03 21:24:36 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 03, 2025 9:24:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2025.06.03 21:24:39 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 03, 2025 9:24:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2025.06.03 21:24:39 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:39 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:39 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServerLauncher.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:39 WARN  no build target for: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala
+2025.06.03 21:24:39 INFO  Attempting to connect to the build server...
+2025.06.03 21:24:39 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServerLauncher.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:39 INFO  No running Bloop server found, starting one.
+2025.06.03 21:24:41 INFO  Starting compilation server
+2025.06.03 21:24:41 INFO  no build target found for c:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServerLauncher.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:41 INFO  no build target found for c:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServerLauncher.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:41 WARN  no build target for: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala
+2025.06.03 21:24:41 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:41 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:43 WARN  no build target for: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala
+2025.06.03 21:24:43 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.03 21:24:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.03 21:24:44 INFO  time: Connected to build server in 4.24s
+2025.06.03 21:24:43 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.03 21:24:44 INFO  time: Imported build in 0.19s
+2025.06.03 21:24:58 INFO  time: indexed workspace in 14s
+2025.06.03 21:24:59 INFO  compiling lab06 (30 scala sources)
+2025.06.03 21:25:22 INFO  compiling lab06-test (9 scala sources)
+2025.06.03 21:25:24 INFO  time: compiled lab06 in 24s
+2025.06.03 21:25:24 WARN  there was 1 deprecation warning; re-run with -deprecation for details
+2025.06.03 21:25:24 INFO  time: compiled lab06-test in 2.08s
+Jun 03, 2025 9:32:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 45
+2025.06.03 21:33:32 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:33:34 INFO  time: compiled lab06 in 1.96s
+2025.06.03 21:35:14 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:35:14 INFO  time: compiled lab06 in 0.75s
+2025.06.03 21:35:23 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:35:23 INFO  time: compiled lab06 in 0.42s
+2025.06.03 21:36:10 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:36:10 INFO  time: compiled lab06 in 0.36s
+2025.06.03 21:36:24 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:36:24 INFO  time: compiled lab06 in 0.27s
+Jun 03, 2025 9:40:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 735
+2025.06.03 21:40:26 INFO  compiling lab06 (1 scala source)
+Jun 03, 2025 9:40:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 794
+2025.06.03 21:40:29 INFO  time: compiled lab06 in 2.34s
+Jun 03, 2025 9:40:29 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Could not find any locations for Some(SymbolOccurrence(Some(Range(29,17,29,21)),amyc/lsp/AmyLanguageServer#exit().,DEFINITION)), printing index state (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-references_(lab06)_21-40-29-068.md)
+2025.06.03 21:40:47 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:40:47 INFO  time: compiled lab06 in 0.86s
+2025.06.03 21:41:48 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:41:48 INFO  time: compiled lab06 in 0.79s
+Jun 03, 2025 9:42:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1255
+Jun 03, 2025 9:42:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1287
+Jun 03, 2025 9:43:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1624
+Jun 03, 2025 9:43:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1637
+2025.06.03 21:43:21 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:43:21 INFO  time: compiled lab06 in 0.66s
+2025.06.03 21:43:29 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:43:29 INFO  time: compiled lab06 in 0.51s
+2025.06.03 21:43:45 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:43:45 INFO  time: compiled lab06 in 0.43s
+2025.06.03 21:50:58 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:50:58 INFO  time: compiled lab06 in 0.52s
+Jun 03, 2025 9:51:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1951
+Jun 03, 2025 9:51:43 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-definition_(lab06)_11-48-08-144.md)
+2025.06.03 21:51:43 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:51:43 INFO  time: compiled lab06 in 0.53s
+2025.06.03 21:52:09 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:52:09 INFO  time: compiled lab06 in 0.25s
+2025.06.03 21:52:10 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:52:10 INFO  time: compiled lab06 in 0.29s
+2025.06.03 21:52:35 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:52:35 INFO  time: compiled lab06 in 0.87s
+2025.06.03 21:53:52 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:53:52 INFO  time: compiled lab06 in 0.66s
+2025.06.03 21:54:30 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:54:30 INFO  time: compiled lab06 in 0.68s
+2025.06.03 21:54:35 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:54:35 INFO  time: compiled lab06 in 0.39s
+Jun 03, 2025 9:55:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2852
+2025.06.03 21:55:22 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:55:22 INFO  time: compiled lab06 in 0.5s
+2025.06.03 21:55:51 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:55:51 INFO  time: compiled lab06 in 0.36s
+2025.06.03 21:56:05 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:56:05 INFO  time: compiled lab06 in 0.44s
+Jun 03, 2025 9:56:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3203
+2025.06.03 21:56:37 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:56:37 INFO  time: compiled lab06 in 0.39s
+Jun 03, 2025 9:56:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3349
+2025.06.03 21:56:48 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:56:48 INFO  time: compiled lab06 in 0.32s
+2025.06.03 21:56:58 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:56:58 INFO  time: compiled lab06 in 0.31s
+Jun 03, 2025 9:57:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3495
+2025.06.03 21:57:10 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:57:10 INFO  time: compiled lab06 in 0.87s
+2025.06.03 21:57:25 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:57:25 INFO  time: compiled lab06 in 0.33s
+2025.06.03 21:57:40 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:57:40 INFO  time: compiled lab06 in 0.37s
+2025.06.03 21:57:45 INFO  compiling lab06 (1 scala source)
+2025.06.03 21:57:45 INFO  time: compiled lab06 in 0.4s
+2025.06.03 21:59:55 INFO  compiling lab06 (2 scala sources)
+2025.06.03 21:59:56 INFO  time: compiled lab06 in 1.01s
+2025.06.03 22:00:01 INFO  compiling lab06 (2 scala sources)
+2025.06.03 22:00:02 INFO  time: compiled lab06 in 1.13s
+2025.06.03 22:00:06 INFO  compiling lab06 (2 scala sources)
+2025.06.03 22:00:06 INFO  time: compiled lab06 in 0.32s
+Jun 03, 2025 10:00:36 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\WorkspaceService.scala
+java.nio.file.NoSuchFileException: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\WorkspaceService.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3281)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:465)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:289)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:300)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:216)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:138)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at dotty.tools.pc.utils.InteractiveEnrichments$.symbolDocumentation(InteractiveEnrichments.scala:284)
+	at dotty.tools.pc.HoverProvider$.$anonfun$3(HoverProvider.scala:131)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at dotty.tools.pc.HoverProvider$.hover(HoverProvider.scala:131)
+	at dotty.tools.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:393)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Jun 03, 2025 10:00:36 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\WorkspaceService.scala
+java.nio.file.NoSuchFileException: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\WorkspaceService.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3281)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:465)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:289)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:300)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:311)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:216)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:138)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at dotty.tools.pc.utils.InteractiveEnrichments$.symbolDocumentation(InteractiveEnrichments.scala:284)
+	at dotty.tools.pc.HoverProvider$.$anonfun$3(HoverProvider.scala:131)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at dotty.tools.pc.HoverProvider$.hover(HoverProvider.scala:131)
+	at dotty.tools.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:393)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025.06.03 22:00:46 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:00:46 INFO  time: compiled lab06 in 0.28s
+2025.06.03 22:00:59 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:00:59 INFO  time: compiled lab06 in 0.51s
+Jun 03, 2025 10:01:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3881
+Jun 03, 2025 10:01:20 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServer.scala
+java.nio.file.NoSuchFileException: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServer.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3281)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:465)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:289)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:300)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:216)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:138)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at dotty.tools.pc.utils.InteractiveEnrichments$.symbolDocumentation(InteractiveEnrichments.scala:284)
+	at dotty.tools.pc.CompletionItemResolver$.resolve(CompletionItemResolver.scala:29)
+	at dotty.tools.pc.ScalaPresentationCompiler.completionItemResolve$$anonfun$1(ScalaPresentationCompiler.scala:259)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Jun 03, 2025 10:01:20 PM scala.meta.internal.mtags.SymbolIndexBucket addMtagsSourceFile
+WARNING: Error indexing C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServer.scala
+java.nio.file.NoSuchFileException: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\LanguageServer.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3281)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:465)
+	at scala.meta.internal.mtags.Mtags.index(Mtags.scala:96)
+	at scala.meta.internal.mtags.Mtags.allSymbols(Mtags.scala:21)
+	at scala.meta.internal.mtags.SymbolIndexBucket.allSymbols(SymbolIndexBucket.scala:289)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:300)
+	at scala.meta.internal.mtags.SymbolIndexBucket.addMtagsSourceFile(SymbolIndexBucket.scala:311)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.$anonfun$query0$1$adapted(SymbolIndexBucket.scala:216)
+	at scala.collection.immutable.Set$Set2.foreach(Set.scala:210)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query0(SymbolIndexBucket.scala:216)
+	at scala.meta.internal.mtags.SymbolIndexBucket.query(SymbolIndexBucket.scala:189)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$findSymbolDefinition$1(OnDemandSymbolIndex.scala:142)
+	at scala.collection.immutable.List.flatMap(List.scala:294)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.findSymbolDefinition(OnDemandSymbolIndex.scala:142)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.definition(OnDemandSymbolIndex.scala:48)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:138)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:49)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:51)
+	at dotty.tools.pc.utils.InteractiveEnrichments$.symbolDocumentation(InteractiveEnrichments.scala:284)
+	at dotty.tools.pc.CompletionItemResolver$.resolve(CompletionItemResolver.scala:29)
+	at dotty.tools.pc.ScalaPresentationCompiler.completionItemResolve$$anonfun$1(ScalaPresentationCompiler.scala:259)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:157)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:143)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:246)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025.06.03 22:01:21 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:01:21 INFO  time: compiled lab06 in 0.17s
+2025.06.03 22:01:35 INFO  compiling lab06 (2 scala sources)
+2025.06.03 22:01:35 INFO  time: compiled lab06 in 0.43s
+2025.06.03 22:01:42 INFO  compiling lab06 (3 scala sources)
+2025.06.03 22:01:43 INFO  time: compiled lab06 in 1.01s
+2025.06.03 22:01:59 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:01:59 INFO  time: compiled lab06 in 0.5s
+2025.06.03 22:02:14 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:02:14 INFO  time: compiled lab06 in 0.23s
+2025.06.03 22:03:38 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:03:38 INFO  time: compiled lab06 in 0.26s
+Exception in thread "pool-11-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Jun 03, 2025 10:04:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4720
+2025.06.03 22:04:16 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:04:16 INFO  time: compiled lab06 in 0.75s
+2025.06.03 22:04:36 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:04:36 INFO  time: compiled lab06 in 0.58s
+Jun 03, 2025 10:05:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4948
+2025.06.03 22:05:24 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:05:24 INFO  time: compiled lab06 in 0.22s
+Jun 03, 2025 10:05:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5153
+2025.06.03 22:05:37 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:05:37 INFO  time: compiled lab06 in 0.9s
+Jun 03, 2025 10:06:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5269
+Jun 03, 2025 10:06:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5347
+2025.06.03 22:06:17 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:17 INFO  time: compiled lab06 in 0.92s
+2025.06.03 22:06:24 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:24 INFO  time: compiled lab06 in 0.8s
+2025.06.03 22:06:30 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:30 INFO  time: compiled lab06 in 0.81s
+2025.06.03 22:06:31 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:31 INFO  time: compiled lab06 in 0.78s
+2025.06.03 22:06:37 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:37 INFO  time: compiled lab06 in 0.72s
+2025.06.03 22:06:42 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:42 INFO  time: compiled lab06 in 0.65s
+2025.06.03 22:06:47 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:47 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 22:06:47 INFO  time: compiled lab06 in 0.75s
+2025.06.03 22:06:56 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:56 INFO  time: compiled lab06 in 0.7s
+2025.06.03 22:06:59 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:06:59 INFO  time: compiled lab06 in 0.75s
+Jun 03, 2025 10:08:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/c%3A/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/.bloop/lab06/bloop-bsp-clients-classes/classes-Metals-TktxLaF0TTulEaRk_ZNVbA%3D%3D/amyc/utils/Env%24Linux%24.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:130)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:190)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:774)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Jun 03, 2025 10:09:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5771
+Jun 03, 2025 10:09:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5772
+Jun 03, 2025 10:09:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5774
+Jun 03, 2025 10:09:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5775
+2025.06.03 22:09:11 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:09:11 INFO  time: compiled lab06 in 0.78s
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6004
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6005
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6006
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6007
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6008
+Jun 03, 2025 10:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6009
+2025.06.03 22:13:44 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:13:44 INFO  time: compiled lab06 in 0.56s
+2025.06.03 22:13:57 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:13:57 INFO  time: compiled lab06 in 0.46s
+Jun 03, 2025 10:14:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6342
+2025.06.03 22:14:42 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:14:42 INFO  time: compiled lab06 in 0.74s
+2025.06.03 22:14:47 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:14:47 INFO  time: compiled lab06 in 0.63s
+2025.06.03 22:14:57 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:14:57 INFO  time: compiled lab06 in 0.7s
+Jun 03, 2025 10:15:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6665
+Jun 03, 2025 10:18:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7121
+Jun 03, 2025 10:18:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7171
+Jun 03, 2025 10:18:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7292
+Jun 03, 2025 10:18:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7360
+Jun 03, 2025 10:18:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7401
+Jun 03, 2025 10:19:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7458
+2025.06.03 22:19:14 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 22:19:14 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:19:14 INFO  time: compiled lab06 in 0.8s
+Jun 03, 2025 10:19:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7612
+2025.06.03 22:19:47 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:19:47 INFO  time: compiled lab06 in 0.63s
+2025.06.03 22:20:27 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:20:27 INFO  time: compiled lab06 in 0.77s
+2025.06.03 22:20:30 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:20:30 INFO  time: compiled lab06 in 0.69s
+Jun 03, 2025 10:21:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8033
+2025.06.03 22:21:35 INFO  time: code lens generation in 1.05s
+Jun 03, 2025 10:21:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8068
+Jun 03, 2025 10:22:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8184
+Jun 03, 2025 10:22:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8260
+Jun 03, 2025 10:22:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8334
+Jun 03, 2025 10:23:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8584
+2025.06.03 22:23:19 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:23:19 INFO  time: compiled lab06 in 0.75s
+Jun 03, 2025 10:23:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8812
+Jun 03, 2025 10:23:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8899
+2025.06.03 22:23:56 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:23:56 INFO  time: compiled lab06 in 0.68s
+2025.06.03 22:24:33 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:24:33 INFO  time: compiled lab06 in 0.72s
+2025.06.03 22:24:34 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:24:34 INFO  time: compiled lab06 in 0.73s
+Jun 03, 2025 10:27:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9363
+2025.06.03 22:27:07 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:27:07 INFO  time: compiled lab06 in 0.8s
+2025.06.03 22:27:48 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:27:48 INFO  time: compiled lab06 in 0.73s
+2025.06.03 22:27:50 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:27:50 INFO  time: compiled lab06 in 0.57s
+2025.06.03 22:28:07 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:28:07 INFO  time: compiled lab06 in 0.63s
+Jun 03, 2025 10:28:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9592
+2025.06.03 22:28:43 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:28:43 INFO  time: compiled lab06 in 0.7s
+2025.06.03 22:28:46 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:28:46 INFO  time: compiled lab06 in 0.66s
+2025.06.03 22:29:30 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:29:30 INFO  time: compiled lab06 in 0.75s
+2025.06.03 22:29:34 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:29:34 INFO  time: compiled lab06 in 0.63s
+2025.06.03 22:29:38 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:29:38 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 22:29:38 INFO  time: compiled lab06 in 0.68s
+Jun 03, 2025 10:29:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9847
+2025.06.03 22:31:32 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:31:32 INFO  time: compiled lab06 in 0.67s
+2025.06.03 22:31:50 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:31:50 INFO  time: compiled lab06 in 0.65s
+2025.06.03 22:32:27 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:32:27 INFO  time: compiled lab06 in 0.7s
+2025.06.03 22:32:30 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:32:30 INFO  time: compiled lab06 in 0.59s
+Jun 03, 2025 10:32:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10444
+2025.06.03 22:32:48 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:32:48 INFO  time: compiled lab06 in 0.55s
+2025.06.03 22:32:58 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:32:58 INFO  time: compiled lab06 in 0.58s
+2025.06.03 22:33:09 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:33:09 INFO  time: compiled lab06 in 0.62s
+Jun 03, 2025 10:33:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10673
+Jun 03, 2025 10:33:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10705
+Jun 03, 2025 10:33:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10732
+Jun 03, 2025 10:33:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10733
+Jun 03, 2025 10:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10883
+Jun 03, 2025 10:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10886
+Jun 03, 2025 10:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10889
+Jun 03, 2025 10:33:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10890
+2025.06.03 22:33:56 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:33:56 INFO  time: compiled lab06 in 0.74s
+Jun 03, 2025 10:35:18 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-definition_(lab06)_22-35-18-376.md)
+2025.06.03 22:35:18 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:35:18 INFO  time: compiled lab06 in 0.81s
+Jun 03, 2025 10:36:04 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: Could not find any locations for Some(SymbolOccurrence(Some(Range(13,6,13,16)),amyc/ast/TreeModule#,DEFINITION)), printing index state (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-references_(lab06)_22-36-04-529.md)
+Jun 03, 2025 10:38:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11535
+Jun 03, 2025 10:38:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11552
+Jun 03, 2025 10:38:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11555
+Jun 03, 2025 10:38:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11556
+Jun 03, 2025 10:38:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11557
+Jun 03, 2025 10:38:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11613
+2025.06.03 22:39:00 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:39:00 INFO  time: compiled lab06 in 0.71s
+Jun 03, 2025 10:41:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11980
+Jun 03, 2025 10:41:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12106
+Jun 03, 2025 10:41:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12110
+Jun 03, 2025 10:41:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12169
+2025.06.03 22:41:54 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:41:54 INFO  time: compiled lab06 in 0.72s
+Jun 03, 2025 10:43:57 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-definition_(lab06)_22-35-18-376.md)
+2025.06.03 22:43:58 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:43:58 INFO  time: compiled lab06 in 0.71s
+2025.06.03 22:44:05 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:44:05 INFO  time: compiled lab06 in 0.57s
+2025.06.03 22:44:50 INFO  compiling lab06 (1 scala source)
+2025.06.03 22:44:50 INFO  time: compiled lab06 in 0.69s
+2025.06.03 23:27:32 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:27:33 INFO  time: compiled lab06 in 1.19s
+2025.06.03 23:40:50 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:40:53 INFO  time: compiled lab06 in 3.34s
+Jun 03, 2025 11:41:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13013
+2025.06.03 23:41:31 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:41:33 INFO  time: compiled lab06 in 1.46s
+2025.06.03 23:41:34 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:37 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:38 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:40 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:42 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:42 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:41:42 INFO  time: compiled lab06 in 0.43s
+2025.06.03 23:41:43 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:49 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:51 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+Jun 03, 2025 11:41:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13338
+2025.06.03 23:41:51 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:53 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:55 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:55 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:55 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:41:55 INFO  time: compiled lab06 in 0.31s
+2025.06.03 23:41:56 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:57 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:41:59 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:42:00 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:42:01 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.03 23:42:01 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:42:03 INFO  time: compiled lab06 in 2.35s
+2025.06.03 23:42:29 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:42:29 INFO  time: compiled lab06 in 0.31s
+2025.06.03 23:42:31 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:42:31 INFO  time: compiled lab06 in 0.49s
+2025.06.03 23:42:34 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:42:35 INFO  time: compiled lab06 in 1.49s
+Jun 03, 2025 11:43:04 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-definition_(lab06)_22-35-18-376.md)
+2025.06.03 23:43:07 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:43:07 INFO  time: compiled lab06 in 0.56s
+2025.06.03 23:43:27 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:43:27 INFO  time: compiled lab06 in 0.46s
+2025.06.03 23:43:42 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:43:42 INFO  time: compiled lab06 in 0.43s
+2025.06.03 23:43:44 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:43:44 INFO  time: compiled lab06 in 0.75s
+2025.06.03 23:44:23 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:44:23 INFO  time: compiled lab06 in 0.46s
+Jun 03, 2025 11:44:44 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\.metals\.reports\metals-full\2025-06-03\r_empty-definition_(lab06)_22-35-18-376.md)
+2025.06.03 23:44:50 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:44:50 INFO  time: compiled lab06 in 0.45s
+2025.06.03 23:44:56 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:44:56 INFO  time: compiled lab06 in 0.42s
+2025.06.03 23:46:12 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:46:12 INFO  time: compiled lab06 in 0.42s
+2025.06.03 23:47:11 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:47:11 INFO  time: compiled lab06 in 0.46s
+2025.06.03 23:47:19 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:47:19 INFO  time: compiled lab06 in 0.25s
+2025.06.03 23:47:34 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:47:34 INFO  time: compiled lab06 in 0.55s
+2025.06.03 23:47:40 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:47:40 INFO  time: compiled lab06 in 0.24s
+Jun 03, 2025 11:47:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15096
+2025.06.03 23:48:00 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:48:00 INFO  time: compiled lab06 in 0.18s
+2025.06.03 23:48:32 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:48:32 INFO  time: compiled lab06 in 0.16s
+2025.06.03 23:49:15 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:49:15 INFO  time: compiled lab06 in 0.56s
+2025.06.03 23:49:36 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:49:36 INFO  time: compiled lab06 in 0.39s
+2025.06.03 23:49:48 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:49:48 INFO  time: compiled lab06 in 0.23s
+2025.06.03 23:49:59 INFO  compiling lab06 (1 scala source)
+2025.06.03 23:49:59 INFO  time: compiled lab06 in 0.35s
+2025.06.03 23:51:08 INFO  Shutting down server
+2025.06.03 23:51:08 INFO  shutting down Metals
+2025.06.03 23:51:08 INFO  Shut down connection with build server.
+2025.06.03 23:51:08 INFO  Exiting server
