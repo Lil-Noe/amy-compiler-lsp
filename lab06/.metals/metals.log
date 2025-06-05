@@ -526,3 +526,916 @@ WARNING: Unmatched cancel notification for request id 5293
 2025.06.05 11:55:38 INFO  time: indexed workspace in 25s
 2025.06.05 12:01:22 INFO  compiling lab06 (1 scala source)
 2025.06.05 12:01:36 INFO  time: compiled lab06 in 13s
+Jun 05, 2025 12:05:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 474
+Jun 05, 2025 12:08:35 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 12:20:58 INFO  compiling lab06 (1 scala source)
+2025.06.05 12:21:02 INFO  time: compiled lab06 in 3.48s
+2025.06.05 12:21:25 INFO  compiling lab06 (1 scala source)
+2025.06.05 12:21:26 INFO  time: compiled lab06 in 1.6s
+Jun 05, 2025 12:22:06 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+Jun 05, 2025 12:24:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1061
+2025.06.05 12:24:14 INFO  compiling lab06 (1 scala source)
+2025.06.05 12:24:15 INFO  time: compiled lab06 in 1.37s
+Jun 05, 2025 1:12:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1307
+Jun 05, 2025 1:12:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1352
+2025.06.05 13:12:55 INFO  compiling lab06 (1 scala source)
+2025.06.05 13:12:58 INFO  time: compiled lab06 in 3.81s
+Jun 05, 2025 1:16:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1564
+Jun 05, 2025 1:16:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1683
+Jun 05, 2025 1:16:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1686
+Jun 05, 2025 1:16:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1706
+Jun 05, 2025 1:16:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1716
+2025.06.05 13:18:18 INFO  compiling lab06 (1 scala source)
+2025.06.05 13:18:21 INFO  time: compiled lab06 in 2.96s
+Exception in thread "pool-7-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Exception in thread "pool-7-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.06.05 13:18:55 INFO  compiling lab06 (1 scala source)
+2025.06.05 13:18:57 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 13:18:57 INFO  time: compiled lab06 in 2.12s
+Jun 05, 2025 1:19:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2035
+2025.06.05 13:19:01 INFO  compiling lab06 (1 scala source)
+2025.06.05 13:19:03 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 13:19:03 INFO  time: compiled lab06 in 1.15s
+2025.06.05 14:26:25 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:26:28 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:26:28 INFO  time: compiled lab06 in 3.63s
+2025.06.05 14:27:09 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:27:10 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:27:10 INFO  time: compiled lab06 in 1.55s
+Jun 05, 2025 2:27:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2725
+2025.06.05 14:27:53 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:27:55 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:27:55 INFO  time: compiled lab06 in 1.51s
+2025.06.05 14:28:18 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:28:19 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:28:19 INFO  time: compiled lab06 in 1.25s
+2025.06.05 14:33:33 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:33:36 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:33:36 INFO  time: compiled lab06 in 3.6s
+Jun 05, 2025 2:36:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3648
+2025.06.05 14:36:54 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:36:57 INFO  time: compiled lab06 in 3.02s
+2025.06.05 14:37:05 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:37:07 INFO  time: compiled lab06 in 1.27s
+2025.06.05 14:37:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:37:17 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:37:17 INFO  time: compiled lab06 in 1.65s
+Jun 05, 2025 2:37:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3748
+Jun 05, 2025 2:37:39 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 14:37:41 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:37:42 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:37:42 INFO  time: compiled lab06 in 1.17s
+Exception in thread "pool-7-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Jun 05, 2025 2:37:50 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 14:37:56 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:37:56 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:37:57 INFO  time: compiled lab06 in 1.01s
+Jun 05, 2025 2:40:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3939
+2025.06.05 14:42:47 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:42:50 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:42:50 INFO  time: compiled lab06 in 3.52s
+2025.06.05 14:43:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:43:17 INFO  time: compiled lab06 in 1.2s
+2025.06.05 14:43:58 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:44:00 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:44:00 INFO  time: compiled lab06 in 1.32s
+2025.06.05 14:44:32 INFO  compiling lab06 (1 scala source)
+2025.06.05 14:44:33 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 14:44:33 INFO  time: compiled lab06 in 1.13s
+2025.06.05 14:48:02 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:49:03 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:49:03 INFO  time: compiled lab06 in 61m1s
+2025.06.05 15:50:12 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:50:14 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:50:14 INFO  time: compiled lab06 in 3.11s
+2025.06.05 15:50:48 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:50:51 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:50:51 INFO  time: compiled lab06 in 2.79s
+2025.06.05 15:50:59 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:51:00 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:51:00 INFO  time: compiled lab06 in 1.5s
+2025.06.05 15:58:43 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:58:47 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:58:47 INFO  time: compiled lab06 in 3.82s
+Jun 05, 2025 3:58:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5711
+2025.06.05 15:59:03 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:59:05 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:59:05 INFO  time: compiled lab06 in 1.49s
+2025.06.05 15:59:46 INFO  compiling lab06 (1 scala source)
+2025.06.05 15:59:47 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 15:59:47 INFO  time: compiled lab06 in 1.24s
+Jun 05, 2025 5:08:33 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 17:08:39 INFO  compiling lab06 (1 scala source)
+Jun 05, 2025 5:08:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6268
+2025.06.05 17:08:42 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:08:42 INFO  time: compiled lab06 in 3.83s
+2025.06.05 17:08:43 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:08:43 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:08:54 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:09:09 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:12:02 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:12:07 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:12:48 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:13:48 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+Jun 05, 2025 5:14:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6476
+2025.06.05 17:14:07 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:09 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:11 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:12 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:13 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:13 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:14:16 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:14:16 INFO  time: compiled lab06 in 2.65s
+2025.06.05 17:14:22 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:14:24 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:14:24 INFO  time: compiled lab06 in 1.59s
+2025.06.05 17:14:25 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:26 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 17:14:27 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:14:27 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:14:28 INFO  time: compiled lab06 in 1.05s
+Jun 05, 2025 5:14:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6662
+2025.06.05 17:14:36 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:14:36 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:14:36 INFO  time: compiled lab06 in 0.97s
+Jun 05, 2025 5:15:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6841
+2025.06.05 17:15:40 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:15:43 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:15:43 INFO  time: compiled lab06 in 3.24s
+2025.06.05 17:25:34 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:25:36 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:25:36 INFO  time: compiled lab06 in 2.45s
+2025.06.05 17:35:14 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:35:18 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 17:35:18 INFO  time: compiled lab06 in 4.41s
+Jun 05, 2025 5:35:55 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: scallion/Syntaxes#Syntax# (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_17-35-55-006.md)
+2025.06.05 17:37:50 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:37:53 INFO  time: compiled lab06 in 2.82s
+Jun 05, 2025 5:40:29 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_17-40-29-959.md)
+2025.06.05 17:40:39 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:40:43 INFO  time: compiled lab06 in 4.16s
+2025.06.05 17:41:45 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:41:47 INFO  time: compiled lab06 in 1.62s
+2025.06.05 17:44:30 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:44:34 INFO  time: compiled lab06 in 3.94s
+2025.06.05 17:44:34 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:44:36 INFO  time: compiled lab06 in 1.81s
+2025.06.05 17:45:04 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:45:05 INFO  time: compiled lab06 in 1.53s
+2025.06.05 17:45:44 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:45:45 INFO  time: compiled lab06 in 1.31s
+2025.06.05 17:45:48 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:45:48 INFO  time: compiled lab06 in 0.92s
+2025.06.05 17:46:24 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:46:24 INFO  time: compiled lab06 in 0.79s
+2025.06.05 17:46:28 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:46:28 INFO  time: compiled lab06 in 0.96s
+2025.06.05 17:46:41 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:46:41 INFO  time: compiled lab06 in 0.82s
+2025.06.05 17:47:10 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:47:10 INFO  time: compiled lab06 in 0.75s
+2025.06.05 17:47:24 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:47:24 INFO  time: compiled lab06 in 0.77s
+2025.06.05 17:48:05 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:48:05 INFO  time: compiled lab06 in 0.92s
+Jun 05, 2025 5:48:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9586
+2025.06.05 17:48:19 INFO  compiling lab06 (2 scala sources)
+Jun 05, 2025 5:48:19 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_17-48-19-113.md)
+2025.06.05 17:48:19 INFO  time: compiled lab06 in 0.73s
+2025.06.05 17:48:27 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:48:27 INFO  time: compiled lab06 in 0.82s
+2025.06.05 17:48:43 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:48:43 INFO  time: compiled lab06 in 0.77s
+2025.06.05 17:48:47 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:48:47 INFO  time: compiled lab06 in 0.76s
+2025.06.05 17:49:19 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:49:19 INFO  time: compiled lab06 in 0.83s
+2025.06.05 17:49:34 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:49:34 INFO  time: compiled lab06 in 0.69s
+2025.06.05 17:49:51 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:49:51 INFO  time: compiled lab06 in 0.72s
+2025.06.05 17:49:56 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:49:56 INFO  time: compiled lab06 in 0.79s
+2025.06.05 17:50:02 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:50:02 INFO  time: compiled lab06 in 0.81s
+2025.06.05 17:50:09 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:50:09 INFO  time: compiled lab06 in 0.68s
+2025.06.05 17:50:12 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:50:12 INFO  time: compiled lab06 in 0.71s
+2025.06.05 17:50:23 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:50:23 INFO  time: compiled lab06 in 0.73s
+2025.06.05 17:54:31 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:54:31 INFO  time: compiled lab06 in 0.94s
+2025.06.05 17:55:12 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:12 INFO  time: compiled lab06 in 0.91s
+2025.06.05 17:55:21 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:21 INFO  time: compiled lab06 in 0.77s
+2025.06.05 17:55:30 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:30 INFO  time: compiled lab06 in 0.76s
+2025.06.05 17:55:37 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:37 INFO  time: compiled lab06 in 0.67s
+2025.06.05 17:55:42 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:42 INFO  time: compiled lab06 in 0.65s
+2025.06.05 17:55:53 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:53 INFO  time: compiled lab06 in 0.68s
+2025.06.05 17:55:57 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:55:57 INFO  time: compiled lab06 in 0.64s
+2025.06.05 17:56:02 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:56:02 INFO  time: compiled lab06 in 0.67s
+2025.06.05 17:56:05 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:56:05 INFO  time: compiled lab06 in 0.65s
+Jun 05, 2025 5:56:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10648
+2025.06.05 17:56:14 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:56:14 INFO  time: compiled lab06 in 0.77s
+Jun 05, 2025 5:56:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10778
+2025.06.05 17:56:49 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:56:49 INFO  time: compiled lab06 in 0.76s
+2025.06.05 17:57:05 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:57:05 INFO  time: compiled lab06 in 0.81s
+2025.06.05 17:57:12 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:57:12 INFO  time: compiled lab06 in 0.67s
+2025.06.05 17:57:16 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:57:16 INFO  time: compiled lab06 in 0.63s
+2025.06.05 17:57:22 INFO  compiling lab06 (2 scala sources)
+2025.06.05 17:57:22 INFO  time: compiled lab06 in 0.69s
+2025.06.05 17:58:05 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:58:07 INFO  time: compiled lab06 in 2.68s
+2025.06.05 17:58:23 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:58:23 INFO  time: compiled lab06 in 0.65s
+2025.06.05 17:59:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 17:59:16 INFO  time: compiled lab06 in 0.74s
+2025.06.05 18:00:02 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:00:02 INFO  time: compiled lab06 in 0.85s
+2025.06.05 18:00:05 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:00:05 INFO  time: compiled lab06 in 0.72s
+2025.06.05 18:00:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:00:16 INFO  time: compiled lab06 in 0.58s
+2025.06.05 18:01:15 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:01:15 INFO  time: compiled lab06 in 0.67s
+2025.06.05 18:01:40 INFO  compiling lab06 (2 scala sources)
+2025.06.05 18:01:40 INFO  time: compiled lab06 in 0.8s
+2025.06.05 18:01:41 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:43 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:43 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:44 INFO  compiling lab06 (2 scala sources)
+2025.06.05 18:01:44 INFO  time: compiled lab06 in 0.88s
+2025.06.05 18:01:45 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:46 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:46 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:46 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:46 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:49 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:50 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:50 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:52 INFO  compiling lab06 (2 scala sources)
+2025.06.05 18:01:52 INFO  time: compiled lab06 in 0.75s
+2025.06.05 18:01:53 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:53 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 18:01:54 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:01:54 INFO  time: compiled lab06 in 0.66s
+Jun 05, 2025 6:02:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11818
+2025.06.05 18:02:49 INFO  time: compiled lab06 in 31ms
+2025.06.05 18:05:51 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:05:52 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:05:52 INFO  time: compiled lab06 in 1.45s
+2025.06.05 18:06:01 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:06:01 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:06:01 INFO  time: compiled lab06 in 0.74s
+Jun 05, 2025 6:11:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12318
+2025.06.05 18:12:03 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:12:07 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:12:07 INFO  time: compiled lab06 in 3.5s
+2025.06.05 18:12:27 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:12:28 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:12:28 INFO  time: compiled lab06 in 1.22s
+2025.06.05 18:26:12 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:26:12 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 18:26:14 WARN  there were 2 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:26:14 INFO  time: compiled lab06 in 2.5s
+2025.06.05 18:35:44 INFO  Started: Metals version 1.5.3 in folders 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06' for client Visual Studio Code 1.100.3.
+2025.06.05 18:35:49 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 18:35:49 INFO  Attempting to connect to the build server...
+2025.06.05 18:35:49 INFO  No running Bloop server found, starting one.
+2025.06.05 18:35:54 INFO  Starting compilation server
+2025.06.05 18:35:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 18:35:58 INFO  Attempting to connect to the build server...
+2025.06.05 18:35:58 INFO  Found a Bloop server running
+2025.06.05 18:35:58 INFO  Attempting to connect to the build server...
+2025.06.05 18:35:58 INFO  Found a Bloop server running
+2025.06.05 18:35:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 18:35:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 18:35:58 INFO  time: Connected to build server in 8.82s
+2025.06.05 18:35:58 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.05 18:35:58 INFO  time: Imported build in 0.29s
+2025.06.05 18:36:13 INFO  time: indexed workspace in 14s
+Jun 05, 2025 6:36:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_compiler-error_(lab06)_18-36-21-128.md
+2025.06.05 18:36:21 WARN  Could not find semantic tokens for: file:///C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/src/amyc/lsp/AmyTextDocumentService.scala
+Jun 05, 2025 6:36:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_compiler-error_(lab06)_18-36-23-733.md
+2025.06.05 18:36:23 WARN  Could not find semantic tokens for: file:///C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/src/amyc/lsp/AmyTextDocumentService.scala
+Jun 05, 2025 6:41:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 275
+2025.06.05 18:41:53 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:42:13 INFO  time: compiled lab06 in 20s
+2025.06.05 18:42:21 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:42:24 INFO  time: compiled lab06 in 2.92s
+2025.06.05 18:42:39 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:42:41 INFO  time: compiled lab06 in 1.63s
+2025.06.05 18:42:55 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:42:55 INFO  time: compiled lab06 in 0.55s
+2025.06.05 18:42:57 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:43:00 INFO  time: compiled lab06 in 2.49s
+2025.06.05 18:43:46 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:43:48 INFO  time: compiled lab06 in 1.42s
+2025.06.05 18:43:49 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:43:53 INFO  time: compiled lab06 in 3.66s
+2025.06.05 18:43:56 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:44:00 INFO  time: compiled lab06 in 3.32s
+2025.06.05 18:44:08 INFO  time: compiled lab06 in 30ms
+2025.06.05 18:46:01 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:46:03 INFO  time: compiled lab06 in 1.7s
+2025.06.05 18:47:18 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:47:19 INFO  time: compiled lab06 in 1.23s
+2025.06.05 18:47:29 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:47:29 INFO  time: compiled lab06 in 0.52s
+2025.06.05 18:47:48 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:47:48 INFO  time: compiled lab06 in 0.46s
+2025.06.05 18:48:26 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:48:26 INFO  time: compiled lab06 in 0.45s
+2025.06.05 18:48:32 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:48:32 INFO  time: compiled lab06 in 0.34s
+Jun 05, 2025 6:48:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1475
+2025.06.05 18:48:38 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:48:38 INFO  time: compiled lab06 in 0.26s
+Jun 05, 2025 6:48:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1497
+2025.06.05 18:48:43 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:48:43 INFO  time: compiled lab06 in 0.26s
+Jun 05, 2025 6:50:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1718
+2025.06.05 18:50:38 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:50:38 INFO  time: compiled lab06 in 0.27s
+Jun 05, 2025 6:50:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1805
+2025.06.05 18:50:47 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:50:47 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:50:49 INFO  time: compiled lab06 in 1.15s
+2025.06.05 18:54:05 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:54:08 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:54:08 INFO  time: compiled lab06 in 2.31s
+Jun 05, 2025 6:55:56 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 18:56:04 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:56:06 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:56:06 INFO  time: compiled lab06 in 2.36s
+2025.06.05 18:56:12 INFO  compiling lab06 (1 scala source)
+2025.06.05 18:56:15 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 18:56:15 INFO  time: compiled lab06 in 3.94s
+2025.06.05 19:06:54 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:06:57 INFO  time: compiled lab06 in 3.06s
+2025.06.05 19:07:02 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:07:08 INFO  time: compiled lab06 in 5.88s
+2025.06.05 19:12:15 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:12:19 INFO  time: compiled lab06 in 3.18s
+2025.06.05 19:12:19 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:12:19 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:12:21 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:13:51 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:15:07 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:16:46 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:17:42 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:17:44 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 19:17:44 INFO  time: compiled lab06 in 2.4s
+2025.06.05 19:18:20 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:20:01 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:21:36 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:23:12 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:23:22 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:28:39 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:29:15 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\parsing\Parser.scala
+2025.06.05 19:29:15 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:29:19 INFO  time: compiled lab06 in 3.65s
+2025.06.05 19:32:03 INFO  compiling lab06 (1 scala source)
+Jun 05, 2025 7:32:03 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 19:32:05 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 19:32:05 INFO  time: compiled lab06 in 2.39s
+2025.06.05 19:32:07 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:32:08 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 19:32:08 INFO  time: compiled lab06 in 1.09s
+Jun 05, 2025 7:32:43 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_17-48-19-113.md)
+2025.06.05 19:45:58 INFO  compiling lab06 (1 scala source)
+2025.06.05 19:46:01 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 19:46:01 INFO  time: compiled lab06 in 2.52s
+2025.06.05 20:20:41 INFO  time: code lens generation in 2.01s
+2025.06.05 20:22:03 INFO  compiling lab06 (1 scala source)
+2025.06.05 20:22:04 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 20:22:04 INFO  time: compiled lab06 in 1.64s
+2025.06.05 20:30:51 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 20:30:50 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 20:30:50 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 20:30:51 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 20:30:53 INFO  Running List(C:\Users\lilia\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, --workspace, C:\Users\lilia\AppData\Local\Temp\metals-scala-cli9675446919954457138, --semantic-db-source-root, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala)
+2025.06.05 20:30:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 20:30:54 INFO  Scala CLI: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2025.06.05 20:30:54 INFO  Scala CLI: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2025.06.05 20:30:54 INFO  Scala CLI: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2025.06.05 20:30:54 INFO  Scala CLI: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2025.06.05 20:30:56 INFO  Connected to Scala CLI server v1.6.2
+2025.06.05 20:30:56 INFO  compiling metals-scala-cli9675446919954457138_2f2394a520-f7fca1dc9f (1 scala source)
+2025.06.05 20:30:56 INFO  time: code lens generation in 4.83s
+2025.06.05 20:30:59 INFO  compiling metals-scala-cli9675446919954457138_2f2394a520-f7fca1dc9f (1 scala source)
+2025.06.05 20:31:00 INFO  time: compiled metals-scala-cli9675446919954457138_2f2394a520-f7fca1dc9f in 1.44s
+2025.06.05 20:31:01 INFO  time: indexed workspace in 5.03s
+2025.06.05 20:31:00 INFO  compiling metals-scala-cli9675446919954457138_2f2394a520-f7fca1dc9f (1 scala source)
+2025.06.05 20:31:02 INFO  time: compiled metals-scala-cli9675446919954457138_2f2394a520-f7fca1dc9f in 0.88s
+2025.06.05 20:31:02 INFO  Scala CLI started for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\langserver\textservice.scala
+Jun 05, 2025 9:17:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6147
+2025.06.05 21:19:42 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:19:46 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:19:46 INFO  time: compiled lab06 in 3.94s
+2025.06.05 21:19:51 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:19:52 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:19:52 INFO  time: compiled lab06 in 2.06s
+2025.06.05 21:19:54 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:19:55 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:19:55 INFO  time: compiled lab06 in 1.27s
+2025.06.05 21:20:00 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:20:00 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:20:01 INFO  time: compiled lab06 in 1.11s
+2025.06.05 21:20:21 INFO  Shut down connection with build server.
+2025.06.05 21:20:21 INFO  Scala CLI: Jun 05, 2025 9:20:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+2025.06.05 21:20:21 INFO  Scala CLI: WARNING: Notification threw an exception: {
+2025.06.05 21:20:21 INFO  Scala CLI:   "jsonrpc": "2.0",
+2025.06.05 21:20:21 INFO  Scala CLI:   "method": "build/exit",
+2025.06.05 21:20:21 INFO  Scala CLI:   "params": null
+2025.06.05 21:20:21 INFO  Scala CLI: }
+2025.06.05 21:20:21 INFO  Scala CLI: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at com.oracle.svm.core.windows.WindowsPlatformThreads.osThreadStartRoutine(WindowsPlatformThreads.java:178)
+2025.06.05 21:20:21 INFO  Scala CLI: Caused by: java.lang.reflect.InvocationTargetException
+2025.06.05 21:20:21 INFO  Scala CLI: 	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+2025.06.05 21:20:21 INFO  Scala CLI: 	... 13 more
+2025.06.05 21:20:21 INFO  Scala CLI: Caused by: java.lang.RuntimeException: BSP server not initialized yet
+2025.06.05 21:20:21 INFO  Scala CLI: 	at scala.sys.package$.error(package.scala:27)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at scala.build.bsp.BloopSession$Reference.get(BloopSession.scala:70)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at scala.build.bsp.BspImpl.$anonfun$11(BspImpl.scala:474)
+2025.06.05 21:20:21 INFO  Scala CLI: 	at scala.build.bsp.BuildServerProxy.onBuildExit(BuildServerProxy.scala:29)
+2025.06.05 21:20:21 INFO  Scala CLI: 	... 15 more
+2025.06.05 21:20:21 INFO  Scala CLI: 
+2025.06.05 21:26:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:26:20 INFO  time: compiled lab06 in 4.38s
+2025.06.05 21:38:26 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:38:30 INFO  time: compiled lab06 in 4.52s
+2025.06.05 21:41:13 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:41:16 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:41:16 INFO  time: compiled lab06 in 3.48s
+2025.06.05 21:41:51 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:41:53 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:41:53 INFO  time: compiled lab06 in 1.95s
+2025.06.05 21:43:14 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:43:17 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:43:17 INFO  time: compiled lab06 in 3.58s
+2025.06.05 21:44:33 INFO  compiling lab06 (1 scala source)
+2025.06.05 21:44:37 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 21:44:37 INFO  time: compiled lab06 in 4.22s
+Jun 05, 2025 9:49:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8569
+2025.06.05 21:50:14 INFO  Running List(C:\Users\lilia\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, --workspace, C:\Users\lilia\AppData\Local\Temp\metals-scala-cli9675446919954457138, --semantic-db-source-root, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Lexer.scala)
+2025.06.05 21:50:14 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Lexer.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 21:50:15 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Lexer.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:15 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Lexer.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:16 INFO  Connected to Scala CLI server v1.6.2
+2025.06.05 21:50:16 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c (1 scala source)
+2025.06.05 21:50:17 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c in 1.24s
+2025.06.05 21:50:17 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c (1 scala source)
+2025.06.05 21:50:17 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c in 0.57s
+2025.06.05 21:50:22 INFO  time: indexed workspace in 6.82s
+2025.06.05 21:50:23 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c (1 scala source)
+2025.06.05 21:50:23 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c in 0.26s
+2025.06.05 21:50:23 INFO  Scala CLI started for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Lexer.scala
+2025.06.05 21:50:32 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:32 INFO  Running List(C:\Users\lilia\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, --workspace, C:\Users\lilia\AppData\Local\Temp\metals-scala-cli9675446919954457138, --semantic-db-source-root, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala)
+2025.06.05 21:50:32 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 21:50:32 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:32 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:32 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 21:50:33 INFO  Connected to Scala CLI server v1.6.2
+2025.06.05 21:50:33 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 (1 scala source)
+2025.06.05 21:50:33 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 in 0.77s
+2025.06.05 21:50:33 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 (1 scala source)
+2025.06.05 21:50:35 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 in 0.86s
+2025.06.05 21:50:35 INFO  time: indexed workspace in 2.05s
+2025.06.05 21:50:35 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 (1 scala source)
+2025.06.05 21:50:35 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57 in 0.45s
+2025.06.05 21:50:36 INFO  Scala CLI started for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\parsing\Parser.scala
+2025.06.05 21:51:22 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [1 minute]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 21:51:22 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [1 minute]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 21:52:23 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [60018 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 21:52:23 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [60018 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:09:26 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:09:31 INFO  time: compiled lab06 in 4.78s
+Jun 05, 2025 10:09:42 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\AppData\Local\Temp\fallback-service11882537784199483163\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57)_22-09-42-839.md)
+Jun 05, 2025 10:09:42 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\AppData\Local\Temp\fallback-service11882537784199483163\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(metals-scala-cli9675446919954457138_f664b29d0e-3efc782c57)_22-09-42-839.md)
+2025.06.05 22:10:24 INFO  compiling metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c (1 scala source)
+2025.06.05 22:10:25 INFO  time: compiled metals-scala-cli9675446919954457138_f664b29d0e-e0727e485c in 1.11s
+Jun 05, 2025 10:11:45 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-45-961.md)
+Jun 05, 2025 10:11:46 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-45-961.md)
+Jun 05, 2025 10:11:47 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-45-961.md)
+Jun 05, 2025 10:11:47 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-45-961.md)
+Jun 05, 2025 10:11:49 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source.fromFile(). (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-49-094.md)
+Jun 05, 2025 10:11:49 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: silex/Source.fromFile(). (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-05\r_empty-definition_(lab06)_22-11-49-094.md)
+2025.06.05 22:12:34 INFO  Running List(C:\Users\lilia\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, --workspace, C:\Users\lilia\AppData\Local\Temp\metals-scala-cli9675446919954457138, --semantic-db-source-root, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala)
+2025.06.05 22:12:34 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:34 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 22:12:34 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:34 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:35 INFO  Connected to Scala CLI server v1.6.2
+2025.06.05 22:12:36 INFO  time: code lens generation in 1.14s
+2025.06.05 22:12:36 INFO  Running List(C:\Users\lilia\AppData\Local\Coursier\data\bin\scala-cli.BAT, bsp, --workspace, C:\Users\lilia\AppData\Local\Temp\metals-scala-cli9675446919954457138, --semantic-db-source-root, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils, C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala)
+2025.06.05 22:12:36 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:36 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 22:12:36 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:36 INFO  compiling metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a (1 scala source)
+2025.06.05 22:12:36 INFO  no build target found for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala. Using presentation compiler with project's scala-library version: 3.6.3
+2025.06.05 22:12:37 INFO  Connected to Scala CLI server v1.6.2
+2025.06.05 22:12:37 INFO  time: compiled metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a in 1.09s
+2025.06.05 22:12:37 INFO  compiling metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a (1 scala source)
+2025.06.05 22:12:37 INFO  compiling metals-scala-cli9675446919954457138_9159e8e475-f8d60bed4a (1 scala source)
+2025.06.05 22:12:37 INFO  time: compiled metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a in 0.47s
+2025.06.05 22:12:38 INFO  time: compiled metals-scala-cli9675446919954457138_9159e8e475-f8d60bed4a in 1.18s
+2025.06.05 22:12:38 INFO  compiling metals-scala-cli9675446919954457138_9159e8e475-f8d60bed4a (1 scala source)
+2025.06.05 22:12:40 INFO  time: compiled metals-scala-cli9675446919954457138_9159e8e475-f8d60bed4a in 1.06s
+2025.06.05 22:12:40 INFO  time: indexed workspace in 4.65s
+2025.06.05 22:12:40 INFO  Shut down connection with build server.
+2025.06.05 22:12:40 INFO  compiling metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a (1 scala source)
+2025.06.05 22:12:40 INFO  time: compiled metals-scala-cli9675446919954457138_9159e8e475-4d13f4e16a in 0.28s
+2025.06.05 22:12:41 INFO  Scala CLI started for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\Position.scala
+2025.06.05 22:12:41 INFO  time: indexed workspace in 4.03s
+2025.06.05 22:12:41 INFO  Scala CLI started for C:\Users\lilia\Downloads\scala_compiler-main\scala_compiler-main\amy-compiler-w-server\src\amyc\utils\PositionHelper.scala
+2025.06.05 22:13:40 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [1 minute]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:13:40 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [1 minute]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:14:10 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [90027 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:14:10 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [90027 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:15:36 INFO  Shut down connection with build server.
+2025.06.05 22:15:39 INFO  Shut down connection with build server.
+2025.06.05 22:15:39 INFO  Scala CLI: Jun 05, 2025 10:15:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+2025.06.05 22:16:16 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [126039 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:16:16 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [126039 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:17:10 INFO  Scala test classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [180000 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:17:10 INFO  Scala main classes not supported by server
+java.util.concurrent.TimeoutException: Future timed out after [180000 milliseconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.05 22:18:56 INFO  Shut down connection with build server.
+2025.06.05 22:23:56 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:24:00 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:24:00 INFO  time: compiled lab06 in 4.03s
+2025.06.05 22:24:05 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:24:07 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:24:07 INFO  time: compiled lab06 in 1.99s
+2025.06.05 22:25:39 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:25:42 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:25:42 INFO  time: compiled lab06 in 3.9s
+Jun 05, 2025 10:25:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11388
+2025.06.05 22:25:52 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:25:52 INFO  time: compiled lab06 in 0.86s
+2025.06.05 22:25:53 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:25:54 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:25:54 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+Jun 05, 2025 10:25:54 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 22:25:56 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:25:59 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:25:59 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:26:00 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:26:00 INFO  time: compiled lab06 in 1.37s
+2025.06.05 22:29:18 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:29:22 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:29:22 INFO  time: compiled lab06 in 4.02s
+2025.06.05 22:34:34 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:34:37 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:34:37 INFO  time: compiled lab06 in 3.88s
+Jun 05, 2025 10:35:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12320
+2025.06.05 22:36:03 INFO  compiling lab06 (1 scala source)
+Jun 05, 2025 10:36:03 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 22:36:05 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:36:05 INFO  time: compiled lab06 in 1.91s
+Jun 05, 2025 10:36:17 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+Jun 05, 2025 10:36:17 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 22:36:20 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:36:22 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:36:22 INFO  time: compiled lab06 in 1.14s
+Jun 05, 2025 10:36:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12532
+Jun 05, 2025 10:36:53 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 22:36:55 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:36:55 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:36:56 INFO  time: compiled lab06 in 1.02s
+2025.06.05 22:37:16 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:37:17 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+Jun 05, 2025 10:37:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12683
+Jun 05, 2025 10:37:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12685
+Jun 05, 2025 10:37:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12688
+Jun 05, 2025 10:37:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12689
+2025.06.05 22:37:18 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:37:18 INFO  time: compiled lab06 in 1.33s
+Jun 05, 2025 10:37:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12698
+2025.06.05 22:37:19 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:37:19 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:37:19 INFO  time: compiled lab06 in 0.77s
+Jun 05, 2025 10:42:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12960
+2025.06.05 22:42:56 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:43:00 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:43:00 INFO  time: compiled lab06 in 3.58s
+Jun 05, 2025 10:43:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13136
+2025.06.05 22:43:40 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:43:41 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:43:41 INFO  time: compiled lab06 in 1.78s
+2025.06.05 22:43:42 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:43:42 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:43:45 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.05 22:43:46 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:43:47 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:43:47 INFO  time: compiled lab06 in 1.16s
+2025.06.05 22:43:47 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:43:49 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:43:49 INFO  time: compiled lab06 in 1.02s
+2025.06.05 22:43:54 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:43:54 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:43:54 INFO  time: compiled lab06 in 0.97s
+2025.06.05 22:44:21 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:44:21 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:21 INFO  time: compiled lab06 in 0.73s
+2025.06.05 22:44:24 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:44:24 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:24 INFO  time: compiled lab06 in 0.86s
+2025.06.05 22:44:27 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:44:27 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:27 INFO  time: compiled lab06 in 0.7s
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.06.05 22:44:46 INFO  compiling lab06 (1 scala source)
+Jun 05, 2025 10:44:46 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.05 22:44:46 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:46 INFO  time: compiled lab06 in 0.96s
+2025.06.05 22:44:52 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:44:52 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:52 INFO  time: compiled lab06 in 0.82s
+2025.06.05 22:44:56 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:44:56 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:44:56 INFO  time: compiled lab06 in 0.75s
+2025.06.05 22:45:57 INFO  compiling lab06 (1 scala source)
+2025.06.05 22:46:01 WARN  there were 4 deprecation warnings; re-run with -deprecation for details
+2025.06.05 22:46:01 INFO  time: compiled lab06 in 4.07s

@@ -35,6 +35,8 @@ object Std
     error("") // Stub implementation
   }
   def booleanToString(b: Boolean): String = {
+    val rem: Int(32) = 12;
+    val div: Int(32) = rem + 4;
     if (b) { "true" } else { "false" }
   }
 end Std

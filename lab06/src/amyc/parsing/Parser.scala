@@ -37,8 +37,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
   lazy val module: Syntax[ModuleDef] =
     (kw("object") ~ identifier ~ many(definition) ~ opt(expr) ~ kw(
       "end"
-    ) ~ identifier).map { case obj ~ id ~ defs ~ body ~ _ ~ id1 =>
-      if id == id1 then ModuleDef(id, defs.toList, body).setPos(obj)
+    ) ~ identifier).map { case kw ~ id ~ defs ~ body ~ _ ~ id1 =>
+      if id == id1 then ModuleDef(id, defs.toList, body).setPos(kw)
       else
         throw new AmycFatalError(
           "Begin and end module names do not match: " + id + " and " + id1
@@ -51,8 +51,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
   }
 
   // An identifier along with its position.
-  val identifierPos: Syntax[(String, Position)] = accept(IdentifierKind) {
-    case id @ IdentifierToken(name) => (name, id.startPosition)
+  val identifierPos: Syntax[(String, Position, Position)] = accept(IdentifierKind) {
+    case id @ IdentifierToken(name) => (name, id.startPosition, id.endPosition)
   }
 
   // A definition within a module.
@@ -91,8 +91,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A parameter definition, i.e., an identifier along with the expected type.
   lazy val parameter: Syntax[ParamDef] =
-    (identifier ~ delimiter(":") ~ typeTree) map { case id ~ _ ~ tt =>
-      ParamDef(id, tt)
+    (identifierPos ~ delimiter(":") ~ typeTree) map { 
+      case (id, startPos, endPos) ~ _ ~ tt => ParamDef(id, tt).setPos(startPos, endPos)
     }
 
   // A type expression.
@@ -130,10 +130,13 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A user-defined type (such as `List`).
   lazy val identifierType: Syntax[TypeTree] =
-    (identifier ~ opt(delimiter(".") ~ identifier)) map {
-      case id ~ None => TypeTree(ClassType(QualifiedName(None, id)))
-      case module ~ Some(_ ~ id) =>
-        TypeTree(ClassType(QualifiedName(Some(module), id)))
+    (identifierPos ~ opt(delimiter(".") ~ identifier)) map {
+      case (id, startPos, endPos) ~ None => 
+        TypeTree(ClassType(QualifiedName(None, id)))
+        .setPos(startPos, endPos)
+      case (mod, startPos, endPos) ~ Some(_ ~ id) =>
+        TypeTree(ClassType(QualifiedName(Some(mod), id)))
+        .setPos(startPos, endPos)
     }
 
   // An expression.
@@ -147,14 +150,14 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
     (kw("val") ~ parameter ~ delimiter("=") ~ ifOrMatchExpr ~ delimiter(
       ";"
     ) ~ expr) map { case _ ~ nameAndType ~ _ ~ value ~ _ ~ body =>
-      Let(nameAndType, value, body)
+      Let(nameAndType, value, body).setPos(nameAndType)
     }
 
   // A ; operator expression.
   lazy val semiColExpr: Syntax[Expr] =
     (ifOrMatchExpr ~ opt(delimiter(";") ~ expr)) map {
-      case exp ~ None           => exp
-      case exp ~ Some(_ ~ body) => Sequence(exp, body)
+      case exp ~ None           => exp.setPos(exp)
+      case exp ~ Some(_ ~ body) => Sequence(exp, body).setPos(exp)
     }
 
   // Either an if or a binary expression, optionally matched on X times.
@@ -162,12 +165,12 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
     ((ifExpr | binaryExpr) ~ opt(
       many1(kw("match") ~ delimiter("{") ~ many1(matchCase) ~ delimiter("}"))
     )) map {
-      case exp ~ None => exp
+      case exp ~ None => exp.setPos(exp)
       case exp ~ Some(
             matches
           ) => // Makes sure to compute each match expr in order
         matches.foldLeft(exp) { case (acc, (_ ~ _ ~ matchCases ~ _)) =>
-          Match(acc, matchCases.toList)
+          Match(acc, matchCases.toList).setPos(exp)
         }
     }
 
@@ -183,8 +186,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
       "{"
     ) ~ expr ~ delimiter("}") ~ kw("else") ~ delimiter("{") ~ expr ~ delimiter(
       "}"
-    )) map { case _ ~ _ ~ cond ~ _ ~ _ ~ thenn ~ _ ~ _ ~ _ ~ elze ~ _ =>
-      Ite(cond, thenn, elze)
+    )) map { case kw ~ _ ~ cond ~ _ ~ _ ~ thenn ~ _ ~ _ ~ _ ~ elze ~ _ =>
+      Ite(cond, thenn, elze).setPos(kw)
     }
 
   def acceptFromString(s: String) = accept(OperatorKind(s)) { case _ => s }
@@ -266,19 +269,19 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A pattern composed of a case class.
   lazy val caseClassPattern: Syntax[Pattern] =
-    (identifier ~ opt(delimiter(".") ~ identifier) ~ opt(
+    (identifierPos ~ opt(delimiter(".") ~ identifier) ~ opt(
       delimiter("(") ~ patterns ~ delimiter(")")
     )).map {
       // A simple variable pattern.
-      case id ~ None ~ None => IdPattern(id)
+      case (id, startPos, endPos) ~ None ~ None => IdPattern(id).setPos(startPos, endPos)
 
       // A simple function pattern.
-      case fn ~ None ~ Some(_ ~ patterns ~ _) =>
-        CaseClassPattern(QualifiedName(None, fn), patterns)
+      case (fn, startPos, endPos) ~ None ~ Some(_ ~ patterns ~ _) =>
+        CaseClassPattern(QualifiedName(None, fn), patterns).setPos(startPos, endPos)
 
       // Another module's function pattern.
-      case module ~ Some(_ ~ fn) ~ Some(_ ~ patterns ~ _) =>
-        CaseClassPattern(QualifiedName(Some(module), fn), patterns)
+      case (mod, startPos, endPos) ~ Some(_ ~ fn) ~ Some(_ ~ patterns ~ _) =>
+        CaseClassPattern(QualifiedName(Some(mod), fn), patterns).setPos(startPos, endPos)
 
       case p => throw new AmycFatalError("Unexpected pattern: " + p)
     }
@@ -292,18 +295,18 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // Either a variable or a function call.
   lazy val variableOrCall: Syntax[Expr] =
-    (identifier ~ opt(delimiter(".") ~ identifier) ~ opt(
+    (identifierPos ~ opt(delimiter(".") ~ identifier) ~ opt(
       delimiter("(") ~ args ~ delimiter(")")
     )) map {
       // A simple var.
-      case id ~ None ~ None => Variable(id)
+      case (id, startPos, endPos) ~ None ~ None => Variable(id).setPos(startPos, endPos)
 
       // A simple function call.
-      case fn ~ None ~ Some(_ ~ args ~ _) => Call(QualifiedName(None, fn), args)
+      case (fn, startPos, endPos) ~ None ~ Some(_ ~ args ~ _) => Call(QualifiedName(None, fn), args).setPos(startPos, endPos)
 
       // Another module's function call.
-      case module ~ Some(_ ~ fn) ~ Some(_ ~ args ~ _) =>
-        Call(QualifiedName(Some(module), fn), args)
+      case (mod, startPos, endPos) ~ Some(_ ~ fn) ~ Some(_ ~ args ~ _) =>
+        Call(QualifiedName(Some(mod), fn), args).setPos(startPos, endPos)
 
       case e => throw new AmycFatalError("Unexpected call: " + e)
     }
