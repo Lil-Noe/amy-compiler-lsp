@@ -306,3 +306,223 @@ WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report a
 2025.06.02 23:36:29 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/Labs/group21-cs320/lab06/src/amyc/lsp/TextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
 2025.06.02 23:36:29 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/Labs/group21-cs320/lab06/src/amyc/lsp/TextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
 2025.06.02 23:36:33 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/Labs/group21-cs320/lab06/src/amyc/lsp/TextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.04 18:43:48 INFO  Started: Metals version 1.5.3 in folders 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06' for client Visual Studio Code 1.100.3.
+2025.06.04 18:43:53 INFO  Attempting to connect to the build server...
+2025.06.04 18:43:53 WARN  no build target for: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyWorkspaceService.scala
+2025.06.04 18:43:53 INFO  Found a Bloop server running
+2025.06.04 18:43:53 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyWorkspaceService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.04 18:43:53 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyWorkspaceService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.04 18:43:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.04 18:43:54 INFO  Attempting to connect to the build server...
+2025.06.04 18:43:54 INFO  Found a Bloop server running
+2025.06.04 18:43:54 INFO  Attempting to connect to the build server...
+2025.06.04 18:43:54 INFO  Found a Bloop server running
+2025.06.04 18:43:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.04 18:43:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.04 18:43:54 INFO  time: Connected to build server in 0.59s
+2025.06.04 18:43:54 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.04 18:43:53 INFO  time: Imported build in 0.2s
+Jun 04, 2025 6:43:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Jun 04, 2025 6:43:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Jun 04, 2025 6:43:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Jun 04, 2025 6:43:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Jun 04, 2025 6:43:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Jun 04, 2025 6:43:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+2025.06.04 18:44:13 INFO  time: indexed workspace in 17s
+Jun 04, 2025 6:44:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 64
+2025.06.04 18:44:53 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:44:56 INFO  time: compiled lab06 in 3.83s
+Jun 04, 2025 6:45:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 424
+Jun 04, 2025 6:45:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 428
+2025.06.04 18:45:35 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:45:37 INFO  time: compiled lab06 in 2.27s
+Jun 04, 2025 6:45:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 539
+Jun 04, 2025 6:45:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 540
+Jun 04, 2025 6:45:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 555
+2025.06.04 18:45:57 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:45:59 INFO  time: compiled lab06 in 2.32s
+2025.06.04 18:46:17 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:46:19 INFO  time: compiled lab06 in 1.51s
+2025.06.04 18:47:20 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:47:22 INFO  time: compiled lab06 in 1.64s
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 909
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 908
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 914
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 910
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 913
+Jun 04, 2025 6:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 916
+Jun 04, 2025 6:48:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1130
+2025.06.04 18:48:17 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:48:20 INFO  time: compiled lab06 in 3.79s
+2025.06.04 18:48:39 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:48:41 INFO  time: compiled lab06 in 1.84s
+2025.06.04 18:48:44 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:48:45 INFO  time: compiled lab06 in 1.54s
+Jun 04, 2025 6:48:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1354
+2025.06.04 18:48:56 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:48:58 INFO  time: compiled lab06 in 1.59s
+2025.06.04 18:49:01 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:49:03 INFO  time: compiled lab06 in 1.65s
+2025.06.04 18:49:15 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:49:16 INFO  time: compiled lab06 in 1.39s
+2025.06.04 18:49:27 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:49:29 INFO  time: compiled lab06 in 2.26s
+2025.06.04 18:49:48 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:49:50 INFO  time: compiled lab06 in 1.57s
+2025.06.04 18:50:21 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:50:21 INFO  time: compiled lab06 in 0.92s
+Jun 04, 2025 6:50:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1782
+2025.06.04 18:50:29 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:50:30 INFO  time: compiled lab06 in 1.39s
+2025.06.04 18:50:32 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:50:33 INFO  time: compiled lab06 in 1.41s
+Jun 04, 2025 6:51:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1884
+Jun 04, 2025 6:51:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2035
+2025.06.04 18:51:42 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:51:44 INFO  time: compiled lab06 in 1.45s
+Jun 04, 2025 6:51:58 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.04 18:52:02 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:52:03 INFO  time: compiled lab06 in 1.23s
+2025.06.04 18:53:19 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:53:20 INFO  time: compiled lab06 in 1.3s
+2025.06.04 18:53:20 INFO  compiling lab06 (1 scala source)
+2025.06.04 18:53:22 INFO  time: compiled lab06 in 1.45s
+2025.06.04 19:00:06 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:00:10 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.04 19:00:10 INFO  time: compiled lab06 in 4.25s
+2025.06.04 19:00:10 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.04 19:00:10 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:00:12 INFO  time: compiled lab06 in 2.19s
+2025.06.04 19:00:23 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:00:24 INFO  time: compiled lab06 in 1.75s
+2025.06.04 19:00:24 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:00:26 INFO  time: compiled lab06 in 1.25s
+2025.06.04 19:00:38 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:00:39 INFO  time: compiled lab06 in 1.77s
+Jun 04, 2025 7:02:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2731
+Jun 04, 2025 7:02:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2732
+2025.06.04 19:07:58 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:01 INFO  time: compiled lab06 in 2.72s
+2025.06.04 19:08:06 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:07 INFO  time: compiled lab06 in 1.28s
+2025.06.04 19:08:20 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:21 INFO  time: compiled lab06 in 1.23s
+Jun 04, 2025 7:08:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3150
+2025.06.04 19:08:46 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:46 INFO  time: compiled lab06 in 0.86s
+2025.06.04 19:08:53 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:53 INFO  time: compiled lab06 in 0.95s
+2025.06.04 19:08:59 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:08:59 INFO  time: compiled lab06 in 0.9s
+2025.06.04 19:09:16 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:09:17 INFO  time: compiled lab06 in 1.03s
+2025.06.04 19:09:31 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:09:31 INFO  time: compiled lab06 in 0.82s
+2025.06.04 19:09:40 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:09:40 INFO  time: compiled lab06 in 0.91s
+Jun 04, 2025 7:09:51 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\.reports\metals-full\2025-06-04\r_empty-definition_(lab06)_18-51-58-554.md)
+2025.06.04 19:10:02 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:10:02 INFO  time: compiled lab06 in 0.97s
+2025.06.04 19:10:25 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:10:25 INFO  time: compiled lab06 in 0.83s
+2025.06.04 19:10:30 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:10:32 INFO  time: compiled lab06 in 2.12s
+2025.06.04 19:10:57 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:10:58 INFO  time: compiled lab06 in 1.46s
+2025.06.04 19:10:59 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:11:01 INFO  time: compiled lab06 in 1.32s
+2025.06.04 19:18:43 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:18:47 INFO  time: compiled lab06 in 3.52s
+2025.06.04 19:18:58 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:19:00 INFO  time: compiled lab06 in 2.48s
+2025.06.04 19:24:36 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:24:40 INFO  time: compiled lab06 in 4.11s
+2025.06.04 19:25:06 INFO  compiling lab06 (1 scala source)
+Exception in thread "pool-5-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.06.04 19:25:08 INFO  time: compiled lab06 in 2.1s
+2025.06.04 19:25:13 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.04 19:25:13 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:25:15 INFO  time: compiled lab06 in 1.41s
+2025.06.04 19:29:20 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:29:23 INFO  time: compiled lab06 in 2.6s
+2025.06.04 19:29:46 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:29:49 INFO  time: compiled lab06 in 3.18s
+2025.06.04 19:30:55 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:30:56 INFO  time: compiled lab06 in 1.9s
+2025.06.04 19:31:10 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:31:11 INFO  time: compiled lab06 in 1.35s
+2025.06.04 19:35:35 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:35:38 INFO  time: compiled lab06 in 3.34s
+2025.06.04 19:35:41 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:35:43 INFO  time: compiled lab06 in 1.61s
+2025.06.04 19:35:43 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:35:45 INFO  time: compiled lab06 in 1.46s
+2025.06.04 19:36:10 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:36:13 INFO  time: compiled lab06 in 2.34s
+2025.06.04 19:36:45 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:36:47 INFO  time: compiled lab06 in 1.06s
+Jun 04, 2025 7:37:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5293
+2025.06.04 19:37:01 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:37:01 INFO  time: compiled lab06 in 0.84s
+2025.06.04 19:37:04 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:37:06 INFO  time: compiled lab06 in 2.1s
+2025.06.04 19:37:25 WARN  Could not load snapshot text for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala
+2025.06.04 19:37:25 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:37:27 INFO  time: compiled lab06 in 1.69s
+2025.06.04 19:37:28 INFO  compiling lab06 (1 scala source)
+2025.06.04 19:37:29 INFO  time: compiled lab06 in 1.19s
+2025.06.05 11:54:54 INFO  Started: Metals version 1.5.3 in folders 'C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06' for client Visual Studio Code 1.100.3.
+2025.06.05 11:54:59 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 11:55:06 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 11:55:06 INFO  no build target found for C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\src\amyc\lsp\AmyTextDocumentService.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.05 11:55:06 INFO  Attempting to connect to the build server...
+2025.06.05 11:55:06 INFO  No running Bloop server found, starting one.
+2025.06.05 11:55:08 INFO  Starting compilation server
+2025.06.05 11:55:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 11:55:12 INFO  Attempting to connect to the build server...
+2025.06.05 11:55:12 INFO  Found a Bloop server running
+2025.06.05 11:55:12 INFO  Attempting to connect to the build server...
+2025.06.05 11:55:12 INFO  Found a Bloop server running
+2025.06.05 11:55:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 11:55:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\lilia\Documents\EPFL\BA6\CLP\CS-320_Amy_LSP\lab06\project\project\.metals\bsp.trace.json or C:\Users\lilia\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.06.05 11:55:12 INFO  time: Connected to build server in 5.36s
+2025.06.05 11:55:12 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.05 11:55:13 INFO  time: Imported build in 0.63s
+2025.06.05 11:55:38 INFO  time: indexed workspace in 25s
+2025.06.05 12:01:22 INFO  compiling lab06 (1 scala source)
+2025.06.05 12:01:36 INFO  time: compiled lab06 in 13s

@@ -2,6 +2,47 @@ object HelloInt
   Std.printString("What is your name?");
   val name: String = Std.readString();
   Std.printString("Hello " ++ name ++ "! And how old are you?");
+
+  
+  // Std.printInt(pow(0, 10));
+  // Std.printInt(pow(1, 5));
+  // Std.printInt(pow(2, 10));
+  // Std.printInt(pow(3, 3));
+  // Std.printInt(gcd(0, 10));
+  // Std.printInt(gcd(17, 99)); // 1
+  // Std.printInt(gcd(16, 46)); // 2
+  // Std.printInt(gcd(222, 888)); // 222
+
+  
+  // Std.printInt(pow(0, 10));
+  // Std.printInt(pow(1, 5));
+  // Std.printInt(pow(2, 10));
+  // Std.printInt(pow(3, 3));
+  // Std.printInt(gcd(0, 10));
+  // Std.printInt(gcd(17, 99)); // 1
+  // Std.printInt(gcd(16, 46)); // 2
+  // Std.printInt(gcd(222, 888)); // 222
+
+
   val age: Int(32) = Std.readInt();
-  Std.printString(Std.intToString(age) ++ " years old then.")
+  Std.printString(Std.intToString(age) ++ " years old then.");
+
+  Std.printString("Hello " ++ name ++ "! And how old are you?");
+
+
+
+
+
+
+   // Std.printInt(pow(0, 10));
+  // Std.printInt(pow(1, 5));
+  // Std.printInt(pow(2, 10));
+  // Std.printInt(pow(3, 3));
+  // Std.printInt(gcd(0, 10));
+  // Std.printInt(gcd(17, 99)); // 1
+  // Std.printInt(gcd(16, 46)); // 2
+  // Std.printInt(gcd(222, 888)); // 222
+  Std.printString("Hello " ++ name ++ "! And how old are you?")
+
+
 end HelloInt

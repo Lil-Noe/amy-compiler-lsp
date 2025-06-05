@@ -48,7 +48,10 @@ object Main extends MainHelpers {
   def main(args: Array[String]): Unit = {
     val ctx = parseArgs(args)
 
-    if (ctx.serverMode) launchServer() 
+    if (ctx.serverMode) {
+      launchServer() 
+      return
+    }
 
     if (ctx.help) {
       val helpMsg = {

@@ -34,14 +34,14 @@ import scala.compiletime.ops.boolean
   */
 class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentService {
 
-  override def didSave(params: DidSaveTextDocumentParams): Unit =
-    server.sendMsgToClient("didSave TextDocument")
-  override def didClose(params: DidCloseTextDocumentParams): Unit =
-    server.sendMsgToClient("didClose TextDocument")
-  override def didChange(params: DidChangeTextDocumentParams): Unit =
-    server.sendMsgToClient("didChange TextDocument")
-  override def didOpen(params: DidOpenTextDocumentParams): Unit =
-    server.sendMsgToClient("didOpen TextDocument")
+  override def didSave(params: DidSaveTextDocumentParams): Unit = {}
+    //server.sendMsgToClient("didSave TextDocument")
+  override def didClose(params: DidCloseTextDocumentParams): Unit = {}
+    //server.sendMsgToClient("didClose TextDocument")
+  override def didChange(params: DidChangeTextDocumentParams): Unit = {}
+    //server.sendMsgToClient("didChange TextDocument")
+  override def didOpen(params: DidOpenTextDocumentParams): Unit = {}
+    //server.sendMsgToClient("didOpen TextDocument")
 
 
 
@@ -257,7 +257,10 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
         // Variables
         case Variable(name) => {
-          if (positionMatch(positionSource, e.startPosition, e.endPosition)) Some(name)
+          if (positionMatch(positionSource, e.startPosition, e.endPosition)) {
+            server.sendMsgToClient(s"Identifier : $name")
+            Some(name)
+          }
           else None
         }
 
@@ -345,7 +348,10 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
         // Local variable
         case Let(df, value, body) => {
-          if (positionMatch(positionSource, e.startPosition, e.endPosition)) Some(df.name)
+          if (positionMatch(positionSource, e.startPosition, e.endPosition)) {
+            server.sendMsgToClient(s"Identifier : ${df.name}")
+            Some(df.name)
+          }
           else { lookForIdentifier(value, positionSource) match {
                 case Some(name) => Some(name)
                 case _ => lookForIdentifier(body, positionSource)
@@ -356,7 +362,10 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
         // Type or function invocation
         case Call(qname, args) => {
-          if (positionMatch(positionSource, e.startPosition, e.endPosition)) Some(qname)
+          if (positionMatch(positionSource, e.startPosition, e.endPosition)) {
+            server.sendMsgToClient(s"Identifier : $qname")
+            Some(qname)
+          }
           else { 
             // Look into each argument
             args.foreach { arg => {
@@ -407,12 +416,35 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
       val textDoc = params.getTextDocument
       val uri = textDoc.getUri
       val path = Paths.get(URI.create(uri))
-      server.sendMsgToClient(s"ClientFile URI : $uri \n ClientFile Path : $path")
+      //server.sendMsgToClient(s"ClientFile URI : $uri \n ClientFile Path : $path")
 
-      // Compile the file up to NameAnalyser to have identifiers
-      val ctx = new Context(new Reporter, List(path.toString()))
+
+      // Find source folder to include all needed files
+      var baseDir = path
+      while (baseDir != null && baseDir.getFileName.toString != "test-folder") {
+        baseDir = baseDir.getParent()
+      }
+      val libraryDir = baseDir.resolve("library")
+      val filesToLookIn = Set(
+        path, 
+        libraryDir.resolve("List.amy"),
+        libraryDir.resolve("Std.amy"),
+        libraryDir.resolve("Option.amy"))
+
+
+      // Compile the files up to NameAnalyser to have identifiers
+      val ctx = new Context(new Reporter, filesToLookIn.toList.map(_.toString()))
       val files = ctx.files.map(new File(_))
       val pipeline = AmyLexer.andThen(Parser.andThen(NameAnalyzer))
+
+      if (files.isEmpty) {
+        server.sendMsgToClient("No input files")
+      }
+      files.find(!_.exists()).foreach { f =>
+        server.sendMsgToClient(s"File not found: ${f.getName}")
+      }
+
+
       val (program, table) = pipeline.run(ctx)(files)
 
 
@@ -420,12 +452,17 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
       // Get position given by the client
       val clientPosition: LSP4JPosition = params.getPosition()
+      val clientLine = clientPosition.getLine()
+      val clientChar = clientPosition.getCharacter()
+
 
       // Translate position (from LSP4J to Amy format) 
       // following zero-indexing of LSP4J protocol
       val identifierPosition = new SourcePosition(
-        path.toFile(), clientPosition.getLine() + 1, clientPosition.getCharacter() + 1)
+        path.toFile(), clientLine + 1, clientChar + 1)
       var definitionPosition : Position = NoPosition
+      //server.sendMsgToClient(s"ClientFile Position : line $clientLine, char $clientChar")
+
     
 
 
@@ -461,11 +498,11 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
 
 
-
         // When corresponding identifier found, get its position
         identifier match {
-          case None => {/* do nothing if the position did not point to an identifier */}
+          case None => {server.sendMsgToClient("Identifier not found")/* do nothing if the position did not point to an identifier */}
           case Some(name) => {
+            server.sendMsgToClient("Identifier found youhou")
             
             // Search first in definitions
             mod.defs.foreach { definition => {
@@ -491,6 +528,9 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
           } 
         }
       }}
+
+      server.sendMsgToClient(s"Def Position : line ${definitionPosition.line}, char ${definitionPosition.col}")
+      if (definitionPosition.file == null) return CompletableFuture.supplyAsync(() =>Either.forLeft(Collections.emptyList()))
 
 
       // Translate position (from Amy to LSP4J format) 
