@@ -15,6 +15,7 @@ To launch the Amy extension that includes the LSP, either :
 2. Run the command "npm install" in the terminal
 3. Run the command "npm run compile" in the terminal
 4. Go to 'Run and Debug' on VSCode and click on the 'Run Extension' button
+
 Or
 1. Use the amy.vsix extension file and install it on VSCode using extension manage (here is the documentation to install a vsix file : [link](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix) )
 
