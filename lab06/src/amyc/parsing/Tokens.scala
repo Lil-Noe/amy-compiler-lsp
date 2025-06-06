@@ -22,7 +22,6 @@ object Tokens {
   final case class SpaceToken() extends Token                   // e.g. "\n  "
   final case class ErrorToken(content: String) extends Token
   final case class EOFToken() extends Token                     // special token at the end of file
-  final case class FileToken(fname: String) extends Token
 }
 
 sealed abstract class TokenKind(representation: String) {
@@ -38,7 +37,6 @@ object TokenKinds {
   final case class OperatorKind(value: String) extends TokenKind(value)
   case object EOFKind extends TokenKind("<EOF>")
   case object NoKind extends TokenKind("<???>")
-  case object FileKind extends TokenKind("<File>")
 }
 
 object TokenKind {
@@ -55,7 +53,6 @@ object TokenKind {
     case DelimiterToken(value) => DelimiterKind(value)
     case OperatorToken(value) => OperatorKind(value)
     case EOFToken() => EOFKind
-    case FileToken(_) => FileKind
     case _ => NoKind
   }
 }
