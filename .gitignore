@@ -1,7 +1,7 @@
 lab06/target/
-lab06/project/*
+lab06/project/
 lab06/.bloop/
 lab06/.metals/
+lab06/.vscode/
+lab06/.bsp/
 .metals/*
-lab06/bin/
-
