@@ -25,7 +25,7 @@ Our extensions are a formatter and a language server. A formatter is quite self 
 
 The formatter is simply a fork at a set point of the pipeline, reusing the already present infrastructure and only adding components when absolutely needed. The language server acts as a standalone. It uses the whole compiling pipeline, then wraps around it with the necessary server and client infrastructures. 
 
-On the other hand, the LSP (Language Server Protocol) implementation is split into a Client, on the IDE side, and a Server on the language side. The Server is the part that needs a compiler to be implemented. It may use any part of the language implementation, but regarding the go-to-definition feature, it uses only a part of the actual pipeline which is namely the Lexer, the Parser and the Name Analyser. Indeed, the Server receives text files from the LSP client and, in order to find the definition of a variable, we must obtain identifiers so that we can compare them. Our goal is not (for go-to-definiton at least) to generate executable code or even to check the validity of the program for the moment, that's why we don't follow the pipeline up to the end.
+More precisely, the LSP (Language Server Protocol) implementation is split into a Client, on the IDE side, and a Server on the language side. The Server is the part that needs a compiler to be implemented. It may use any part of the language implementation, but regarding the go-to-definition feature, it uses only a part of the actual pipeline which is namely the Lexer, the Parser and the Name Analyser. Indeed, the Server receives text files from the LSP client and, in order to find the definition of a variable, we must obtain identifiers so that we can compare them. Our goal is not, for go-to-definiton at least, to generate executable code or even to check the validity of the program for the moment, that's why we don't follow the pipeline up to the end.
 
 
 ## Examples and Use of the Extension
@@ -114,7 +114,7 @@ The language server provides support for the code highlighting as follows, direc
 <img src="color.jpg" alt="Code with highlighting" width="50%"/>
 
 
-The Language Server also implements the Go-to-definition feature, which consists in being redirected to the definition of a variable or a function when clicking on an occurrence of it. A user should only have to Ctrl+Click (or Cmd+Click on Mac) on a variable, or press F12 when the variable is selected. Then the IDE detects the user asks for the definition and the Client side of the LSP asks the Server to provide the definition position.
+The Language Server also implements the Go-to-definition feature, which consists in being redirected to the definition of a variable or a function when clicking on an occurrence of it. A user should only have to Ctrl+Click (or Cmd+Click on Mac) on a variable, or press F12 when the variable is selected. Then the IDE detects the user's request, asks for the definition and the Client side of the LSP asks the Server to provide the definition position.
 The following screenshots illustrate how it works on VSCode with the extension enabled. 
 <img src="goto-definition.gif" alt="Go-to-definition in python" width="50%"/>
 
@@ -124,7 +124,7 @@ The following screenshots illustrate how it works on VSCode with the extension e
 
 For the formatter, the given suggestion from the teaching team mentioned that it could be done at two levels ; either the lexer or the parser. Intuitively, we went for the parser level, as it seemed easier to format. With this in mind, we started modifying the pipeline to fork the pipeline after the original parser, and then to pretty-print the generated AST in the files. We understood fast that the already existing infrastructure wouldn't be sufficient to perform the whole operation. 
 
-For the following steps, we followed our instinct back by ChatGPT suggestions. We decided to create an alternate formatting parser, that would include everything that we need. It worked as expected, allowing for case class arguments to be printed for example, while using a common parser trait. To print, we used the Document and Printer traits already present in the project.
+For the following steps, we followed our instinct backed by ChatGPT suggestions. We decided to create an alternate formatting parser, that would include everything that we need. It worked as expected, allowing for case class arguments to be printed for example, while using a common parser trait. To print, we used the Document and Printer traits already present in the project.
 
 When we finally came to adding the comments, we realised this way of doing was simply not robust enough to implement them in a nice way. The fact that comments could occur anywhere, including inside AST nodes, made it impossible to continue like without requiring hacky workarounds.
 
@@ -135,14 +135,17 @@ As for the language server, we followed a more theorical and academic background
 
 Regarding the Go-To-Definition, the conceptual idea is to receive the position and the file in which the user had clicked from the client side. Then to process it using the pipeline, going through the program by comparing positions to find the identifier. When it's done, we go through the program once more to compare identifiers and find its definition. And finally we need pass the file and position of this definition to the client. 
 
+Finally, the code highlighting required the creation of a VSCode extension. This is quite straightforward, as the VSCode documentation provides a lot of information on how to create an extension. The idea is to use the TextMate grammar to highlight the code, which is a common way to do it in VSCode. 
 
 ### Implementation details
 
 Concerning the formatter, we stumbled upon a few hard parts. The first one was simply keeping track of which file each module corresponded to. Indeed, the lexer removes the concept of files, and simply arranges appends all the modules of all files.
 
-To fix this, each time we tokenize a new file, we add a newly added `FileToken(fname)` token at the very beginning, only when formatting. Thanks to this small trick, we can still run the full pipeline as exptected, and keep track of the files when formatting.
+To fix this, instead of running the lexer on all files as in the usual pipeline, we extracted the lexing process and used to run to tokenize each file, one by one. Thanks to this small trick, we can still run the full pipeline as exptected when compiling, and keep track of the files when formatting.
 
-Then, it came down to the printing. We use a `StringBuilder` to easily append to the already existing string. Since we simply used a `match` expression to switch over the tokens, we couldn't use the already existing tools provided by Scallion and Sylex in this step.
+Then, it came down to the printing. We use a `StringBuilder` to easily append to the already existing string. Since we simply used a `match` expression to switch over the tokens, we couldn't use the already existing tools provided by Scallion and Sylex in this step. 
+
+It crossed our mind to use the Scallion library at this step, as it's very close what we want. However, due to the comments and the rigidity of the library, we found it easier to mimick the behaviour of Scallion's Parsers, in an homemade function.
 
 One issue that we faced at this step was the different formatting we had to make for the same tokens, depending on the context. For example, when faced with an identifier, it could make sense to skip a line after it, or skip a line before it, or to not skip a line at all.
 
@@ -151,22 +154,22 @@ To address this issue, we introduced a new variable that keeps track of the last
 More conceptually, it also was a struggle to know where to add the different kind of special characters. For example, it does make sense to have white spaces around an operation token, but should those white spaces be introduced when considering the operation token, or when considering its operand ? Having a reliable and robust version of this took a lot of time and trial & error.
 
 
-Regarding the Language Server, we had to launch it in the main if the --server_mode was called using the LSP4J library, and to set the capabilities when initializing the server. We found out there had to be a WorkspaceService and a TextDocumentService which had to implemented few methods, even if we didn't use them for now.
+The language server was a bit more straightforward, but still required a lot of work. To launch it, we created a new program parameter `--server_mode` that simply needs to be specified when running the program. For the implementation itself, the first step was to create the server and client sides, which we did using the LSP4J library. This library is a Java implementation of the Language Server Protocol, and it allows us to create a server that can communicate with a client, such as VSCode.
 
-About the Go-to-definition specific feature, the first struggle was to manage the paths. The server receives an URI that corresponds to the file where the client has clicked, but usually to compile it we need other files' definitions. To do that, we had to go back up to the root whre the client is activated. Once we're in it, we include all the .amy files in the compiler to make sure we have all the needed modules.
+Concerning the Go-to-definition feature, the first struggle was to manage the paths. When the server receives a URI from the client indicating where the user clicked, it often needs access to definitions from other files to resolve references correctly. To address this, we first navigate back to the root directory where the client was launched. From there, we include all .amy files in the compilation process to ensure that all required modules are available.
 
-Then the second part was to determine wether an identifier could be found in a specific TreeModule, and hence go looking for it recursively. To begin, the Amy position file starts at (1, 1) where the LSP4J passes a position that starts at (0, 0). So we had to translate it in the first place. When we managed to find an identifier, we must be sure it has a range position to compare it with the given position. In the original pipeline, the parser would give only one position that corresponded to the beginning of the identifier in it. The problem is we have to get the start and end position of a given identifier to be sure the client clicked on it. Hence we modified the Position file and the parser to include start and end position of the identifier to the trees.
+The second part was to determine wether an identifier could be found in a specific Module, and hence go look for it recursively. To begin, the Amy position file starts at (1, 1) where the LSP4J gives a position that starts at (0, 0). So we had to translate it in the first place. When we finally managed to find an identifier, we must be sure it has a range position to compare it with the given position. In our original pipeline, the parser would give only one position that corresponded to the beginning of the identifier in it. The problem is we had to get the start and end position of a given identifier to be sure the client clicked on it. Hence we modified the Position file and the parser to include start and end positions of the identifier to the nodes.
 
 The most difficult part of this goal was the Match tree, because we had to look in every match case. In them, we had to look in the scrutinees and in the expressions only if it wasn't in the scrutinee. The thing is the scrutinee may be another case class, so we had to go once again recursive using another function to make sure we had covered all the possiblities in which there could be an identifier.
 
-Finally, once we had the identifier we had to look in the program for the definition of it. Once again, only specific trees can include definitions, in which case we would have to go recursive. The thing was only to compare identifiers so it was easier than finding the identifier. Then we build the message to send to the client, using once again translating and setting the position to the end of the definition instead of the beginning.
+Finally, once we had the identifier we had to look in the program for the definition of it. Once again, only specific nodes can include definitions, in which case we would have to go recursive. The thing was only to compare identifiers so it was easier than finding the identifier. Then we built the message to send to the client, using once again the translation library, and setting the position to the end of the definition instead of the beginning.
 
 ## Possible Extensions
 
-As of the current state of our extensions, the formatter seems to be working as expected in the majority of the cases. We didn't have the time to incorporate tests in the workflow, but with the manual testings we did, no unexpected result was found.
+As of the current state of our extensions, the formatter seems to be working as expected in the majority of the cases. We incorporated a few basic tests that should cover a large range of the possibilites, and with the manual testings we did, no unexpected result was found.
 
 There are a few tests on the LSP server side that make sure the go-to-definition works as expected for different files and identifiers, either variables or functions. There is even a test that makes sure the server is well launched.
-The LSP only performs one feature, which is go-to-definition. But as we already made a part of the job by creating the client and server sides and learning how to launch it and use it, it should be quite easy to implement other features of the LSP, especially the ones that use the same functionality as the go-to-definition, such as hover feature.
+The language server only performs one feature, which is go-to-definition. But as we already made a part of the job by creating the client and server sides and learning how to launch it and use it, it should be quite easy to implement other features of the LSP, especially the ones that use the same functionality as the go-to-definition, such as hover feature.
 
 In theory, there are a lot more things a language server can offer, going from auto completion to error checking. We believe these specific features would require a very different apporach and a lot of work, especially for auto-completion if it needs to generate code that is not already finished. 
 
