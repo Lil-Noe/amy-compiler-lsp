@@ -3,23 +3,24 @@ package amyc.test
 import amyc.utils._
 import amyc.ast._
 import amyc.parsing._
-import amyc.formatter._
+import amyc.formatting._
+import java.io.File
 import org.junit.Test
 
 class FormatterTests extends TestSuite {
 
-  private val testFormatPrinter: Pipeline[List[(String, String)], Unit] = {
-    new Pipeline[List[(String, String)], Unit] {
-      def run(ctx: Context)(f: List[(String, String)]): Unit = {
+  private val testFormatPrinter: Pipeline[List[(File, String)], Unit] = {
+    new Pipeline[List[(File, String)], Unit] {
+      def run(ctx: Context)(f: List[(File, String)]): Unit = {
         f.foreach { case (filename, content) =>
-          println(filename)
+          println(filename.getName)
           println(content)
         }
       }
     }
   }
   
-  val pipeline = AmyLexer.andThen(Formatter).andThen(testFormatPrinter)
+  val pipeline = Formatter.andThen(testFormatPrinter)
 
   val baseDir = "formatter"
 
