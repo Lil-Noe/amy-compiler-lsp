@@ -10,18 +10,26 @@ Our goal was to have user-oriented features, that's why we decided to implement 
 
 ## Language Server Process Extension
 
-To launch the Amy extension, either : 
-* Opening amy-extension folder in VSCode
-* Run the command "npm install" in the terminal
-* Run the command "npm run compile" in the terminal
-* Go to 'Run and Debug' on VSCode and click on the 'Run Extension' button
-
+To launch the Amy extension that includes the LSP, either : 
+1. Opening amy-extension folder in VSCode
+2. Run the command "npm install" in the terminal
+3. Run the command "npm run compile" in the terminal
+4. Go to 'Run and Debug' on VSCode and click on the 'Run Extension' button
 Or
-* We packaged the extension into amy.vsix file for anyone to install it on VSCode using extension manager
-* Here is the documentation to install a vsix file : [link](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix)
+1. Use the amy.vsix extension file and install it on VSCode using extension manage (here is the documentation to install a vsix file : [link](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix) )
 
 
-When the extension is installed, we can open the test-folder or use the extension with any .amy files.
+When the extension is installed, open the CS-320_Amy_LSP\amy-files folder at the root of the project to test it with amy files.
+Here are a few point to take care regarding the LSP use : 
+- The files to test it on have to have the "amy-files" folder somewhere in their parents folders.
+- The "library" folder including Std.amy, List.amy and Option.amy has to be directly in the "amy-files" folder without any other subfolders in between.
+- The go to definition feature only works in the same file. This means the definition has to be in the same file as the variable for it to work.
+
+
+If changes are made to the compiler and LSP Server, here is the procedure to compress it to a .jar file and include it in the extension.
+1. First, open the lab06 folder and run "sbt reload clean assembly"
+2. Then go look for the .jar file at \target\scala-3.5.2\amyc-assembly-1.7.jar
+3. Rename it to lsp-server.jar and include it into CS-320_Amy_LSP\amy-extension\server\
 
 
 ## Formatter
