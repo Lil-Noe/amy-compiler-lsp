@@ -26,8 +26,13 @@ class FormatterTests extends TestSuite {
 
   val outputExt = "txt"
 
-  @Test def testEmpty = shouldOutput("Empty")
-
-  @Test def testNoChange = shouldOutput("NoChange")
+  @Test def testArithmetic() = shouldOutput("Arithmetic")
+  @Test def testDefinitions() = shouldOutput("Definitions")
+  @Test def testFactorial() = shouldOutput("Factorial")
+  @Test def testHanoi() = shouldOutput("Hanoi")
+  @Test def testHello() = shouldOutput("Hello")
+  @Test def testHelloInt() = shouldOutput("HelloInt")
+  @Test def testPrinting() = shouldOutput("Printing")
+  @Test def testTestLists() = shouldOutput("TestLists")
 
 }

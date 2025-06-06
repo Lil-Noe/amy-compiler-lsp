@@ -152,7 +152,7 @@ object TokenFormatter {
         add_text("error")
 
       case "false" | "true" =>
-        add_text(s); add_space
+        add_text(s)
 
       case "_" =>
         add_text("_"); add_space

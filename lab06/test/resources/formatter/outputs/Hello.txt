@@ -1,4 +1,6 @@
-NoChange.amy
+Hello.amy
 object Hello
+
   Std.printString("Hello " ++ "world!")
+
 end Hello
