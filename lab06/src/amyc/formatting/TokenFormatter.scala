@@ -70,6 +70,8 @@ object TokenFormatter {
             add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
           case Some(KeywordToken("if")) | Some(KeywordToken("for")) | Some(DelimiterToken(")")) =>
             add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
+          case Some(KeywordToken("match")) =>
+            add_text("{"); INDENT_LEVEL += 1; add_newline
           case _ =>
             add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
         }
@@ -84,6 +86,9 @@ object TokenFormatter {
           case _ =>
             add_newline; add_text("}"); add_newline
         }
+
+      case "=>" => 
+        add_space; add_text("=>"); add_space
 
       case other =>
         add_text(other)
@@ -110,7 +115,12 @@ object TokenFormatter {
 
     case KeywordToken(s) => s match {
       case "case" =>
-        add_newline; add_text("case"); add_space
+        lastToken match {
+          case Some(DelimiterToken("{")) =>
+            add_text("case"); add_space
+          case _ => 
+            add_newline; add_text("case"); add_space
+        }
 
       case "class" =>
         add_newline; add_text("class"); add_space
@@ -119,7 +129,7 @@ object TokenFormatter {
         add_newline; add_text("def"); add_space
 
       case "match" =>
-        add_newline; add_text("match"); add_space
+        add_space; add_text("match"); add_space
 
       case "else" =>
         add_text("else")
@@ -152,7 +162,7 @@ object TokenFormatter {
         add_text("error")
 
       case "_" =>
-        add_text("_"); add_space
+        add_text("_"); 
 
       case other =>
         add_text(other); add_space
