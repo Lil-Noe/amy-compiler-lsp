@@ -17,8 +17,11 @@ import java.util.concurrent.CompletableFuture
 import org.eclipse.lsp4j.MessageActionItem
 import org.eclipse.lsp4j.DefinitionParams
 import java.nio.file.Paths
+import java.nio.file.Path
 import java.nio.file.Files
 import java.util.Collections
+import java.net.URI
+
 
 class AmyLanguageServerTests {
 
@@ -37,6 +40,17 @@ class AmyLanguageServerTests {
         override def telemetryEvent(x$0: Object): Unit =  
             {/* Stub implementation : do nothing */}
     }
+
+    private class UselessLanguageServer extends AmyLanguageServer {
+        override def getWorkspaceRoot: Option[Path] =  {
+            val rootDir = System.getProperty("user.dir")
+            val amyFolder = Paths.get(rootDir, "test", "resources", "amy-files").toFile
+            val opt = Option(Paths.get(amyFolder.toURI()))
+            print(opt.get.toString())
+            opt
+        }
+    }
+
 
     @Test def testInitLSPServer(): Unit = {
         // Simulate what the Main function does : create a server and connect it to a client
@@ -81,7 +95,8 @@ class AmyLanguageServerTests {
         val fileClient: TextDocumentIdentifier = new TextDocumentIdentifier(fileURI)
         val defParam: DefinitionParams = new DefinitionParams(fileClient, posClient)
 
-        val server = new AmyLanguageServer()
+        val server = new UselessLanguageServer()
+        
 
         // Make sure the server has at least a valid text document service file
         assertNotNull("The server should have a valid Text Document Service", server.getTextDocumentService())
@@ -117,7 +132,7 @@ class AmyLanguageServerTests {
         val posClient: Position = new Position(29, 12)
         val fileClient: TextDocumentIdentifier = new TextDocumentIdentifier(fileURI)
         val defParam: DefinitionParams = new DefinitionParams(fileClient, posClient)
-        val server = new AmyLanguageServer()
+        val server = new UselessLanguageServer()
 
         // Make sure the server has at least a valid text document service file
         assertNotNull("The server should have a valid Text Document Service", server.getTextDocumentService())
@@ -152,7 +167,7 @@ class AmyLanguageServerTests {
         val posClient: Position = new Position(14, 63)
         val fileClient: TextDocumentIdentifier = new TextDocumentIdentifier(fileURI)
         val defParam: DefinitionParams = new DefinitionParams(fileClient, posClient)
-        val server = new AmyLanguageServer()
+        val server = new UselessLanguageServer()
 
         // Make sure the server has at least a valid text document service file
         assertNotNull("The server should have a valid Text Document Service", server.getTextDocumentService())
@@ -186,7 +201,7 @@ class AmyLanguageServerTests {
         val posClient: Position = new Position(8, 20)
         val fileClient: TextDocumentIdentifier = new TextDocumentIdentifier(fileURI)
         val defParam: DefinitionParams = new DefinitionParams(fileClient, posClient)
-        val server = new AmyLanguageServer()
+        val server = new UselessLanguageServer()
 
         // Make sure the server has at least a valid text document service file
         assertNotNull("The server should have a valid Text Document Service", server.getTextDocumentService())

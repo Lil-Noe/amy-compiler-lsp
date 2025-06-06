@@ -23,14 +23,13 @@ object Arithmetic
     }
   }
 
-  // Std.printInt(pow(0, 10));
-  // Std.printInt(pow(1, 5));
-  // Std.printInt(pow(2, 10));
-  // Std.printInt(pow(3, 3));
-  // Std.printInt(gcd(0, 10));
-  // Std.printInt(gcd(17, 99)); // 1
-  // Std.printInt(gcd(16, 46)); // 2
-  // Std.printInt(gcd(222, 888)) // 222
+  Std.printInt(pow(0, 10));
+  Std.printInt(pow(1, 5));
+  Std.printInt(pow(2, 10));
+  Std.printInt(pow(3, 3));
+  Std.printInt(gcd(0, 10));
+  Std.printInt(gcd(17, 99)); // 1
+  Std.printInt(gcd(16, 46)); // 2
+  Std.printInt(gcd(222, 888)) // 222
 
-  val e: Int(32) = pow(2, 6)
 end Arithmetic
