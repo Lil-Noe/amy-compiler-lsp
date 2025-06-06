@@ -1,4 +1,4 @@
-./lab06/target/*
-./lab06/project/*
-./lab06/.bloop/*
-./lab06/.metals/*
+lab06/target/
+lab06/project/
+lab06/.bloop/
+lab06/.metals/
