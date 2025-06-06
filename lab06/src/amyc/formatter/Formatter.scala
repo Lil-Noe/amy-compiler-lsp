@@ -10,12 +10,12 @@ import java.nio.charset.StandardCharsets
 object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
   private val INDENT_SYMBOL: String = "  "
 
-  private def NEWLINE_SYMBOL: Unit = {
+  private def add_newline: Unit = {
     currentBuilder.append("\n")
     atLineStart = true
   }
 
-  private def SPACE_SYMBOL: Unit = {
+  private def add_space: Unit = {
     currentBuilder.append(" ")
     atLineStart = false
   }
@@ -28,7 +28,7 @@ object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
   private var currentBuilder: StringBuilder = new StringBuilder
   private val files = ListBuffer.empty[(String, StringBuilder)]
 
-  private def PRINT_TOKEN(text: String): Unit = {
+  private def add_text(text: String): Unit = {
     if (atLineStart) {
       (0 until INDENT_LEVEL).foreach(_ => currentBuilder.append(INDENT_SYMBOL))
       atLineStart = false
@@ -49,7 +49,7 @@ object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
       lastToken = Some(token)
     }
 
-    if (!atLineStart) NEWLINE_SYMBOL
+    if (!atLineStart) add_newline
 
     files.map { case (name, sb) => (name, sb.toString()) }.toList
   }
@@ -61,106 +61,106 @@ object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
           case Some(DelimiterToken(";")) =>
             ()
           case _ =>
-            NEWLINE_SYMBOL
-        PRINT_TOKEN(c)
-        NEWLINE_SYMBOL
+            add_newline
+        add_text(c)
+        add_newline
       } else {
-        PRINT_TOKEN(c)
+        add_text(c)
       }
 
     case DelimiterToken(",") =>
-      PRINT_TOKEN(",")
-      SPACE_SYMBOL
+      add_text(",")
+      add_space
 
     case DelimiterToken("{") =>
-      NEWLINE_SYMBOL
-      PRINT_TOKEN("{")
+      add_newline
+      add_text("{")
       INDENT_LEVEL += 1
-      NEWLINE_SYMBOL
+      add_newline
 
     case DelimiterToken("}") =>
       INDENT_LEVEL -= 1
       lastToken match
         case Some(DelimiterToken("}")) => ()
-        case _                         => NEWLINE_SYMBOL
-      PRINT_TOKEN("}")
-      NEWLINE_SYMBOL
+        case _                         => add_newline
+      add_text("}")
+      add_newline
 
     case DelimiterToken(";") =>
-      PRINT_TOKEN(";")
-      NEWLINE_SYMBOL
+      add_text(";")
+      add_newline
 
     case DelimiterToken("=") =>
-      SPACE_SYMBOL
-      PRINT_TOKEN("=")
-      SPACE_SYMBOL
+      add_space
+      add_text("=")
+      add_space
 
     case DelimiterToken(":") =>
-      PRINT_TOKEN(":")
-      SPACE_SYMBOL
+      add_text(":")
+      add_space
 
     case DelimiterToken("(") =>
-      PRINT_TOKEN("(")
+      add_text("(")
 
     case DelimiterToken(")") =>
-      PRINT_TOKEN(")")
+      add_text(")")
 
     case DelimiterToken(d) =>
-      PRINT_TOKEN(d)
+      add_text(d)
 
     case OperatorToken(op) =>
-      SPACE_SYMBOL
-      PRINT_TOKEN(op)
-      SPACE_SYMBOL
+      add_space
+      add_text(op)
+      add_space
 
     case KeywordToken("def") =>
-      NEWLINE_SYMBOL
-      PRINT_TOKEN("def")
-      SPACE_SYMBOL
+      add_newline
+      add_text("def")
+      add_space
 
     case KeywordToken("object") =>
-      PRINT_TOKEN("object")
-      SPACE_SYMBOL
+      add_text("object")
+      add_space
 
     case KeywordToken("end") =>
       INDENT_LEVEL -= 1
-      NEWLINE_SYMBOL
-      PRINT_TOKEN("end")
-      SPACE_SYMBOL
+      add_newline
+      add_text("end")
+      add_space
 
     case KeywordToken("error") =>
-      PRINT_TOKEN("error")
+      add_text("error")
 
     case KeywordToken(s) =>
-      PRINT_TOKEN(s)
-      SPACE_SYMBOL
+      add_text(s)
+      add_space
 
     case IdentifierToken(s) =>
       lastToken match {
         case Some(KeywordToken("object")) =>
-          PRINT_TOKEN(s)
-          NEWLINE_SYMBOL
+          add_text(s)
+          add_newline
           INDENT_LEVEL += 1
         case Some(DelimiterToken("}")) =>
-          NEWLINE_SYMBOL
-          PRINT_TOKEN(s)
+          add_newline
+          add_text(s)
         case Some(KeywordToken("end")) =>
-          PRINT_TOKEN(s)
-          NEWLINE_SYMBOL
-        case _ => PRINT_TOKEN(s)
+          add_text(s)
+          add_newline
+        case _ => add_text(s)
       }
 
     case PrimTypeToken(s) =>
-      PRINT_TOKEN(s)
+      add_text(s)
 
     case IntLitToken(s) =>
-      PRINT_TOKEN(s.toString)
+      add_text(s.toString)
 
     case BoolLitToken(s) =>
-      PRINT_TOKEN(s.toString)
+      add_text(s.toString)
 
     case StringLitToken(s) =>
-      PRINT_TOKEN("\"" + s + "\"")
+      add_text("\"" + s + "\"")
 
     case FileToken(s) =>
       lastToken = None
@@ -168,7 +168,7 @@ object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
       files += ((s, currentBuilder))
 
     case ErrorToken(e) =>
-      PRINT_TOKEN(s"Couldn't format: $e")
+      add_text(s"Couldn't format: $e")
 
     case _ => ()
   }
@@ -176,14 +176,6 @@ object Formatter extends Pipeline[Iterator[Token], List[(String, String)]] {
   override def run(
       ctx: Context
   )(tokens: Iterator[Token]): List[(String, String)] = {
-    val formattedFiles = Formatter(tokens)
-    formattedFiles.foreach { case (fileName, content) =>
-      ctx.reporter.info(s"Formatting $fileName")
-      Files.write(
-        Paths.get(fileName),
-        content.getBytes(StandardCharsets.UTF_8)
-      )
-    }
-    formattedFiles
+    Formatter(tokens)
   }
 }

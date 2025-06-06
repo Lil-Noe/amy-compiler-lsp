@@ -79,7 +79,7 @@ object Main extends MainHelpers {
     val pipeline = {
       AmyLexer.andThen(
         if (ctx.printTokens) DisplayTokens
-        else if (ctx.format) Formatter
+        else if (ctx.format) Formatter.andThen(FormatPrinter)
         else Parser.andThen(
           if (ctx.printTrees) treePrinterN("Trees after parsing")
           else NameAnalyzer.andThen(
