@@ -151,9 +151,6 @@ object TokenFormatter {
       case "error" =>
         add_text("error")
 
-      case "false" | "true" =>
-        add_text(s)
-
       case "_" =>
         add_text("_"); add_space
 
@@ -194,7 +191,7 @@ object TokenFormatter {
       }
 
     case BoolLitToken(b) =>
-      add_text(b.toString); add_space
+      add_text(b.toString);
 
     case StringLitToken(s) =>
       add_text("\"" + s + "\"")
