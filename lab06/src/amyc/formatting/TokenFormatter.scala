@@ -129,7 +129,12 @@ object TokenFormatter {
         add_newline; add_text("def"); add_space
 
       case "match" =>
-        add_space; add_text("match"); add_space
+        lastToken match {
+          case Some(DelimiterToken("}")) | Some(DelimiterToken(")")) =>
+            add_text("match"); add_space
+          case _ =>
+            add_space; add_text("match"); add_space
+        }
 
       case "else" =>
         add_text("else")
