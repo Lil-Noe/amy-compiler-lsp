@@ -17,6 +17,7 @@ import java.util.Optional
 import java.util.List as UtilList
 import java.net.URI
 import java.nio.file.{Files, Path, Paths}
+import scala.jdk.StreamConverters._
 import amyc.utils.Position as AmyPosition
 import amyc.utils.* 
 import amyc.parsing.*
@@ -401,24 +402,22 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
     CompletableFuture[Either[UtilList[? <: Location], UtilList[? <: LocationLink]]] = 
   { 
 
-      // Get the file in which to look for identifier
       val textDoc = params.getTextDocument
       val uri = textDoc.getUri
       val path = Paths.get(URI.create(uri))
 
-
-      // Find source folder to include all needed files
-      var baseDir = path
-      while (baseDir != null && baseDir.getFileName.toString != "amy-files") {
-        baseDir = baseDir.getParent()
+      // Try to get the workspace root from the server
+      val workspaceRootOpt = server.getWorkspaceRoot
+      val filesToLookIn: Set[Path] = workspaceRootOpt match {
+        case Some(root) => 
+          Files.walk(root)
+            .toScala(Iterator)
+            .filter(p => p.toString.endsWith(".amy"))
+            .toSet
+        case None =>
+          // fallback to only the current file
+          Set(path)
       }
-      val libraryDir = baseDir.resolve("library")
-      val filesToLookIn = Set(
-        path, 
-        libraryDir.resolve("List.amy"),
-        libraryDir.resolve("Std.amy"),
-        libraryDir.resolve("Option.amy"))
-
 
       // Compile the files up to NameAnalyser to have identifiers
       val ctx = new Context(new Reporter, filesToLookIn.toList.map(_.toString()))

@@ -12,6 +12,8 @@ import org.eclipse.lsp4j.services.LanguageClientAware
 import org.eclipse.lsp4j.TextDocumentSyncKind
 import org.eclipse.lsp4j.MessageParams
 import org.eclipse.lsp4j.MessageType
+import java.nio.file.{Path, Paths}
+import java.net.URI
 
 /**
   * This Server receives requests/notifications from a client 
@@ -19,6 +21,9 @@ import org.eclipse.lsp4j.MessageType
   */
 class AmyLanguageServer extends LanguageServer with LanguageClientAware {
     
+    // The root path of the workspace, initialized when launching
+    private var workspaceRoot: Option[Path] = None
+
     // Language client, initialized when launching
     private var languageClient: LanguageClient = null
     // Connect to a client, called when launching
@@ -53,6 +58,10 @@ class AmyLanguageServer extends LanguageServer with LanguageClientAware {
     // (first request the server should receive)
     override def initialize(params: InitializeParams): CompletableFuture[InitializeResult] = {
 
+        // Get the root path of the workspace
+        val rootPath = Option(params.getRootUri)
+        workspaceRoot = rootPath.map(uri => Paths.get(URI.create(uri)))
+
         // Create the capabilities of the server
         val capabilities = new ServerCapabilities()
         // Make sure text documents are synced, always sending full content of the document
@@ -68,5 +77,8 @@ class AmyLanguageServer extends LanguageServer with LanguageClientAware {
         // Return the CompletableFuture
         CompletableFuture.completedFuture(result)
     }
+
+    // Get the workspace root path
+    def getWorkspaceRoot: Option[Path] = workspaceRoot
 
 }

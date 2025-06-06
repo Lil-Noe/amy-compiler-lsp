@@ -1,4 +1,7 @@
 lab06/target/
-lab06/project/
+lab06/project/*
 lab06/.bloop/
 lab06/.metals/
+.metals/*
+lab06/bin/
+

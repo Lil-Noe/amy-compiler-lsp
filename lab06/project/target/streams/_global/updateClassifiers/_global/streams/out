@@ -1,3 +1,4 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/"), "lab06-build")...
-[debug] Done updating ProjectRef(uri("file:/C:/Users/lilia/Documents/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/"), "lab06-build")
+[0m[[0m[33mwarn[0m] [0m[0msbt-bloop_2.12_1.0-2.0.10-sources.jar no longer exists at /C:/Users/lilia/AppData/Local/Coursier/Cache/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.10/sbt-bloop_2.12_1.0-2.0.10-sources.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = false, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/"), "lab06-build")...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/"), "lab06-build")[0m

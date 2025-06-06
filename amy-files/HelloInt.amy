@@ -30,12 +30,12 @@ object HelloInt
   Std.printString("Hello " ++ name ++ "! And how old are you?");
 
 
+  Hanoi.solve(4);
 
-
-
+  
 
    // Std.printInt(pow(0, 10));
-  // Std.printInt(pow(1, 5));
+  Std.printInt(1);
   // Std.printInt(pow(2, 10));
   // Std.printInt(pow(3, 3));
   // Std.printInt(gcd(0, 10));

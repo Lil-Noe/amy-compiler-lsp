@@ -2448,3 +2448,709 @@ WARNING: Unmatched cancel notification for request id 3786
 2025.06.04 18:43:29 INFO  shutting down Metals
 2025.06.04 18:43:29 INFO  Shut down connection with build server.
 2025.06.04 18:43:29 INFO  Exiting server
+2025.06.06 15:47:27 INFO  Started: Metals version 1.6.0 in folders '/Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP' for client Visual Studio Code 1.100.2.
+2025.06.06 15:47:28 INFO  Attempting to connect to the build server...
+2025.06.06 15:47:28 INFO  Found a Bloop server running
+2025.06.06 15:47:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/.metals/bsp.trace.json or /Users/romanbatut/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.5.2\scala3-library_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-compiler_3\3.5.2\scala3-compiler_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-interfaces\3.5.2\scala3-interfaces-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.5.2\tasty-core_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-asm\9.7.0-scala-2\scala-asm-9.7.0-scala-2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.9.6\compiler-interface-1.9.6.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-reader\3.25.1\jline-reader-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal\3.25.1\jline-terminal-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal-jna\3.25.1\jline-terminal-jna-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.9.8\util-interface-1.9.8.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-native\3.25.1\jline-native-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scaladoc_3\3.5.2\scaladoc_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-tasty-inspector_3\3.5.2\scala3-tasty-inspector_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.5.2\scala3-library_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\nl\big-o\liqp\0.8.2\liqp-0.8.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-compiler_3\3.5.2\scala3-compiler_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.1\jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-interfaces\3.5.2\scala3-interfaces-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.5.2\tasty-core_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-asm\9.7.0-scala-2\scala-asm-9.7.0-scala-2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.9.6\compiler-interface-1.9.6.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-reader\3.25.1\jline-reader-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal\3.25.1\jline-terminal-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal-jna\3.25.1\jline-terminal-jna-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.9.8\util-interface-1.9.8.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-native\3.25.1\jline-native-3.25.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scaladoc_3\3.5.2\scaladoc_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jetbrains\annotations\15.0\annotations-15.0.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-jira-converter\0.62.2\flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr4-runtime\4.7.2\antlr4-runtime-4.7.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\ua\co\k\strftime4j\1.0.5\strftime4j-1.0.5.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-ins\0.62.2\flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-superscript\0.62.2\flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-tasty-inspector_3\3.5.2\scala3-tasty-inspector_3-3.5.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\nl\big-o\liqp\0.8.2\liqp-0.8.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.1\jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.06.06 15:47:28 ERROR Bloop server PID: 8845
+Ignoring SIGINT
+Will truncate output file /Users/romanbatut/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/romanbatut/Library/Caches/ScalaCli/bloop/daemon/socket.
+Jun 06, 2025 3:04:04 PM zipkin2.reporter.AsyncReporter$BoundedAsyncReporter flush
+WARNING: Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+Jun 06, 2025 3:04:04 PM zipkin2.reporter.AsyncReporter$BoundedAsyncReporter flush
+WARNING: Dropped 0 spans due to ConnectException(Connection refused)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1460)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1423)
+	at zipkin2.reporter.urlconnection.URLConnectionSender.send(URLConnectionSender.java:229)
+	at zipkin2.reporter.urlconnection.URLConnectionSender$HttpPostCall.doExecute(URLConnectionSender.java:270)
+	at zipkin2.reporter.urlconnection.URLConnectionSender$HttpPostCall.doExecute(URLConnectionSender.java:262)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at bloop.tracing.BraveTracer$.$anonfun$apply$5(BraveTracer.scala:178)
+	at bloop.tracing.BraveTracer.terminate(BraveTracer.scala:105)
+	at bloop.engine.tasks.CompileTask$.$anonfun$compile$32(CompileTask.scala:337)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1726)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1717)
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1641)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1491)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:2073)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2035)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+
+2025.06.06 15:47:28 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.MessageIssueException: Message could not be parsed.
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:761)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:634)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1570)
+Caused by: org.eclipse.lsp4j.jsonrpc.MessageIssueException: Message could not be parsed.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponseIssues(RemoteEndpoint.java:367)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handle(RemoteEndpoint.java:326)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "jline-native-3.25.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.14.0\\jna-5.14.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scaladoc_3\\3.5.2\\scaladoc_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-tasty-inspector_3\\3.5.2\\scala3-tasty-inspector_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark\\0.62.2\\flexmark-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-ast\\0.62.2\\flexmark-util-ast-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-data\\0.62.2\\flexmark-util-data-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-html\\0.62.2\\flexmark-util-html-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-anchorlink\\0.62.2\\flexmark-ext-anchorlink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-autolink\\0.62.2\\flexmark-ext-autolink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-emoji\\0.62.2\\flexmark-ext-emoji-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-strikethrough\\0.62.2\\flexmark-ext-gfm-strikethrough-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-tasklist\\0.62.2\\flexmark-ext-gfm-tasklist-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-wikilink\\0.62.2\\flexmark-ext-wikilink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-tables\\0.62.2\\flexmark-ext-tables-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-yaml-front-matter\\0.62.2\\flexmark-ext-yaml-front-matter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\nl\\big-o\\liqp\\0.8.2\\liqp-0.8.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jsoup\\jsoup\\1.17.2\\jsoup-1.17.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-yaml\\2.15.1\\jackson-dataformat-yaml-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-builder\\0.62.2\\flexmark-util-builder-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-collection\\0.62.2\\flexmark-util-collection-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-dependency\\0.62.2\\flexmark-util-dependency-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-format\\0.62.2\\flexmark-util-format-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-misc\\0.62.2\\flexmark-util-misc-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-superscript\\0.62.2\\flexmark-ext-superscript-0.62.2.jar\n\tat scala.sys.package$.error(package.scala:30)\n\tat bloop.ScalaInstance.$anonfun$compilerJar$2(ScalaInstance.scala:46)\n\tat scala.Option.getOrElse(Option.scala:189)\n\tat bloop.ScalaInstance.<init>(ScalaInstance.scala:46)\n\tat bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:180)\n\tat bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:185)\n\tat java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)\n\tat bloop.ScalaInstance$.apply(ScalaInstance.scala:185)\n\tat bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:315)\n\tat scala.Option.flatMap(Option.scala:271)\n\tat bloop.data.Project$.fromConfig(Project.scala:310)\n\tat bloop.data.Project$.fromBytesAndOrigin(Project.scala:293)\n\t... 10 more\n"
+    },
+    "id": "1",
+    "jsonrpc": "2.0"
+}Content-Length: 336
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "jline-native-3.25.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.14.0\\jna-5.14.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scaladoc_3\\3.5.2\\scaladoc_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-tasty-inspector_3\\3.5.2\\scala3-tasty-inspector_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark\\0.62.2\\flexmark-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-ast\\0.62.2\\flexmark-util-ast-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-data\\0.62.2\\flexmark-util-data-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-html\\0.62.2\\flexmark-util-html-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-anchorlink\\0.62.2\\flexmark-ext-anchorlink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-autolink\\0.62.2\\flexmark-ext-autolink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-emoji\\0.62.2\\flexmark-ext-emoji-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-strikethrough\\0.62.2\\flexmark-ext-gfm-strikethrough-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-tasklist\\0.62.2\\flexmark-ext-gfm-tasklist-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-wikilink\\0.62.2\\flexmark-ext-wikilink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-tables\\0.62.2\\flexmark-ext-tables-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-yaml-front-matter\\0.62.2\\flexmark-ext-yaml-front-matter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\nl\\big-o\\liqp\\0.8.2\\liqp-0.8.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jsoup\\jsoup\\1.17.2\\jsoup-1.17.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-yaml\\2.15.1\\jackson-dataformat-yaml-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-builder\\0.62.2\\flexmark-util-builder-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-collection\\0.62.2\\flexmark-util-collection-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-dependency\\0.62.2\\flexmark-util-dependency-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-format\\0.62.2\\flexmark-util-format-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-misc\\0.62.2\\flexmark-util-misc-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-superscript\\0.62.2\\flexmark-ext-superscript-0.62.2.jar\n\tat scala.sys.package$.error(package.scala:30)\n\tat bloop.ScalaInstance.$anonfun$compilerJar$2(ScalaInstance.scala:46)\n\tat scala.Option.getOrElse(Option.scala:189)\n\tat bloop.ScalaInstance.<init>(ScalaInstance.scala:46)\n\tat bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:180)\n\tat bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:185)\n\tat java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)\n\tat bloop.ScalaInstance$.apply(ScalaInstance.scala:185)\n\tat bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:315)\n\tat scala.Option.flatMap(Option.scala:271)\n\tat bloop.data.Project$.fromConfig(Project.scala:310)\n\tat bloop.data.Project$.fromBytesAndOrigin(Project.scala:293)\n\t... 10 more\n"
+    },
+    "id": "1",
+    "jsonrpc": "2.0"
+}Content-Length: 336
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 302
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 302
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 318
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 318
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 304
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 304
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 338
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 338
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 306
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 306
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 337
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 337
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 323
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 323
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 331
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 331
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 349
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 349
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 297
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 297
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 291
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 291
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 324
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 324
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 3:47:28 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 340
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 340
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+2025.06.06 16:01:31 INFO  Shutting down server
+2025.06.06 16:01:31 INFO  shutting down Metals
+2025.06.06 16:01:31 INFO  Exiting server
+2025.06.06 16:01:32 INFO  Started: Metals version 1.6.0 in folders '/Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP' for client Visual Studio Code 1.100.2.
+2025.06.06 16:01:33 INFO  Attempting to connect to the build server...
+2025.06.06 16:01:33 INFO  Found a Bloop server running
+2025.06.06 16:01:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/.metals/bsp.trace.json or /Users/romanbatut/Library/Caches/org.scalameta.metals/bsp.trace.json
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.5.2\scala3-library_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-compiler_3\3.5.2\scala3-compiler_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-interfaces\3.5.2\scala3-interfaces-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.5.2\tasty-core_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-asm\9.7.0-scala-2\scala-asm-9.7.0-scala-2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.9.6\compiler-interface-1.9.6.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-reader\3.25.1\jline-reader-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal\3.25.1\jline-terminal-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal-jna\3.25.1\jline-terminal-jna-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.9.8\util-interface-1.9.8.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-native\3.25.1\jline-native-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scaladoc_3\3.5.2\scaladoc_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-tasty-inspector_3\3.5.2\scala3-tasty-inspector_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\nl\big-o\liqp\0.8.2\liqp-0.8.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.1\jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jetbrains\annotations\15.0\annotations-15.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-jira-converter\0.62.2\flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.5.2\scala3-library_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-compiler_3\3.5.2\scala3-compiler_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-interfaces\3.5.2\scala3-interfaces-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.5.2\tasty-core_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-asm\9.7.0-scala-2\scala-asm-9.7.0-scala-2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.9.6\compiler-interface-1.9.6.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-reader\3.25.1\jline-reader-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal\3.25.1\jline-terminal-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal-jna\3.25.1\jline-terminal-jna-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.9.8\util-interface-1.9.8.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-native\3.25.1\jline-native-3.25.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scaladoc_3\3.5.2\scaladoc_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-tasty-inspector_3\3.5.2\scala3-tasty-inspector_3-3.5.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-anchorlink\0.62.2\flexmark-ext-anchorlink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-autolink\0.62.2\flexmark-ext-autolink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-emoji\0.62.2\flexmark-ext-emoji-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.62.2\flexmark-ext-gfm-strikethrough-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.62.2\flexmark-ext-gfm-tasklist-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-wikilink\0.62.2\flexmark-ext-wikilink-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.62.2\flexmark-ext-yaml-front-matter-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\nl\big-o\liqp\0.8.2\liqp-0.8.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.1\jackson-dataformat-yaml-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jetbrains\annotations\15.0\annotations-15.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-jira-converter\0.62.2\flexmark-jira-converter-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr4-runtime\4.7.2\antlr4-runtime-4.7.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\ua\co\k\strftime4j\1.0.5\strftime4j-1.0.5.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-ins\0.62.2\flexmark-ext-ins-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-superscript\0.62.2\flexmark-ext-superscript-0.62.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr4-runtime\4.7.2\antlr4-runtime-4.7.2.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 WARN  Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\Users\lilia\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar doesn't exist!
+2025.06.06 16:01:33 ERROR Bloop server PID: 8845
+Ignoring SIGINT
+Will truncate output file /Users/romanbatut/Library/Caches/ScalaCli/bloop/daemon/output every 5 minutes
+Unable to load nailgun-version.properties.
+NGServer [UNKNOWN] started on local socket /Users/romanbatut/Library/Caches/ScalaCli/bloop/daemon/socket.
+Jun 06, 2025 3:04:04 PM zipkin2.reporter.AsyncReporter$BoundedAsyncReporter flush
+WARNING: Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+Jun 06, 2025 3:04:04 PM zipkin2.reporter.AsyncReporter$BoundedAsyncReporter flush
+WARNING: Dropped 0 spans due to ConnectException(Connection refused)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1460)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1423)
+	at zipkin2.reporter.urlconnection.URLConnectionSender.send(URLConnectionSender.java:229)
+	at zipkin2.reporter.urlconnection.URLConnectionSender$HttpPostCall.doExecute(URLConnectionSender.java:270)
+	at zipkin2.reporter.urlconnection.URLConnectionSender$HttpPostCall.doExecute(URLConnectionSender.java:262)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at bloop.tracing.BraveTracer$.$anonfun$apply$5(BraveTracer.scala:178)
+	at bloop.tracing.BraveTracer.terminate(BraveTracer.scala:105)
+	at bloop.engine.tasks.CompileTask$.$anonfun$compile$32(CompileTask.scala:337)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1726)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1717)
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1641)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1491)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:2073)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2035)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+
+2025.06.06 16:01:33 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.MessageIssueException: Message could not be parsed.
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:761)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:634)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1570)
+Caused by: org.eclipse.lsp4j.jsonrpc.MessageIssueException: Message could not be parsed.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponseIssues(RemoteEndpoint.java:367)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handle(RemoteEndpoint.java:326)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "ve-3.25.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.14.0\\jna-5.14.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scaladoc_3\\3.5.2\\scaladoc_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-tasty-inspector_3\\3.5.2\\scala3-tasty-inspector_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark\\0.62.2\\flexmark-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-ast\\0.62.2\\flexmark-util-ast-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-data\\0.62.2\\flexmark-util-data-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-html\\0.62.2\\flexmark-util-html-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-anchorlink\\0.62.2\\flexmark-ext-anchorlink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-autolink\\0.62.2\\flexmark-ext-autolink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-emoji\\0.62.2\\flexmark-ext-emoji-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-strikethrough\\0.62.2\\flexmark-ext-gfm-strikethrough-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-tasklist\\0.62.2\\flexmark-ext-gfm-tasklist-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-wikilink\\0.62.2\\flexmark-ext-wikilink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-tables\\0.62.2\\flexmark-ext-tables-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-yaml-front-matter\\0.62.2\\flexmark-ext-yaml-front-matter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\nl\\big-o\\liqp\\0.8.2\\liqp-0.8.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jsoup\\jsoup\\1.17.2\\jsoup-1.17.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-yaml\\2.15.1\\jackson-dataformat-yaml-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-builder\\0.62.2\\flexmark-util-builder-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-collection\\0.62.2\\flexmark-util-collection-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-dependency\\0.62.2\\flexmark-util-dependency-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-format\\0.62.2\\flexmark-util-format-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-misc\\0.62.2\\flexmark-util-misc-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-superscript\\0.62.2\\flexmark-ext-superscript-0.62.2.jar\n\tat scala.sys.package$.error(package.scala:30)\n\tat bloop.ScalaInstance.$anonfun$compilerJar$2(ScalaInstance.scala:46)\n\tat scala.Option.getOrElse(Option.scala:189)\n\tat bloop.ScalaInstance.<init>(ScalaInstance.scala:46)\n\tat bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:180)\n\tat bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:185)\n\tat java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)\n\tat bloop.ScalaInstance$.apply(ScalaInstance.scala:185)\n\tat bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:315)\n\tat scala.Option.flatMap(Option.scala:271)\n\tat bloop.data.Project$.fromConfig(Project.scala:310)\n\tat bloop.data.Project$.fromBytesAndOrigin(Project.scala:293)\n\t... 10 more\n"
+    },
+    "id": "1",
+    "jsonrpc": "2.0"
+}Content-Length: 349
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "ve-3.25.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.14.0\\jna-5.14.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scaladoc_3\\3.5.2\\scaladoc_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-tasty-inspector_3\\3.5.2\\scala3-tasty-inspector_3-3.5.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark\\0.62.2\\flexmark-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-ast\\0.62.2\\flexmark-util-ast-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-data\\0.62.2\\flexmark-util-data-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-html\\0.62.2\\flexmark-util-html-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-anchorlink\\0.62.2\\flexmark-ext-anchorlink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-autolink\\0.62.2\\flexmark-ext-autolink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-emoji\\0.62.2\\flexmark-ext-emoji-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-strikethrough\\0.62.2\\flexmark-ext-gfm-strikethrough-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-gfm-tasklist\\0.62.2\\flexmark-ext-gfm-tasklist-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-wikilink\\0.62.2\\flexmark-ext-wikilink-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-tables\\0.62.2\\flexmark-ext-tables-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-yaml-front-matter\\0.62.2\\flexmark-ext-yaml-front-matter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\nl\\big-o\\liqp\\0.8.2\\liqp-0.8.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jsoup\\jsoup\\1.17.2\\jsoup-1.17.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\dataformat\\jackson-dataformat-yaml\\2.15.1\\jackson-dataformat-yaml-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-builder\\0.62.2\\flexmark-util-builder-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-collection\\0.62.2\\flexmark-util-collection-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-dependency\\0.62.2\\flexmark-util-dependency-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-format\\0.62.2\\flexmark-util-format-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-misc\\0.62.2\\flexmark-util-misc-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-sequence\\0.62.2\\flexmark-util-sequence-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-visitor\\0.62.2\\flexmark-util-visitor-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jetbrains\\annotations\\15.0\\annotations-15.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util\\0.62.2\\flexmark-util-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\nibor\\autolink\\autolink\\0.6.0\\autolink-0.6.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-jira-converter\\0.62.2\\flexmark-jira-converter-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.2\\antlr4-runtime-4.7.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.15.1\\jackson-annotations-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.15.1\\jackson-core-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.15.1\\jackson-databind-2.15.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar, /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-superscript\\0.62.2\\flexmark-ext-superscript-0.62.2.jar\n\tat scala.sys.package$.error(package.scala:30)\n\tat bloop.ScalaInstance.$anonfun$compilerJar$2(ScalaInstance.scala:46)\n\tat scala.Option.getOrElse(Option.scala:189)\n\tat bloop.ScalaInstance.<init>(ScalaInstance.scala:46)\n\tat bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:180)\n\tat bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:185)\n\tat java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)\n\tat bloop.ScalaInstance$.apply(ScalaInstance.scala:185)\n\tat bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:315)\n\tat scala.Option.flatMap(Option.scala:271)\n\tat bloop.data.Project$.fromConfig(Project.scala:310)\n\tat bloop.data.Project$.fromBytesAndOrigin(Project.scala:293)\n\t... 10 more\n"
+    },
+    "id": "1",
+    "jsonrpc": "2.0"
+}Content-Length: 349
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 297
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.12.1\\jackson-datatype-jsr310-2.12.1.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 297
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 291
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ua\\co\\k\\strftime4j\\1.0.5\\strftime4j-1.0.5.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 291
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\2.0\\snakeyaml-2.0.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 334
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 324
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-util-options\\0.62.2\\flexmark-util-options-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 324
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+Jun 06, 2025 4:01:33 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 340
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"method":"build/logMessage","params":{"type":2,"message":"Scala instance jar /Users/romanbatut/Library/Caches/ScalaCli/bloop/C:\\Users\\lilia\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\vladsch\\flexmark\\flexmark-ext-ins\\0.62.2\\flexmark-ext-ins-0.62.2.jar doesn't exist!"},"jsonrpc":"2.0"}Content-Length: 340
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+2025.06.06 16:03:02 INFO  [0m[31m[E][0m Caught java.lang.InterruptedException
+2025.06.06 16:03:02 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.
+2025.06.06 17:31:41 WARN  no build target for: /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt
+2025.06.06 17:31:41 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:42 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:41 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:42 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:42 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:42 WARN  Could not find semantic tokens for: file:///Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt
+2025.06.06 17:31:43 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:42 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:43 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:43 WARN  no build target for: /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt
+2025.06.06 17:31:43 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:43 WARN  Could not find semantic tokens for: file:///Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt
+2025.06.06 17:31:43 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:43 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.06 17:31:43 WARN  Could not find semantic tokens for: file:///Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt
+2025.06.06 17:31:47 INFO  no build target found for /Users/romanbatut/Desktop/EPFL/BA6/CLP/CS-320_Amy_LSP/lab06/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6

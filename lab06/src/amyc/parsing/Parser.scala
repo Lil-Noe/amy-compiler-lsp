@@ -295,7 +295,7 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // Either a variable or a function call.
   lazy val variableOrCall: Syntax[Expr] =
-    (identifierPos ~ opt(delimiter(".") ~ identifier) ~ opt(
+    (identifierPos ~ opt(delimiter(".") ~ identifierPos) ~ opt(
       delimiter("(") ~ args ~ delimiter(")")
     )) map {
       // A simple var.
@@ -305,8 +305,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
       case (fn, startPos, endPos) ~ None ~ Some(_ ~ args ~ _) => Call(QualifiedName(None, fn), args).setPos(startPos, endPos)
 
       // Another module's function call.
-      case (mod, startPos, endPos) ~ Some(_ ~ fn) ~ Some(_ ~ args ~ _) =>
-        Call(QualifiedName(Some(mod), fn), args).setPos(startPos, endPos)
+      case (mod, _, _) ~ Some(_ ~ (fn, fnStartPos, fnEndPos)) ~ Some(_ ~ args ~ _) =>
+        Call(QualifiedName(Some(mod), fn), args).setPos(fnStartPos, fnEndPos)
 
       case e => throw new AmycFatalError("Unexpected call: " + e)
     }
