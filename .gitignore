@@ -5,4 +5,8 @@ amy-compiler/.metals/
 amy-compiler/.vscode/
 amy-compiler/.bsp/
 amy-compiler/wasmout/
+
+amy-extension/out/
+amy-extension/node_modules/
+
 .metals/*
