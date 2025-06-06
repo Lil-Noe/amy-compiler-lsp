@@ -23,7 +23,7 @@ Or
 When the extension is installed, open the CS-320_Amy_LSP\amy-files folder at the root of the project to test it with amy files.
 
 Here are a few point to take care regarding the LSP use : 
-- The files to test it on have to have the "amy-files" folder somewhere in their parents folders.
+- The files to test it on have to include the "amy-files" folder somewhere in their parents folders.
 - The "library" folder including Std.amy, List.amy and Option.amy has to be directly in the "amy-files" folder without any other subfolders in between.
 - The go to definition feature only works in the same file. This means the definition has to be in the same file as the variable for it to work.
 
