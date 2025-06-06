@@ -391,7 +391,8 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
     * It receives a position in a file from Client side, 
     * find which identifier is pointed and returns the position of the definition of this identifier.
     * 
-    * If the position does not point to an identifier, this method does nothing.
+    * If the position does not point to an identifier or
+    * the identifier is not defined in the provided file, this method does nothing.
     *
     * @param params
     * @return
@@ -408,7 +409,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
       // Find source folder to include all needed files
       var baseDir = path
-      while (baseDir != null && baseDir.getFileName.toString != "test-folder") {
+      while (baseDir != null && baseDir.getFileName.toString != "amy-files") {
         baseDir = baseDir.getParent()
       }
       val libraryDir = baseDir.resolve("library")
@@ -497,7 +498,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
 
               // If the identifier is a Class or a function, we are done
               if (definition.name == name && definitionPosition.line == 0 && definitionPosition.col == 0) {
-                definitionPosition = definition.startPosition
+                definitionPosition = definition.endPosition
               }
               else if (definitionPosition.line == 0 && definitionPosition.col == 0) {
                 definition match {
@@ -520,7 +521,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
       }}
 
       // Make sure we're not pointing to an empty file
-      if (definitionPosition.file == null) {
+      if (definitionPosition.file == null || definitionPosition.line == 0 || definitionPosition.col == 0) {
         return CompletableFuture.supplyAsync(() =>Either.forLeft(Collections.emptyList()))
       }
 

@@ -76,13 +76,13 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A function definition
   lazy val functionDefinition: Syntax[ClassOrFunDef] =
-    (kw("def") ~ identifier ~ delimiter("(") ~ parameters ~ delimiter(
+    (kw("def") ~ identifierPos ~ delimiter("(") ~ parameters ~ delimiter(
       ")"
     ) ~ delimiter(":") ~ typeTree ~ delimiter("=") ~ delimiter(
       "{"
     ) ~ expr ~ delimiter("}")).map {
-      case kw ~ id ~ _ ~ params ~ _ ~ _ ~ fnType ~ _ ~ _ ~ body ~ _ =>
-        FunDef(id, params, fnType, body).setPos(kw)
+      case kw ~ (id, startPos, endPos) ~ _ ~ params ~ _ ~ _ ~ fnType ~ _ ~ _ ~ body ~ _ =>
+        FunDef(id, params, fnType, body).setPos(startPos, endPos)
     }
 
   // A list of parameter definitions.
