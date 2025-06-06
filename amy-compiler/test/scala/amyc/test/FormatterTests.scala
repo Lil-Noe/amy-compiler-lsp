@@ -33,6 +33,6 @@ class FormatterTests extends TestSuite {
   @Test def testHello() = shouldOutput("Hello")
   @Test def testHelloInt() = shouldOutput("HelloInt")
   @Test def testPrinting() = shouldOutput("Printing")
-  @Test def testTestLists() = shouldOutput("TestLists")
+  @Test def testTestLists() = shouldOutput("Lists")
 
 }
