@@ -22,12 +22,6 @@ Or
 
 When the extension is installed, open the CS-320_Amy_LSP\amy-files folder at the root of the project to test it with amy files.
 
-Here are a few point to take care regarding the LSP use : 
-- The files to test it on have to include the "amy-files" folder somewhere in their parents folders.
-- The "library" folder including Std.amy, List.amy and Option.amy has to be directly in the "amy-files" folder without any other subfolders in between.
-- The go to definition feature only works in the same file. This means the definition has to be in the same file as the variable for it to work.
-
-
 If changes are made to the compiler and LSP Server, here is the procedure to compress it to a .jar file and include it in the extension.
 1. First, open the lab06 folder and run "sbt reload clean assembly"
 2. Then go look for the .jar file at \target\scala-3.5.2\amyc-assembly-1.7.jar
