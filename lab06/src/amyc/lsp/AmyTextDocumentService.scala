@@ -424,9 +424,7 @@ class AmyTextDocumentService(server: AmyLanguageServer) extends TextDocumentServ
       val files = ctx.files.map(new File(_))
       val pipeline = AmyLexer.andThen(Parser.andThen(NameAnalyzer))
 
-      if (files.isEmpty) {
-        server.sendMsgToClient("No input files")
-      }
+      if (files.isEmpty) server.sendMsgToClient("No input files")
       files.find(!_.exists()).foreach { f =>
         server.sendMsgToClient(s"File not found: ${f.getName}")
       }
