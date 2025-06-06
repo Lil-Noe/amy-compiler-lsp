@@ -117,7 +117,9 @@ The language server provides support for the code highlighting as follows, direc
 The Language Server also implements the Go-to-definition feature, which consists in being redirected to the definition of a variable or a function when clicking on an occurrence of it. A user should only have to Ctrl+Click (or Cmd+Click on Mac) on a variable, or press F12 when the variable is selected. Then the IDE detects the user's request, asks for the definition and the Client side of the LSP asks the Server to provide the definition position.
 The following screenshots illustrate how it works on VSCode with the extension enabled. 
 
-<img src="res/goto-definition.gif" alt="Go-to-definition in python" width="100%"/>
+<img src="res/goto-definition1.png" alt="Go-to-definition in python" width="100%"/>
+
+<img src="res/goto-definition2.png" alt="Go-to-definition in python" width="100%"/>
 
 
 ## Implementation
