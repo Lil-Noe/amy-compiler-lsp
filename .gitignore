@@ -1,7 +1,7 @@
-lab06/target/
-lab06/project/
-lab06/.bloop/
-lab06/.metals/
-lab06/.vscode/
-lab06/.bsp/
+amy-compiler/target/
+amy-compiler/project/
+amy-compiler/.bloop/
+amy-compiler/.metals/
+amy-compiler/.vscode/
+amy-compiler/.bsp/
 .metals/*
