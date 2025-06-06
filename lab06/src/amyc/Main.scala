@@ -3,7 +3,6 @@ package amyc
 import ast._
 import utils._
 import parsing._
-import formatter._
 import analyzer._
 import codegen._
 import lsp._
@@ -12,6 +11,7 @@ import java.io.File
 
 import org.eclipse.lsp4j.jsonrpc.Launcher
 import org.eclipse.lsp4j.services.LanguageClient
+import formatting.{FormatPrinter, Formatter}
 
 object Main extends MainHelpers {
   private def parseArgs(args: Array[String]): Context = {
@@ -77,9 +77,10 @@ object Main extends MainHelpers {
       sys.exit(0)
     }
     val pipeline = {
+      if (ctx.format) Formatter.andThen(FormatPrinter)
+      else {
       AmyLexer.andThen(
         if (ctx.printTokens) DisplayTokens
-        else if (ctx.format) Formatter
         else Parser.andThen(
           if (ctx.printTrees) treePrinterN("Trees after parsing")
           else NameAnalyzer.andThen(
@@ -88,7 +89,7 @@ object Main extends MainHelpers {
               if (ctx.typeCheck) then treePrinterS("Trees after type checking")
               else (
                 if (ctx.interpret) then Interpreter
-                else CodeGen.andThen(CodePrinter))))))}
+                else CodeGen.andThen(CodePrinter))))))}}
 
     val files = ctx.files.map(new File(_))
 

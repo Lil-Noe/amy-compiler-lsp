@@ -149,13 +149,12 @@ object AmyLexer extends Pipeline[List[File], Iterator[Token]] with Lexers {
 
     for (file <- files) {
       val source = Source.fromFile(file.toString, SourcePositioner(file))
-      if (ctx.format) it ++= Iterator(FileToken(file.toString()))
       it ++= lexer
         .spawn(source)
         .filter { token =>
           token match {
             case SpaceToken()    => false
-            case CommentToken(_) => ctx.format
+            case CommentToken(_) => false
             case _               => true
           }
         }
