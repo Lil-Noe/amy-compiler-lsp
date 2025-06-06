@@ -12,6 +12,7 @@ object TokenFormatter {
   private var lastToken: Option[Token] = None
   private var builder: StringBuilder = StringBuilder()
 
+  // Adds text to the builder
   private def add_text(text: String): Unit = {
     if (atLineStart) {
       (0 until INDENT_LEVEL).foreach(_ => builder.append(INDENT_SYMBOL))
@@ -20,16 +21,19 @@ object TokenFormatter {
     builder.append(text)
   }
 
+  // Adds a newline to the builder 
   private def add_newline: Unit = {
     builder.append("\n")
     atLineStart = true
   }
 
+  // Adds a space to the builder
   private def add_space: Unit = {
     builder.append(" ")
     atLineStart = false
   }
 
+  // Applies formatting to a sequence of tokens and returns the formatted string
   def apply(tokens: Iterator[Token]): String = {
     INDENT_LEVEL = 0
     atLineStart = true
@@ -45,12 +49,15 @@ object TokenFormatter {
     builder.toString()
   }
 
+  // Handles each token and applies the appropriate formatting
   private def handleToken(t: Token): Unit = t match {
+    // A comment token
     case CommentToken(c) =>
       if (!atLineStart) add_newline
       add_text(c)
       add_newline
 
+    // A delimiter token
     case DelimiterToken(d) => d match {
       case "," =>
         add_text(","); add_space
@@ -94,6 +101,7 @@ object TokenFormatter {
         add_text(other)
     }
 
+    // An operator token
     case OperatorToken(op) => op match {
       case "&&" | "||" | "==" | "<=" | "<" | "+" | "*" | "/" | "%" | "++" =>
         add_space; add_text(op); add_space
@@ -113,6 +121,7 @@ object TokenFormatter {
         add_text(other)
     }
 
+    // A keyword token
     case KeywordToken(s) => s match {
       case "case" =>
         lastToken match {
@@ -173,6 +182,7 @@ object TokenFormatter {
         add_text(other); add_space
     }
 
+    // An identifier token
     case IdentifierToken(s) =>
       lastToken match {
         case Some(KeywordToken("object")) =>
@@ -194,9 +204,11 @@ object TokenFormatter {
           add_text(s)
       }
 
+    // A primitive type token
     case PrimTypeToken(s) =>
       add_text(s)
 
+    // An Int token
     case IntLitToken(v) =>
       lastToken match {
         case Some(IdentifierToken(_)) | Some(DelimiterToken(")")) | Some(DelimiterToken("}")) =>
@@ -205,18 +217,23 @@ object TokenFormatter {
           add_text(v.toString)
       }
 
+    // A Boolean token
     case BoolLitToken(b) =>
       add_text(b.toString);
 
+    // A String token
     case StringLitToken(s) =>
       add_text("\"" + s + "\"")
 
+    // The End of File token
     case EOFToken() =>
       ()
 
+    // An error token
     case ErrorToken(e) =>
       throw new AmycFatalError(s"Error: $e")
 
+    // Any other token type
     case _ =>
       ()
   }
