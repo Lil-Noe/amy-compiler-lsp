@@ -12,7 +12,6 @@ object TokenFormatter {
   private var lastToken: Option[Token] = None
   private var builder: StringBuilder = StringBuilder()
 
-  // Add formatted text to the builder
   private def add_text(text: String): Unit = {
     if (atLineStart) {
       (0 until INDENT_LEVEL).foreach(_ => builder.append(INDENT_SYMBOL))
@@ -21,148 +20,192 @@ object TokenFormatter {
     builder.append(text)
   }
 
-  // Skip a line
   private def add_newline: Unit = {
     builder.append("\n")
     atLineStart = true
   }
 
-  // Add a space
   private def add_space: Unit = {
     builder.append(" ")
     atLineStart = false
   }
 
   def apply(tokens: Iterator[Token]): String = {
-    // Iterate through the tokens and format them
-    while (tokens.hasNext) {
-      val token = tokens.next()
+    INDENT_LEVEL = 0
+    atLineStart = true
+    lastToken = None
+    builder = new StringBuilder
+
+    tokens.foreach { token =>
       handleToken(token)
       lastToken = Some(token)
     }
 
-    // Return the formatted string
+    if (!atLineStart) add_newline
     builder.toString()
   }
 
-  // Handle each token and format it accordingly
   private def handleToken(t: Token): Unit = t match {
     case CommentToken(c) =>
-      if c.startsWith("//") then {
-        lastToken match
-          case Some(DelimiterToken(";")) =>
-            ()
+      if (!atLineStart) add_newline
+      add_text(c)
+      add_newline
+
+    case DelimiterToken(d) => d match {
+      case "," =>
+        add_text(","); add_space
+
+      case ":" =>
+        add_text(":"); add_space
+
+      case ";" =>
+        add_text(";"); add_newline
+
+      case "=" =>
+        add_space; add_text("="); add_space
+
+      case "{" =>
+        lastToken match {
+          case Some(KeywordToken("else")) =>
+            add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
+          case Some(KeywordToken("if")) | Some(KeywordToken("for")) | Some(DelimiterToken(")")) =>
+            add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
           case _ =>
-            add_newline
-        add_text(c)
-        add_newline
-      } else {
-        add_text(c)
-      }
+            add_newline; add_text("{"); INDENT_LEVEL += 1; add_newline
+        }
 
-    case DelimiterToken(",") =>
-      add_text(",")
-      add_space
+      case "}" =>
+        INDENT_LEVEL = math.max(0, INDENT_LEVEL - 1)
+        lastToken match {
+          case Some(DelimiterToken("{")) =>
+            add_text("}"); add_newline
+          case Some(DelimiterToken("}")) =>
+            add_text("}"); add_newline
+          case _ =>
+            add_newline; add_text("}"); add_newline
+        }
 
-    case DelimiterToken("{") =>
-      add_newline
-      add_text("{")
-      INDENT_LEVEL += 1
-      add_newline
+      case other =>
+        add_text(other)
+    }
 
-    case DelimiterToken("}") =>
-      INDENT_LEVEL -= 1
-      lastToken match
-        case Some(DelimiterToken("}")) => ()
-        case _                         => add_newline
-      add_text("}")
-      add_newline
+    case OperatorToken(op) => op match {
+      case "&&" | "||" | "==" | "<=" | "<" | "+" | "*" | "/" | "%" | "++" =>
+        add_space; add_text(op); add_space
 
-    case DelimiterToken(";") =>
-      add_text(";")
-      add_newline
+      case "!" =>
+        add_text("!")
 
-    case DelimiterToken("=") =>
-      add_space
-      add_text("=")
-      add_space
+      case "-" =>
+        lastToken match {
+          case Some(IdentifierToken(_)) | Some(DelimiterToken(")")) | Some(DelimiterToken("}")) =>
+            add_space; add_text("-"); add_space
+          case _ =>
+            add_text("-");
+        }
 
-    case DelimiterToken(":") =>
-      add_text(":")
-      add_space
+      case other =>
+        add_text(other)
+    }
 
-    case DelimiterToken("(") =>
-      add_text("(")
+    case KeywordToken(s) => s match {
+      case "case" =>
+        add_newline; add_text("case"); add_space
 
-    case DelimiterToken(")") =>
-      add_text(")")
+      case "class" =>
+        add_newline; add_text("class"); add_space
 
-    case DelimiterToken(d) =>
-      add_text(d)
+      case "def" =>
+        add_newline; add_text("def"); add_space
 
-    case OperatorToken(op) =>
-      add_space
-      add_text(op)
-      add_space
+      case "match" =>
+        add_newline; add_text("match"); add_space
 
-    case KeywordToken("def") =>
-      add_newline
-      add_text("def")
-      add_space
+      case "else" =>
+        add_text("else")
 
-    case KeywordToken("object") =>
-      add_text("object")
-      add_space
+      case "extends" =>
+        add_space; add_text("extends"); add_space
 
-    case KeywordToken("end") =>
-      INDENT_LEVEL -= 1
-      add_newline
-      add_text("end")
-      add_space
+      case "if" =>
+        add_text("if"); add_space
 
-    case KeywordToken("error") =>
-      add_text("error")
+      case "object" =>
+        add_text("object"); add_space
 
-    case KeywordToken(s) =>
-      add_text(s)
-      add_space
+      case "end" =>
+        INDENT_LEVEL = 0
+        add_newline; add_newline; add_text("end"); add_space
+
+      case "val" =>
+        lastToken match {
+          case Some(IdentifierToken(_)) | Some(DelimiterToken(")")) | Some(DelimiterToken("}")) =>
+            add_newline; add_text("val"); add_space
+          case _ =>
+            add_text("val"); add_space
+        }
+
+      case "abstract" =>
+        add_text("abstract"); add_space
+
+      case "error" =>
+        add_text("error")
+
+      case "false" | "true" =>
+        add_text(s); add_space
+
+      case "_" =>
+        add_text("_"); add_space
+
+      case other =>
+        add_text(other); add_space
+    }
 
     case IdentifierToken(s) =>
       lastToken match {
         case Some(KeywordToken("object")) =>
-          add_text(s)
-          add_newline
-          INDENT_LEVEL += 1
+          add_text(s); add_newline; INDENT_LEVEL += 1
+
         case Some(DelimiterToken("}")) =>
-          add_newline
-          add_text(s)
+          add_newline; add_text(s)
+
         case Some(KeywordToken("end")) =>
+          add_text(s); add_newline
+
+        case Some(DelimiterToken(")")) =>
+          add_newline; add_text(s)
+
+        case Some(IdentifierToken(_)) =>
+          add_newline; add_text(s)
+
+        case _ =>
           add_text(s)
-          add_newline
-        case _ => add_text(s)
       }
 
     case PrimTypeToken(s) =>
       add_text(s)
 
-    case IntLitToken(s) =>
-      add_text(s.toString)
+    case IntLitToken(v) =>
+      lastToken match {
+        case Some(IdentifierToken(_)) | Some(DelimiterToken(")")) | Some(DelimiterToken("}")) =>
+          add_newline; add_text(v.toString); add_space
+        case _ =>
+          add_text(v.toString)
+      }
 
-    case BoolLitToken(s) =>
-      add_text(s.toString)
+    case BoolLitToken(b) =>
+      add_text(b.toString); add_space
 
     case StringLitToken(s) =>
       add_text("\"" + s + "\"")
 
+    case EOFToken() =>
+      ()
+
     case ErrorToken(e) =>
-      throw new AmycFatalError(s"Unexpected error: $e")
+      throw new AmycFatalError(s"Error: $e")
 
-    case EOFToken() => 
-      // Always add a newline at the end of the file
-      if (!atLineStart) add_newline
-
-    case t => 
-      throw new AmycFatalError(s"Unsupported token: $t")
+    case _ =>
+      ()
   }
-
 }

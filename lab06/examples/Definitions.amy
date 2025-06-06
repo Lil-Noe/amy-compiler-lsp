@@ -9,8 +9,8 @@ object Definitions
     Std.printString("func1 called")
   }
 
-  val x = 2
-  val y = 5
+  val x = 2;
+  val y = 5;
 
   /* This comment helps separating definitions from calls */
 
@@ -46,10 +46,10 @@ object Definitions
 
   /* 2nd part of comment */
 
-  val z = x + yS
-  val theta = func1()
+  val z = x + yS;
+  val theta = func1();
 
-  val nul = func2()
+  val nul = func2();
 
   Std.printString("Definitions done")
 end Definitions
