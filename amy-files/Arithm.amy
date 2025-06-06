@@ -31,5 +31,5 @@ object Arithmetic
   Std.printInt(gcd(17, 99)); // 1
   Std.printInt(gcd(16, 46)); // 2
   Std.printInt(gcd(222, 888)) // 222
-
+  
 end Arithmetic
