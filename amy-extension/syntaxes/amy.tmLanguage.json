@@ -2,36 +2,47 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "amy",
 	"patterns": [
-		{ "include": "#storage"     },
-		{ "include": "#keywords"    },
-		{ "include": "#types"	    },
+		{ "include": "#storage" },
+		{ "include": "#keywords" },
+		{ "include": "#types" },
+		{ "include": "#functionCall" },
+		{ "include": "#objectReference" },
 		{ "include": "#identifiers" },
-		{ "include": "#strings"     },
-		{ "include": "#numbers"     },
-		{ "include": "#booleans"    },
-		{ "include": "#comments"    },
-		{ "include": "#operators"   }
+		{ "include": "#strings" },
+		{ "include": "#numbers" },
+		{ "include": "#booleans" },
+		{ "include": "#comments" },
+		{ "include": "#operators" }
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control",
-				"match": "\\b(case|else|extends|if|match|error|end)\\b"
+				"match": "\\b(case|else|extends|if|match|error)\\b"
 			}]
 		},
 		"storage": {
 			"patterns": [
 				{
-					"begin": "\\b(def|val)\\b\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"begin": "(\\bdef\\b)\\s+([A-Za-z_][A-Za-z0-9_]*)",
 					"beginCaptures": {
 						"1": { "name": "storage.type" },
 						"2": { "name": "entity.name.function" }
 					},
-					"end": "(?=\\()", 
+					"end": "(?=\\()",
 					"patterns": []
 				},
 				{
-					"begin": "\\b(class|object)\\b\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"begin": "(\\bval\\b)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"beginCaptures": {
+						"1": { "name": "storage.type" },
+						"2": { "name": "variable.other" }
+					},
+					"end": "(?=\\s*:)",
+					"patterns": []
+				},
+				{
+					"begin": "\\b(class|object|end)\\b\\s+([A-Za-z_][A-Za-z0-9_]*)",
 					"beginCaptures": {
 						"1": { "name": "storage.type" },
 						"2": { "name": "entity.name.class" }
@@ -54,6 +65,26 @@
 				"name": "entity.name.type",
 				"match": "\\b(Boolean|Int|String|Unit|List|Cons|Nil)\\b"
 			}]
+		},
+		"functionCall": {
+			"patterns": [
+				{
+					"name": "entity.name.function",
+					"match": "\\b([A-Za-z_][A-Za-z0-9_]*)(?=\\s*\\()"
+				}
+			]
+		},
+		"objectReference": {
+			"patterns": [
+				{
+					"name": "entity.name.class",
+					"match": "\\b([A-Z][A-Za-z0-9_]*)(?=\\s*\\.)"
+				},
+				{
+					"name": "entity.name.class",
+					"match": "\\b([A-Z][A-Za-z0-9_]*)\\b"
+				}
+			]
 		},
 		"identifiers": {
       		"patterns": [{
