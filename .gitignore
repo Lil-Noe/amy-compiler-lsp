@@ -9,4 +9,17 @@ amy-compiler/wasmout/
 amy-extension/out/
 amy-extension/node_modules/
 
-.metals/*
+# Editor and IDE settings
+.vscode/
+.metals/
+.bloop/
+metals.sbt
+project/metals.sbt
+
+# SBT and Scala build artifacts
+target/
+project/target/
+project/project/
+
+# Mac OS folder settings (just in case)
+.DS_Store

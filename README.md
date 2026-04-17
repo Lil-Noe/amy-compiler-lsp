@@ -33,6 +33,6 @@ If changes are made to the extension, here is the procedure to compress it to a 
 
 ## Formatter
 
-To format the files, we need to run the command `--format` next to the files name in the terminal
+To format the files, run the command `--format` next to the files name in the terminal
 
 e.g. `sbt "run --format examples/Hello.amy examples/Hanoi.amy"`
