@@ -1,12 +1,10 @@
 # Amy Compiler & LSP
 
-This project has been made by Tristan Cendan, Roman Batut and Lilian Noé.
+Implements a complete compiler and interpreter pipeline for Amy language, along with a formatter and a Language Server Protocol.
+The LSP includes the server part on Amy side and a VS Code extension that implements the client side and some syntax highlighting.
 
-The goal of the class and of the project is to implement a compiler for the Amy language, a specific programming language based on Scala. The original pipeline build was guided up to WebAssembly code generation.
-
-The final part of this project is to implement additional features on top of this project.
-Our goal was to have user-oriented features, that's why we decided to implement a formatter and an LSP using a VSCode Extension.
-
+This project is part of the EPFL CS-320 Computer Language Processing course.
+Authors: Lilian Noé, Tristan Cendan, Roman Batut.
 
 ## Compiler & Interpreter
 
@@ -17,7 +15,7 @@ This part was guided in the context of EPFL CS-320 class.
 
 The compiler consists in a multi-stage pipeline:
 
-1. **Lexical Analysis (Lexer)**: Uses the formally verified `ZipLex` library to read source code and transform it into a sequence of structured Tokens.
+1. **Lexical Analysis (Lexer)**: Uses the `Silex` library to read source code and transform it into a sequence of structured Tokens.
 2. **Syntax Analysis (Parser)**: Uses the `Scallion` parser combinator library to process the tokens through a LL(1) grammar to build an Abstract Syntax Tree (AST).
 3. **Semantic Analysis**:
     - **Name Analyzer**: Resolves variable and function scopes, transforming the Nominal AST into a Symbolic AST. 
@@ -84,37 +82,140 @@ Runs the frontend pipeline up to the Type-Checking phase and halts. Useful for v
 ./amytc.sh examples/Hello.amy
 ```
 
+## Formatter Feature
+
+The in-place formatter aims to keep familiar and consistent syntax by re-writing Amy files following pre-defined format rules.
+
+To format the desired files, run the command `--format` next to the files path:
+```bash
+sbt "run --format examples/Hello.amy examples/Hanoi.amy"
+```
+
+Note must be taken that the concerned file must at least be tokenizable for the formatter to work.
+
+Here is an example of how the formatter works :
+
+```scala
+// Before formatting: 
+        object Hanoi
+def 
+solve(n : Int(
+    32)
+) : Int(32) = {    
+     if (n < 1) {      error("can't solve Hanoi for less than 1 plate") // Skip if not enough plates
+   }                else 
+   {      if (n == 1) {        1      } else {   
+     2 * (solve(n - 1) + 1)      }   
+ }  }  Std.printString("Hanoi for 4 plates: " ++ Std.
 
 
+intToString(solve(4)
+))
+end                 Hanoi
+```
+
+```scala
+// After formatting: 
+object Hanoi
+
+  def solve(n: Int(32)): Int(32) = 
+  {
+    if (n < 1)
+    {
+      error("can't solve Hanoi for less than 1 plate")
+      // Skip if not enough plates
+    }
+    else 
+    {
+      if (n == 1)
+      {
+        1
+      }
+      else 
+      {
+        2 * (solve(n - 1) + 1)
+      }
+    }
+  }
+
+  Std.printString("Hanoi for 4 plates: " ++ Std.intToString(solve(4)))
+end Hanoi
+
+```
 
 
+## Language Server Protocol
+
+The **LSP (Language Server Protocol)** is a communication protocol to exchange messages between an IDE (the client) and the language (the server). Based on information the client sends (e.g. the file and the cursor's position), the server provides specific functionalities, like go-to-definition
+or dynamic completion.
+
+### Client Side
+
+To show how the LSP works and try it, we have created a VS Code extension in [*`amy-extension`*](/amy-extension/).  
+This extension also features a syntax highlighter for Amy files.
+
+Here is the process to launch this Amy extension: 
+1. Open the [*`amy-extension`*](/amy-extension/) folder.
+2. Run the command `npm install` in the terminal.
+3. Run the command `npm run compile` in the terminal.
+4. Go to '*Run and Debug*' on VSCode and click on the '*Run Extension*' button.
+
+You can also compress the folder to a `.vsix` file and it install permanently using the extension manager:
+1. Open the [*`amy-extension`*](/amy-extension/) folder and run `npm run compile`.
+2. Run the command `vsce package`.
+3. Install the `amy.vsix` file using the extension manager ([here](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix) is the documentation to install a `.vsix` file in VS Code). 
+
+Once the extension is installed or launched, you can test it with amy files present in  [*`examples`*](/examples/) folder.
 
 
-## Language Server Process Extension
+### Server Side
 
-To launch the Amy extension that includes the LSP, either : 
-1. Open amy-extension folder in VSCode
-2. Run the command `npm install` in the terminal
-3. Run the command `npm run compile` in the terminal
-4. Go to 'Run and Debug' on VSCode and click on the 'Run Extension' button
+The Language Server implements the **Go-to-definition** feature, which consists in getting redirected to a variable or a function definition when clicking on an occurrence.  
 
-Or
-- Use the amy.vsix extension file and install it on VSCode using extension manager. You can find [here](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix) the documentation to install a vsix file.
+With the VS Code extension running (or other IDE Amy extension), one only needs to `Ctrl+Click` (or `Cmd+Click` on Mac) on a variable, or press `F12` when the variable is selected, to get re-directed to the definition. 
 
+If changes are made to the compiler and LSP Server, here is the way to compress it to a `.jar` file:
+1. First, run the following command: 
+```bash 
+sbt reload clean assembly 
+```
+2. Then, look for the `.jar` file at *`target/scala-3.7.2/amyc-assembly-1.7.jar`*
+3. Rename it to `lsp-server.jar` and put it in the [*`amy-extension/server/`*](./amy-extension/server/) folder.
 
-When the extension is installed, open the `CS-320_Amy_LSP\amy-files folder` (or any folder that contains amy files) at the root of the project to test it with amy files.
+## Project Structure
 
-If changes are made to the compiler and LSP Server, here is the procedure to compress it to a .jar file and include it in the extension.
-1. First, open the lab05 folder and run `sbt reload clean assembly`
-2. Then go look for the .jar file at `\target\scala-3.7.2\amyc-assembly-1.7.jar`
-3. Rename it to lsp-server.jar and include it into `CS-320_Amy_LSP\amy-extension\server\`
-
-If changes are made to the extension, here is the procedure to compress it to a .vsix file.
-1. Open the `amy-extension` folder and run `npm run compile` in the terminal
-2. Run the command `vsce package` in the terminal
-
-## Formatter
-
-To format the files, run the command `--format` next to the files name in the terminal
-
-e.g. `sbt "run --format examples/Hello.amy examples/Hanoi.amy"`
+```text
+amy-compiler-lsp/
+├── README.md
+├── .gitignore
+├── build.sbt
+│
+├── docs/
+├── lib/
+├── project/
+├── scripts/
+│
+├── amy-extension/              # The LSP VS Code Client
+│
+├── examples/                   # Some Amy files
+│
+│
+├── src/
+│   └── amyc/
+│       │
+│       ├── analyzer/           # Name Analysis and Type Checking
+│       ├── ast/                # Abstract Syntax Tree definitions
+│       ├── codegen/            # WebAssembly Code Generation
+│       ├── formatting/         # The formatter feature
+│       ├── interpreter/        # JVM-based tree-walking interpreter for direct execution
+│       ├── lsp/                # Language Server Protocol Implementation
+│       ├── parsing/            # Lexer (Silex) and Parser (Scallion)
+│       ├── wasm/               # WebAssembly AST definitions and module printer logic
+│       ├── utils/   
+│       │
+│       └── Main.scala
+│ 
+├── test/                       # JUnit Test Suites
+│   ├── resources/       
+│   └── scala/ 
+```

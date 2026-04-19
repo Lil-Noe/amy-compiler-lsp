@@ -1,5 +1,8 @@
 # Turning a grammar into an LL(1) grammar (practical checklist)
 
+TODO: Clean this doc
+
+
 Informally, LL(1) means: **when parsing a nonterminal A, one lookahead token decides which production (grammar rule) with left hand side A to use**. To make it LL(1), we must modify the grammar so that each choice is unambiguous with 1 token of lookahead.
 
 ## 1. Usual LL(1) blockers

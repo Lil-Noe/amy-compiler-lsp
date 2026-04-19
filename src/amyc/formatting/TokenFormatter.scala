@@ -4,7 +4,7 @@ import amyc.parsing._
 import amyc.parsing.Tokens._
 import amyc.utils.AmycFatalError
 
-object TokenFormatter {
+class TokenFormatter {
 
   private val INDENT_SYMBOL: String = "  "
   private var INDENT_LEVEL: Int = 0
@@ -236,5 +236,21 @@ object TokenFormatter {
     // Any other token type
     case _ =>
       ()
+  }
+
+  def format(tokens: Iterator[Token]): String = {
+    tokens.foreach { token =>
+      handleToken(token)
+      lastToken = Some(token)
+    }
+    if (!atLineStart) add_newline
+    builder.toString()
+  }
+}
+
+object TokenFormatter {
+  def apply(tokens: Iterator[Token]): String = {
+    val formatter = new TokenFormatter() // Spawns a fresh notepad!
+    formatter.format(tokens)
   }
 }

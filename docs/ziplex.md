@@ -1,5 +1,8 @@
 # ZipLex Reference Guide
 
+TODO: Replace Ziplex doc with Silex
+
+
 ZipLex is a formally verified lexer library written in Scala. Its primary purpose is to convert a raw input string of characters (like an `.amy` file) into a sequence of structured Tokens. Unlike standard regex libraries, it is built with strict mathematical properties to ensure verifiable correctness, which is why it requires purely regular languages to define rules.
 
 ## Write a lexer with ZipLex
