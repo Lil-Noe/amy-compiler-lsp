@@ -84,7 +84,7 @@ object TokenFormatter {
         }
 
       case "}" =>
-        INDENT_LEVEL = math.max(0, INDENT_LEVEL - 1)
+        INDENT_LEVEL = Math.max(0, INDENT_LEVEL - 1)
         lastToken match {
           case Some(DelimiterToken("{")) =>
             add_text("}"); add_newline

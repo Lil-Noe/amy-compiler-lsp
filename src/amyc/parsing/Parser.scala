@@ -24,9 +24,9 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
   def op(string: String): Syntax[Token] = elem(OperatorKind(string))
   def kw(string: String): Syntax[Token] = elem(KeywordKind(string))
 
-  implicit def delimiter(string: String): Syntax[Token] = elem(
-    DelimiterKind(string)
-  )
+  given delimiter: Conversion[String, Syntax[Token]] with {
+    def apply(string: String): Syntax[Token] = elem(DelimiterKind(string))
+  }
 
   // An entire program (the starting rule for any Amy file).
   lazy val program: Syntax[Program] = many1(many1(module) ~<~ eof).map(ms =>
@@ -35,14 +35,15 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A module (i.e., a collection of definitions and an initializer expression)
   lazy val module: Syntax[ModuleDef] =
-    (kw("object") ~ identifier ~ many(definition) ~ opt(expr) ~ kw(
-      "end"
-    ) ~ identifier).map { case kw ~ id ~ defs ~ body ~ _ ~ id1 =>
-      if id == id1 then ModuleDef(id, defs.toList, body).setPos(kw)
-      else
-        throw new AmycFatalError(
-          "Begin and end module names do not match: " + id + " and " + id1
-        )
+    (
+      kw("object") ~ identifier ~ many(definition) ~ opt(expr) ~ kw("end") ~ identifier
+    ).map { 
+      case kw ~ id ~ defs ~ body ~ _ ~ id1 =>
+        if id == id1 then ModuleDef(id, defs.toList, body).setPos(kw)
+        else
+          throw new AmycFatalError(
+            "Begin and end module names do not match: " + id + " and " + id1
+          )
     }
 
   // An identifier.
@@ -61,16 +62,19 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // An abstract class definition.
   lazy val abstractClassDefinition: Syntax[ClassOrFunDef] =
-    (kw("abstract") ~ kw("class") ~ identifier).map { 
+    (
+      kw("abstract") ~ kw("class") ~ identifier
+    ).map { 
       case kw ~ _ ~ id =>
         AbstractClassDef(id).setPos(kw)
     }
 
   // A case class definition.
   lazy val caseClassDefinition: Syntax[ClassOrFunDef] =
-    (kw("case") ~ kw("class") ~ identifier 
-    ~ delimiter("(") ~ parameters ~ delimiter(")") 
-    ~ kw("extends") ~ identifier
+    (
+      kw("case") ~ kw("class") ~ identifier 
+      ~ "(" ~ parameters ~ ")" 
+      ~ kw("extends") ~ identifier
     ).map {
       case kw ~ _ ~ id ~ _ ~ params ~ _ ~ _ ~ parent =>
         CaseClassDef(id, params.map(_.tt), parent).setPos(kw)
@@ -78,10 +82,11 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A function definition
   lazy val functionDefinition: Syntax[ClassOrFunDef] =
-    (kw("def") ~ identifierPos 
-    ~ delimiter("(") ~ parameters ~ delimiter(")") 
-    ~ delimiter(":") ~ typeTree ~ delimiter("=") 
-    ~ delimiter("{") ~ expr ~ delimiter("}")
+    (
+      kw("def") ~ identifierPos 
+      ~ "(" ~ parameters ~ ")" 
+      ~ ":" ~ typeTree ~ "=" 
+      ~ "{" ~ expr ~ "}"
     ).map {
       case kw ~ (id, startPos, endPos) ~ _ ~ params ~ _ ~ _ ~ fnType ~ _ ~ _ ~ body ~ _ =>
         FunDef(id, params, fnType, body).setPos(startPos, endPos)
@@ -93,7 +98,7 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A parameter definition, i.e., an identifier along with the expected type.
   lazy val parameter: Syntax[ParamDef] =
-    (identifierPos ~ delimiter(":") ~ typeTree).map { 
+    (identifierPos ~ ":" ~ typeTree).map { 
       case (id, startPos, endPos) ~ _ ~ tt => ParamDef(id, tt).setPos(startPos, endPos)
     }
 
@@ -131,7 +136,7 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A user-defined type (such as `List`).
   lazy val identifierType: Syntax[TypeTree] =
-    (identifierPos ~ opt(delimiter(".") ~ identifier)) map {
+    (identifierPos ~ opt("." ~ identifier)) map {
       case (id, startPos, endPos) ~ None => 
         TypeTree(ClassType(QualifiedName(None, id)))
         .setPos(startPos, endPos)
@@ -148,15 +153,15 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A val declaration expression.
   lazy val letExpr: Syntax[Expr] =
-    (kw("val") ~ parameter ~ delimiter("=") ~ ifOrMatchExpr ~ delimiter(
-      ";"
-    ) ~ expr) map { case _ ~ nameAndType ~ _ ~ value ~ _ ~ body =>
+    (
+      kw("val") ~ parameter ~ "=" ~ ifOrMatchExpr ~ ";" ~ expr
+    ).map { case _ ~ nameAndType ~ _ ~ value ~ _ ~ body =>
       Let(nameAndType, value, body).setPos(nameAndType)
     }
 
   // A ; operator expression.
   lazy val semiColExpr: Syntax[Expr] =
-    (ifOrMatchExpr ~ opt(delimiter(";") ~ expr)) map {
+    (ifOrMatchExpr ~ opt((";" ~ expr))) map {
       case exp ~ None           => exp.setPos(exp)
       case exp ~ Some(_ ~ body) => Sequence(exp, body).setPos(exp)
     }
@@ -164,7 +169,7 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
   // Either an if or a binary expression, optionally matched on X times.
   lazy val ifOrMatchExpr: Syntax[Expr] =
     ((ifExpr | binaryExpr) ~ opt(
-      many1(kw("match") ~ delimiter("{") ~ many1(matchCase) ~ delimiter("}"))
+      many1(kw("match") ~ "{" ~ many1(matchCase) ~ "}")
     )) map {
       case exp ~ None => exp.setPos(exp)
       case exp ~ Some(
@@ -177,17 +182,13 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // A case for a match expression.
   lazy val matchCase: Syntax[MatchCase] =
-    (kw("case") ~ pattern ~ delimiter("=>") ~ expr) map {
+    (kw("case") ~ pattern ~ "=>" ~ expr) map {
       case kw ~ pat ~ _ ~ exp => MatchCase(pat, exp).setPos(kw)
     }
 
   // An 'if () then {} else {}' expression.
   lazy val ifExpr: Syntax[Expr] =
-    (kw("if") ~ delimiter("(") ~ expr ~ delimiter(")") ~ delimiter(
-      "{"
-    ) ~ expr ~ delimiter("}") ~ kw("else") ~ delimiter("{") ~ expr ~ delimiter(
-      "}"
-    )) map { case kw ~ _ ~ cond ~ _ ~ _ ~ thenn ~ _ ~ _ ~ _ ~ elze ~ _ =>
+    (kw("if") ~ "(" ~ expr ~ ")" ~ "{" ~ expr ~ "}" ~ kw("else") ~ "{" ~ expr ~ "}").map { case kw ~ _ ~ cond ~ _ ~ _ ~ thenn ~ _ ~ _ ~ _ ~ elze ~ _ =>
       Ite(cond, thenn, elze).setPos(kw)
     }
 
@@ -226,6 +227,7 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
       case (lhs, "==", rhs) => Equals(lhs, rhs)
       case (lhs, "&&", rhs) => And(lhs, rhs)
       case (lhs, "||", rhs) => Or(lhs, rhs)
+      case _ => throw new AmycFatalError("Unexpected binary operator in expression")
     }
 
   // An expression that takes 1 operand.
@@ -265,15 +267,15 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // The Unit pattern, as it's not in the literal rule.
   lazy val unitPattern: Syntax[Pattern] =
-    (delimiter("(") ~ delimiter(")")).map { 
+    ( "(" ~ ")" ).map { 
       case _ ~ _ =>
         LiteralPattern(UnitLiteral())
     }
 
   // A pattern composed of a case class.
   lazy val caseClassPattern: Syntax[Pattern] =
-    (identifierPos ~ opt(delimiter(".") ~ identifier) ~ opt(
-      delimiter("(") ~ patterns ~ delimiter(")")
+    (identifierPos ~ opt("." ~ identifier) ~ opt(
+      "(" ~ patterns ~ ")"
     )).map {
       // A simple variable pattern.
       case (id, startPos, endPos) ~ None ~ None => IdPattern(id).setPos(startPos, endPos)
@@ -298,8 +300,8 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // Either a variable or a function call.
   lazy val variableOrCall: Syntax[Expr] =
-    (identifierPos ~ opt(delimiter(".") ~ identifierPos) 
-    ~ opt(delimiter("(") ~ args ~ delimiter(")")))
+    (identifierPos ~ opt("." ~ identifierPos) 
+    ~ opt("(" ~ args ~ ")"))
     .map {
       // A simple var.
       case (id, startPos, endPos) ~ None ~ None => Variable(id).setPos(startPos, endPos)
@@ -319,14 +321,14 @@ object Parser extends Pipeline[Iterator[Token], Program] with Parsers {
 
   // Either a parenthesised expression or the Unit literal - important for LL1.
   lazy val parenExpr =
-    (delimiter("(") ~ opt(expr) ~ delimiter(")")) map {
+    ( "(" ~ opt(expr) ~ ")" ) map {
       case _ ~ None ~ _      => UnitLiteral()
       case _ ~ Some(exp) ~ _ => exp
     }
 
   // The error expression.
   lazy val errorExpr: Syntax[Expr] =
-    (kw("error") ~ delimiter("(") ~ expr ~ delimiter(")")) map {
+    (kw("error") ~ "(" ~ expr ~ ")") map {
       case _ ~ _ ~ exp ~ _ => Error(exp)
     }
 

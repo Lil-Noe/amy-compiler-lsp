@@ -9,6 +9,15 @@ import amyc.ast.Identifier
 // Takes a symbolic program and rejects it if it does not follow the Amy typing rules.
 object TypeChecker
     extends Pipeline[(Program, SymbolTable), (Program, SymbolTable)] {
+  
+  // Represents a type variable.
+  // It extends Type, but it is meant only for internal type checker use,
+  //  since no Amy value can have such type.
+  case class TypeVariable private (id: Int) extends Type
+  object TypeVariable {
+    private val c = new UniqueCounter[Unit]
+    def fresh(): TypeVariable = TypeVariable(c.next(()))
+  }
 
   def run(ctx: Context)(v: (Program, SymbolTable)): (Program, SymbolTable) = {
     import ctx.reporter._
@@ -17,20 +26,11 @@ object TypeChecker
 
     case class Constraint(found: Type, expected: Type, pos: Position)
 
-    // Represents a type variable.
-    // It extends Type, but it is meant only for internal type checker use,
-    //  since no Amy value can have such type.
-    case class TypeVariable private (id: Int) extends Type
-    object TypeVariable {
-      private val c = new UniqueCounter[Unit]
-      def fresh(): TypeVariable = TypeVariable(c.next(()))
-    }
-
     // Generates typing constraints for an expression `e` with a given expected type.
     // The environment `env` contains all currently available bindings (you will have to
     //  extend these, e.g., to account for local variables).
     // Returns a list of constraints among types. These will later be solved via unification.
-    def genConstraints(e: Expr, expected: Type)(implicit
+    def genConstraints(e: Expr, expected: Type)(using 
         env: Map[Identifier, Type]
     ): List[Constraint] = {
 
@@ -155,7 +155,7 @@ object TypeChecker
         case Let(df, value, body) =>
           // Variable only exists in the body.
           genConstraints(value, df.tt.tpe) ++
-          genConstraints(body, expected)(env + (df.name -> df.tt.tpe))
+          genConstraints(body, expected)(using env + (df.name -> df.tt.tpe))
         case Ite(cond, thenn, elze) =>
           // Must return the same type as the caller.
           genConstraints(cond, BooleanType) ++
@@ -206,7 +206,7 @@ object TypeChecker
           ): List[Constraint] = {
             val (patConstraints, moreEnv) =
               patternBindings(cse.pat, scrutExpected)
-            patConstraints ++ genConstraints(cse.expr, expected)(env ++ moreEnv)
+            patConstraints ++ genConstraints(cse.expr, expected)(using env ++ moreEnv)
           }
 
           val st = TypeVariable.fresh()
@@ -265,11 +265,11 @@ object TypeChecker
     program.modules.foreach { mod =>
       mod.defs.collect { case FunDef(_, params, retType, body) =>
         val env = params.map { case ParamDef(name, tt) => name -> tt.tpe }.toMap
-        solveConstraints(genConstraints(body, retType.tpe)(env))
+        solveConstraints(genConstraints(body, retType.tpe)(using env))
       }
 
       val tv = TypeVariable.fresh()
-      mod.optExpr.foreach(e => solveConstraints(genConstraints(e, tv)(Map())))
+      mod.optExpr.foreach(e => solveConstraints(genConstraints(e, tv)(using Map())))
     }
 
     v

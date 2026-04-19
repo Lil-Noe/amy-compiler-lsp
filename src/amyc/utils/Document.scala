@@ -8,7 +8,7 @@ abstract class Document {
   def print: String = {
     val sb = new StringBuffer()
 
-    def rec(d: Document)(implicit ind: Int, first: Boolean): Unit = d match {
+    def rec(d: Document)(using ind: Int, first: Boolean): Unit = d match {
       case Raw(s) =>
         if (first && s.nonEmpty) sb.append(("  " * ind))
         sb.append(s)

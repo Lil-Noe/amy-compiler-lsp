@@ -1,6 +1,8 @@
 package amyc
 package codegen
 
+import scala.language.implicitConversions
+
 import analyzer._
 import amyc.ast.Identifier
 import amyc.ast.SymbolicTreeModule.{Call => AmyCall, Div => AmyDiv, And => AmyAnd, Or => AmyOr, _}
@@ -35,7 +37,7 @@ object CodeGen extends Pipeline[(Program, SymbolTable), Module] {
       val name = fullName(owner, fd.name)
       Function(name, fd.params.size, isMain){ lh =>
         val locals = fd.paramNames.zipWithIndex.toMap
-        val body = cgExpr(fd.body)(locals, lh)
+        val body = cgExpr(fd.body)(using locals, lh)
         val comment = Comment(fd.toString)
         if (isMain) {
           body <:> Drop // Main functions do not return a value,
@@ -51,7 +53,7 @@ object CodeGen extends Pipeline[(Program, SymbolTable), Module] {
     // Additional arguments are a mapping from identifiers (parameters and variables) to
     // their index in the wasm local variables, and a LocalsHandler which will generate
     // fresh local slots as required.
-    def cgExpr(expr: Expr)(implicit locals: Map[Identifier, Int], lh: LocalsHandler): Code = {
+    def cgExpr(expr: Expr)(using locals: Map[Identifier, Int], lh: LocalsHandler): Code = {
       expr match {
 
         // Literals and Variables
@@ -123,7 +125,7 @@ object CodeGen extends Pipeline[(Program, SymbolTable), Module] {
           Comment(expr.toString) <:> cgExpr(lhs) <:> Drop <:> cgExpr(rhs)
         case Let(df, value, body)   =>
           val fl = lh.getFreshLocal()
-          Comment(expr.toString) <:> cgExpr(value) <:> SetLocal(fl) <:> cgExpr(body)(locals + (df.name -> fl), lh)
+          Comment(expr.toString) <:> cgExpr(value) <:> SetLocal(fl) <:> cgExpr(body)(using locals + (df.name -> fl), lh)
         case Ite(cond, thenn, elze) =>
           Comment(expr.toString) <:> cgExpr(cond) <:> If_i32 <:> cgExpr(thenn) <:> Else <:> cgExpr(elze) <:> End
           
@@ -163,7 +165,7 @@ object CodeGen extends Pipeline[(Program, SymbolTable), Module] {
                 // Match fields and collect bindings
                 val (fieldChecks, collectedBindings) = args.zipWithIndex.foldLeft((List.empty[Code], locals)) {
                   case ((codes, binds), (subPat, idx)) =>
-                    val loadField = GetLocal(addr) <:> adtField(idx) <:> Load
+                    val loadField = GetLocal(addr) <:> adtField(idx + 1) <:> Load
                     val (subCode, subBinds) = matchAndBind(subPat)
                     (codes :+ (loadField <:> subCode), binds ++ subBinds)
                 }
@@ -187,7 +189,7 @@ object CodeGen extends Pipeline[(Program, SymbolTable), Module] {
           // Generate code for each case
           val casesCode: List[Code] = cases.map { c =>
             val (matchCode, caseLocals) = matchAndBind(c.pat)
-            GetLocal(scrutineeAddress) <:> matchCode <:> If_i32 <:> cgExpr(c.expr)(locals ++ caseLocals, lh) <:> Else
+            GetLocal(scrutineeAddress) <:> matchCode <:> If_i32 <:> cgExpr(c.expr)(using locals ++ caseLocals, lh) <:> Else
           }
           // Default error if no pattern matches
           val defaultCode: Code = mkString("Matching error: ") <:> Call("Std_printString") <:> Unreachable

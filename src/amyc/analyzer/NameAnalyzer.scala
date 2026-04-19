@@ -118,12 +118,12 @@ object NameAnalyzer extends Pipeline[N.Program, (S.Program, SymbolTable)] {
         sym,
         newParams,
         S.TypeTree(sig.retType).setPos(retType),
-        transformExpr(body)(module, (paramsMap, Map()))
+        transformExpr(body)(using module, (paramsMap, Map()))
       ).setPos(fd)
     }
 
     def transformExpr(expr: N.Expr)
-                     (implicit module: String, names: (Map[String, Identifier], Map[String, Identifier])): S.Expr = {
+                     (using module: String, names: (Map[String, Identifier], Map[String, Identifier])): S.Expr = {
       val (params, locals) = names
       val res = expr match {
         case N.Variable(name) =>
@@ -192,7 +192,7 @@ object NameAnalyzer extends Pipeline[N.Program, (S.Program, SymbolTable)] {
           S.Let(
             S.ParamDef(sym, S.TypeTree(tpe)).setPos(vd),
             transformExpr(value),
-            transformExpr(body)(module, (params, locals + (vd.name -> sym)))
+            transformExpr(body)(using module, (params, locals + (vd.name -> sym)))
           )
         case N.Ite(cond, thenn, elze) =>
           S.Ite(transformExpr(cond), transformExpr(thenn), transformExpr(elze))
@@ -200,7 +200,7 @@ object NameAnalyzer extends Pipeline[N.Program, (S.Program, SymbolTable)] {
           def transformCase(cse: N.MatchCase) = {
             val N.MatchCase(pat, rhs) = cse
             val (newPat, moreLocals) = transformPattern(pat)
-            S.MatchCase(newPat, transformExpr(rhs)(module, (params, locals ++ moreLocals)).setPos(rhs)).setPos(cse)
+            S.MatchCase(newPat, transformExpr(rhs)(using module, (params, locals ++ moreLocals)).setPos(rhs)).setPos(cse)
           }
 
           def transformPattern(pat: N.Pattern): (S.Pattern, List[(String, Identifier)]) = {
@@ -255,7 +255,7 @@ object NameAnalyzer extends Pipeline[N.Program, (S.Program, SymbolTable)] {
         S.ModuleDef(
           table.getModule(name).get,
           defs map (transformDef(_, name)),
-          optExpr map (transformExpr(_)(name, (Map(), Map())))
+          optExpr map (transformExpr(_)(using name, (Map(), Map())))
         ).setPos(mod)
       }
     ).setPos(p)

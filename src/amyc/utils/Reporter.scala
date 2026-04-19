@@ -33,10 +33,10 @@ class Reporter {
   }
 
   // Versions for Positioned
-  def info(msg: Any, pos: Positioned): Unit = info(msg, pos.position)
-  def warning(msg: Any, pos: Positioned): Unit = warning(msg, pos.position)
-  def error(msg: Any, pos: Positioned): Unit = error(msg, pos.position)
-  def fatal(msg: Any, pos: Positioned): Nothing = fatal(msg, pos.position)
+  def info(msg: Any, pos: Positioned): Unit = info(msg, pos.startPosition)
+  def warning(msg: Any, pos: Positioned): Unit = warning(msg, pos.startPosition)
+  def error(msg: Any, pos: Positioned): Unit = error(msg, pos.startPosition)
+  def fatal(msg: Any, pos: Positioned): Nothing = fatal(msg, pos.startPosition)
 
 
   /** Terminates the compiler if any errors have been detected. */

@@ -9,5 +9,7 @@ case class Context(
   printNames: Boolean = false,
   interpret: Boolean = false,
   typeCheck: Boolean = false,
-  help: Boolean = false
+  help: Boolean = false,
+  format: Boolean = false,
+  serverMode: Boolean = false
 )

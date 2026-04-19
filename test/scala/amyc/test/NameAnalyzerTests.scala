@@ -13,7 +13,8 @@ class NameAnalyzerTests extends TestSuite {
   private class TestUniquePrinter extends SymbolicPrinter {
     private val counter = new UniqueCounter[String]
     private val map = scala.collection.mutable.Map[Identifier, Int]()
-    override implicit def printName(name: Identifier)(implicit printUniqueIds: Boolean): Document = {
+    
+    override def renderName(name: Identifier)(using printUniqueIds: Boolean): Document = {
       if (printUniqueIds) {
         val id = map.getOrElseUpdate(name, counter.next(name.name))
         s"${name.name}_$id"
@@ -26,7 +27,7 @@ class NameAnalyzerTests extends TestSuite {
   private val treePrinterS: Pipeline[(Program, SymbolTable), Unit] = {
     new Pipeline[(Program, SymbolTable), Unit] {
       def run(ctx: Context)(v: (Program, SymbolTable)) = {
-        println((new TestUniquePrinter)(v._1)(true))
+        println((new TestUniquePrinter)(v._1)(using true))
       }
     }
   }

@@ -62,7 +62,7 @@ object Interpreter extends Pipeline[(Program, SymbolTable), Unit] {
     }
 
     // Interprets a function, using evaluations for local variables contained in 'locals'
-    def interpret(expr: Expr)(implicit locals: Map[Identifier, Value]): Value = {
+    def interpret(expr: Expr)(using locals: Map[Identifier, Value]): Value = {
       expr match {
 
         // Literals and Variables
@@ -118,14 +118,14 @@ object Interpreter extends Pipeline[(Program, SymbolTable), Unit] {
               case Some(func) => func(args map interpret)
               case None       => 
                 val func = findFunction(funcOwner, funcName)
-                interpret(func.body)(locals ++ (func.paramNames zip args.map(interpret)))
+                interpret(func.body)(using locals ++ (func.paramNames zip args.map(interpret)))
             }
           }
         
 
         // Control-Flow
         case Sequence(e1, e2)       => interpret(e1); interpret(e2)
-        case Let(df, value, body)   => interpret(body)(locals + (df.name -> interpret(value)))
+        case Let(df, value, body)   => interpret(body)(using locals + (df.name -> interpret(value)))
         case Ite(cond, thenn, elze) => if (interpret(cond).asBoolean) then interpret(thenn) else interpret(elze)
 
 
@@ -165,7 +165,7 @@ object Interpreter extends Pipeline[(Program, SymbolTable), Unit] {
             }
             .find(_._2.isDefined) match {
             case Some((rhs, Some(moreLocals))) =>
-              interpret(rhs)(locals ++ moreLocals)
+              interpret(rhs)(using locals ++ moreLocals)
             case _ =>
               // No case matched
               ctx.reporter.fatal(
@@ -180,7 +180,7 @@ object Interpreter extends Pipeline[(Program, SymbolTable), Unit] {
       m <- program.modules
       e <- m.optExpr
     } {
-      interpret(e)(Map())
+      interpret(e)(using Map())
     }
   }
 }

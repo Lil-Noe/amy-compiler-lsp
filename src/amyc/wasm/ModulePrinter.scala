@@ -7,7 +7,9 @@ import Instructions._
 
 // Printer for Wasm modules
 object ModulePrinter {
-  private implicit def s2d(s: String): Raw = Raw(s)
+  private given Conversion[String, Raw] with {
+    def apply(s: String): Raw = Raw(s)
+  }
 
   private def mkMod(mod: Module): Document = Stacked(
     "(module ",

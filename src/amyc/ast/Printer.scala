@@ -9,12 +9,14 @@ trait Printer {
   val treeModule: TreeModule
   import treeModule._
 
-  implicit def printName(name: Name)(implicit printUniqueIds: Boolean): Document
-  implicit def printQName(name: QualifiedName)(implicit printUniqueIds: Boolean): Document
+  given printName(using printUniqueIds: Boolean): Conversion[Name, Document]
+  given printQName(using printUniqueIds: Boolean): Conversion[QualifiedName, Document]
 
-  protected implicit def stringToDoc(s: String): Raw = Raw(s)
+  protected given stringToDoc: Conversion[String, Raw] with {
+    def apply(s: String): Raw = Raw(s)
+  }
 
-  def apply(t: Tree)(implicit printUniqueIDs: Boolean = false): String = {
+  def apply(t: Tree)(using printUniqueIDs: Boolean = false): String = {
 
     def binOp(e1: Expr, op: String, e2: Expr) = "(" <:> rec(e1) <:> " " + op + " " <:> rec(e2) <:> ")"
 
@@ -169,14 +171,14 @@ object NominalPrinter extends Printer {
   val treeModule: NominalTreeModule.type = NominalTreeModule
   import NominalTreeModule._
 
-  implicit def printName(name: Name)(implicit printUniqueIds: Boolean): Document = Raw(name)
+  given printName(using printUniqueIds: Boolean): Conversion[Name, Document] with {
+    def apply(name: Name): Document = Raw(name)
+  }
 
-  implicit def printQName(name: QualifiedName)(implicit printUniqueIds: Boolean): Document = {
-    Raw(name match {
-      case QualifiedName(Some(module), name) =>
-        s"$module.$name"
-      case QualifiedName(None, name) =>
-        name
+  given printQName(using printUniqueIds: Boolean): Conversion[QualifiedName, Document] with {
+    def apply(name: QualifiedName): Document = Raw(name match {
+      case QualifiedName(Some(module), name) => s"$module.$name"
+      case QualifiedName(None, name) => name
     })
   }
 }
@@ -186,16 +188,15 @@ trait SymbolicPrinter extends Printer {
   val treeModule: SymbolicTreeModule.type = SymbolicTreeModule
   import SymbolicTreeModule._
 
-  implicit def printName(name: Name)(implicit printUniqueIds: Boolean): Document = {
-    if (printUniqueIds) {
-      name.fullName
-    } else {
-      name.name
-    }
+  def renderName(name: Name)(using printUniqueIds: Boolean): Document = {
+    if (printUniqueIds) name.fullName else name.name
   }
 
-  @inline implicit def printQName(name: QualifiedName)(implicit printUniqueIds: Boolean): Document = {
-    printName(name)
+  given printName(using printUniqueIds: Boolean): Conversion[Name, Document] = { name =>
+    renderName(name)
+  }
+  @inline given printQName(using printUniqueIds: Boolean): Conversion[QualifiedName, Document] = { name =>
+    renderName(name)
   }
 }
 

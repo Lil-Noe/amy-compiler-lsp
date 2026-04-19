@@ -1,6 +1,8 @@
 package amyc
 package codegen
 
+import scala.language.implicitConversions
+
 import amyc.ast.Identifier
 import wasm.Function
 import wasm.Instructions._

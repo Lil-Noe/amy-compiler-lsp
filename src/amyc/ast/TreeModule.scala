@@ -109,7 +109,7 @@ trait TreeModule { self =>
     override def toString: String = "Unit"
   }
   case class ClassType(qname: QualifiedName) extends Type {
-    override def toString: String = printer.printQName(qname)(false).print
+    override def toString: String = printer.printQName(using false)(qname).print
   }
 
   // A wrapper for types that is also a Tree (i.e. has a position)
@@ -126,7 +126,7 @@ trait TreeModule { self =>
 object NominalTreeModule extends TreeModule {
   type Name = String
   case class QualifiedName(module: Option[String], name: String) {
-    override def toString: String = printer.printQName(this)(false).print
+    override def toString: String = printer.printQName(using false)(this).print
   }
   val printer = NominalPrinter
 }

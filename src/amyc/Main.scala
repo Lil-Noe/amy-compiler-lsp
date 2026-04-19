@@ -123,7 +123,7 @@ trait MainHelpers {
     new Pipeline[(SP, SymbolTable), Unit] {
       def run(ctx: Context)(v: (SP, SymbolTable)) = {
         println(title)
-        println(SymbolicPrinter(v._1)(true))
+        println(SymbolicPrinter(v._1)(using true))
       }
     }
   }

@@ -50,19 +50,22 @@ case object NoPosition extends Position {
 // A trait for entities which have a position in a file
 trait Positioned {
 
-  protected var pos_ : Position = NoPosition
+  protected var startPos_ : Position = NoPosition
+  protected var endPos_ : Position = NoPosition
 
-  def hasPosition = pos_ != NoPosition
+  def hasPosition = startPos_ != NoPosition && endPos_ != NoPosition
 
-  def position = pos_
+  def startPosition = startPos_
+  def endPosition = endPos_
 
-  def setPos(pos: Position): this.type = {
-    pos_ = pos
+  def setPos(startPos: Position, endPos: Position): this.type = {
+    startPos_ = startPos
+    endPos_ = endPos
     this
   }
 
   def setPos(other: Positioned): this.type = {
-    setPos(other.position)
+    setPos(other.startPos_, other.endPos_)
   }
 
 }

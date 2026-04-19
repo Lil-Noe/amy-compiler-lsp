@@ -67,7 +67,13 @@ object Instructions {
   }
 
   // Useful implicit conversions to construct Code objects
-  implicit def i2c(i: Instruction): Code = Code(List(i))
-  implicit def is2c(is: List[Instruction]): Code = Code(is)
-  implicit def cs2c(cs: List[Code]): Code = Code(cs flatMap (_.instructions))
+  given i2c: Conversion[Instruction, Code] with {
+    def apply(i: Instruction): Code = Code(List(i))
+  }
+  given is2c: Conversion[List[Instruction], Code] with {
+    def apply(is: List[Instruction]): Code = Code(is)
+  }
+  given cs2c: Conversion[List[Code], Code] with {
+    def apply(cs: List[Code]): Code = Code(cs flatMap (_.instructions))
+  }
 }
